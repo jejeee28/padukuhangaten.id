@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://padukuhan-gaten.dukuh.id/sitemap.xml
+Sitemap: https://padukuhangaten.id/sitemap.xml
