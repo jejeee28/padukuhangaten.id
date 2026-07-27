@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Padukuhan Gaten - Website Resmi Desa | Tirtomulyo, Yogyakarta</title>
+
+    <!-- SEO: deskripsi ini yang muncul di bawah judul pada hasil pencarian Google -->
+    <meta name="description"
+        content="Website resmi Padukuhan Gaten, Kalurahan Tirtomulyo, Yogyakarta. Informasi statistik penduduk, potensi desa, struktur organisasi, sejarah, dan lokasi Padukuhan Gaten." />
+    <meta name="keywords" content="Padukuhan Gaten, Desa Gaten, Gaten Tirtomulyo, desa Yogyakarta" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Pemerintah Padukuhan Gaten" />
+
+    <!-- GANTI: ganti URL di bawah dengan alamat website kamu yang sebenarnya setelah online -->
+    <link rel="canonical" href="https://gaten.desa.id/" />
+
+    <!-- Open Graph: tampilan saat link dibagikan di WhatsApp/Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Padukuhan Gaten - Website Resmi Desa" />
+    <meta property="og:description"
+        content="Informasi resmi Padukuhan Gaten: statistik penduduk, potensi desa, struktur organisasi, dan lokasi." />
+    <meta property="og:url" content="https://gaten.desa.id/" />
+    <!-- GANTI: ganti dengan URL foto asli desa (bukan foto AI) supaya preview link terlihat otentik -->
+    <meta property="og:image" content="https://gaten.desa.id/assets/foto-utama-gaten.jpg" />
+    <meta property="og:locale" content="id_ID" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#dfe7bd",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#b8ccb6",
+                        "surface-container-low": "#f5f3ee",
+                        "surface-dim": "#dbdad5",
+                        "surface-bright": "#fbf9f4",
+                        "on-background": "#1b1c19",
+                        "surface-container-highest": "#e4e2dd",
+                        "on-secondary-fixed-variant": "#434a2b",
+                        "surface-tint": "#516351",
+                        "on-primary-fixed-variant": "#3a4b3b",
+                        "primary": "#435544",
+                        "on-tertiary-fixed-variant": "#6f3800",
+                        "tertiary-fixed-dim": "#ffb781",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#b8ccb6",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#ffdcc4",
+                        "on-error": "#ffffff",
+                        "secondary": "#5a6241",
+                        "on-primary-container": "#daeed8",
+                        "surface-variant": "#e4e2dd",
+                        "surface": "#fbf9f4",
+                        "on-secondary-container": "#606847",
+                        "secondary-fixed-dim": "#c3cba3",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#eae8e3",
+                        "on-primary-fixed": "#0f1f11",
+                        "outline": "#747872",
+                        "tertiary": "#7d4000",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#5b6d5b",
+                        "background": "#fbf9f4",
+                        "secondary-container": "#dfe7bd",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1b1c19",
+                        "primary-fixed": "#d4e8d2",
+                        "surface-container": "#f0eee9",
+                        "outline-variant": "#c3c8c0",
+                        "on-tertiary-container": "#ffe3d1",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f2f1ec",
+                        "on-secondary-fixed": "#181e05",
+                        "on-tertiary-fixed": "#2f1400",
+                        "on-surface-variant": "#434842",
+                        "tertiary-container": "#9f550c",
+                        "inverse-surface": "#30312e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "base": "8px",
+                        "sm": "12px",
+                        "xl": "80px",
+                        "max-width": "1280px",
+                        "lg": "48px",
+                        "xs": "4px",
+                        "gutter": "24px",
+                        "md": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display": ["Montserrat"],
+                        "body-md": ["Inter"],
+                        "display-mobile": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "caption": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: #ffffff;
+            border: 1px solid rgba(90, 98, 65, 0.15);
+            box-shadow: 0px 2px 10px rgba(91, 109, 91, 0.06);
+        }
+
+        .rural-gradient {
+            background: linear-gradient(135deg, #fbf9f4 0%, #f0eee9 100%);
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .map-gradient-overlay {
+            background: linear-gradient(to bottom, rgba(251, 249, 244, 0) 70%, rgba(251, 249, 244, 1) 100%);
+        }
+
+        .organigram-line {
+            position: relative;
+        }
+
+        .organigram-line::after {
+            content: '';
+            position: absolute;
+            background: #5a6241;
+            opacity: 0.3;
+        }
+
+        .vertical-line::after {
+            width: 2px;
+            height: 48px;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(67, 85, 68, 0.05) 0%, rgba(251, 249, 244, 0) 100%);
+        }
+
+        .card-shadow {
+            box-shadow: 0px 4px 20px rgba(91, 109, 91, 0.08);
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 240px;
+            width: 100%;
+        }
+
+        .tonal-card {
+            background: #ffffff;
+            box-shadow: 0px 4px 20px rgba(91, 109, 91, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tonal-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 8px 30px rgba(91, 109, 91, 0.12);
+        }
+
+        .divider-line {
+            background: linear-gradient(90deg, transparent 0%, #c3c8c0 50%, transparent 100%);
+            height: 1px;
+            width: 100%;
+        }
+    </style>
+
+    <!-- Data terstruktur: membantu Google memahami ini adalah halaman resmi sebuah wilayah/desa -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "GovernmentOrganization",
+        "name": "Padukuhan Gaten",
+        "description": "Website resmi Padukuhan Gaten, Kalurahan Tirtomulyo, Yogyakarta.",
+        "url": "https://gaten.desa.id/",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tirtomulyo",
+            "addressRegion": "Yogyakarta",
+            "addressCountry": "ID"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -7.976057991509914,
+            "longitude": 110.29392590770978
+        }
+    }
+    </script>
+</head>
+
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+
+    <!-- TopNavBar -->
+    <header
+        class="sticky top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm transition-all duration-300 ease-in-out">
+        <div
+            class="flex justify-between items-center px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto h-20">
+            <div class="font-headline-md text-headline-md font-bold text-primary">Padukuhan Gaten</div>
+            <nav class="hidden md:flex items-center gap-md">
+                <a class="nav-link font-body-md text-body-md text-tertiary border-b-2 border-tertiary pb-1"
+                    href="#beranda">Beranda</a>
+                <a class="nav-link font-body-md text-body-md text-on-surface hover:text-primary transition-colors"
+                    href="#statistik">Statistik</a>
+                <a class="nav-link font-body-md text-body-md text-on-surface hover:text-primary transition-colors"
+                    href="#potensi">Potensi</a>
+                <a class="nav-link font-body-md text-body-md text-on-surface hover:text-primary transition-colors"
+                    href="#organisasi">Organisasi</a>
+                <a class="nav-link font-body-md text-body-md text-on-surface hover:text-primary transition-colors"
+                    href="#lokasi">Lokasi</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button
+                    class="hidden sm:block bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-primary-container transition-all">
+                    Hubungi Kami
+                </button>
+                <button id="menu-btn" class="md:hidden text-primary flex items-center justify-center p-2"
+                    aria-label="Buka Menu">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu"
+        class="fixed inset-0 z-50 bg-background/95 backdrop-blur-lg flex flex-col p-6 translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="flex justify-between items-center mb-8">
+            <div class="font-headline-md text-headline-md font-bold text-primary">Padukuhan Gaten</div>
+            <button id="close-menu" class="text-primary flex items-center justify-center p-2" aria-label="Tutup Menu">
+                <span class="material-symbols-outlined text-3xl">close</span>
+            </button>
+        </div>
+        <nav class="flex flex-col gap-6 text-center">
+            <a class="mobile-nav-link text-xl font-headline-md text-tertiary border-b border-outline-variant/30 pb-2"
+                href="#beranda">Beranda</a>
+            <a class="mobile-nav-link text-xl font-headline-md text-on-surface hover:text-primary transition-colors pb-2"
+                href="#statistik">Statistik</a>
+            <a class="mobile-nav-link text-xl font-headline-md text-on-surface hover:text-primary transition-colors pb-2"
+                href="#potensi">Potensi</a>
+            <a class="mobile-nav-link text-xl font-headline-md text-on-surface hover:text-primary transition-colors pb-2"
+                href="#organisasi">Organisasi</a>
+            <a class="mobile-nav-link text-xl font-headline-md text-on-surface hover:text-primary transition-colors pb-2"
+                href="#lokasi">Lokasi</a>
+        </nav>
+        <div class="mt-auto text-center pb-8">
+            <button class="bg-primary text-on-primary px-8 py-3 rounded-lg font-label-md text-label-md w-full">
+                Hubungi Kami
+            </button>
+        </div>
+    </div>
+
+    <main>
+        <!-- CATATAN PENTING TENTANG FOTO:
+             - Foto pemandangan/kegiatan (sawah, pasar, balai desa, batik, dll) sekarang memakai foto ASLI
+               (bukan AI) dari Wikimedia Commons berlisensi bebas pakai — tapi ini tetap foto tempat LAIN
+               di Indonesia, BUKAN foto Padukuhan Gaten yang sebenarnya. Tetap ganti dengan foto asli desa
+               begitu tersedia.
+             - Foto potret untuk Dukuh/Sekretaris/Bendahara/ketua organisasi sengaja memakai IKON SILUET
+               generik (bukan foto orang asli), supaya tidak salah pakai foto orang lain yang dikasih nama
+               palsu. Ganti dengan foto pengurus yang sebenarnya menjabat.
+             Cari kata "# DUMMY" untuk menemukan semua area yang masih berisi data/foto contoh. -->
+        <!-- ================= SECTION 1: BERANDA ================= -->
+        <section id="beranda" class="scroll-mt-20">
+            <!-- Hero Section -->
+            <div class="relative h-[870px] flex items-center overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <div class="w-full h-full bg-cover bg-center"
+                        data-alt="A serene landscape of Padukuhan Gaten at sunrise, showing lush green rice fields and traditional Javanese architecture with a soft morning mist. The lighting is golden and warm, reflecting a peaceful rural modernity style. The scene captures the balance between nature and small village development, using a palette of soft laurel greens and warm beige tones. High-end photography with deep field of view."
+                        style="background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Rice-fields-Indonesia-%28Java%29.jpg')">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent">
+                    </div>
+                </div>
+                <div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto w-full">
+                    <div class="max-w-2xl space-y-6">
+                        <span
+                            class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md uppercase tracking-wider">Desa
+                            Ramah Budaya</span>
+                        <h1 class="font-display text-display text-primary leading-tight">
+                            Padukuhan Gaten
+                        </h1>
+                        <p class="font-headline-md text-headline-md text-on-surface-variant font-normal italic">
+                            "Tradisi Hangat dalam Modernitas"
+                        </p>
+                        <div class="flex gap-4 pt-4">
+                            <a class="bg-primary text-on-primary px-8 py-4 rounded-xl font-label-md text-label-md shadow-lg hover:translate-y-[-2px] transition-all"
+                                href="#layanan">Jelajahi Desa</a>
+                            <a class="border border-primary text-primary px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/5 transition-all"
+                                href="#tentang">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+                    <span class="material-symbols-outlined text-primary scale-150">expand_more</span>
+                </div>
+            </div>
+
+            <!-- Tentang Kami Section -->
+            <div id="tentang" class="py-xl bg-surface scroll-mt-20">
+                <div
+                    class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
+                    <div class="relative">
+                        <div class="aspect-square rounded-3xl overflow-hidden shadow-xl">
+                            <div class="w-full h-full bg-cover bg-center"
+                                data-alt="A candid close-up of village elders and youth collaborating in a modern community hall in Padukuhan Gaten. Warm sunlight streams through large windows, illuminating traditional wood carvings alongside modern digital tablets. The atmosphere is collaborative, warm, and professional, utilizing the brand's primary green and soft ivory colors. Professional editorial style photography."
+                                style="background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Ploso%20balai%20desa%20joglo.jpg')">
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 glass-card p-6 rounded-2xl shadow-lg hidden md:block">
+                            <div class="text-primary font-bold text-headline-lg">25+</div>
+                            <div class="text-on-surface-variant font-label-md">Tahun Warisan Budaya</div>
+                        </div>
+                    </div>
+                    <div class="space-y-md">
+                        <h2 class="font-headline-lg text-headline-lg text-primary">Tentang Kami</h2>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            Padukuhan Gaten dikelilingi oleh persawahan yang masih hidup dan terus digarap hingga saat
+                            ini. Sebagian besar warganya berprofesi sebagai petani dan peternak. Selain bertani dan
+                            beternak, ibu-ibu yang tergabung dalam Kelompok Wanita Tani (KWT) di Padukuhan Gaten juga
+                            masih aktif memproduksi telur asin hingga sekarang. Rasa kebersamaan antarwarga di Padukuhan
+                            Gaten masih sangat kuat dan terjaga hingga saat ini.
+                        </p>
+                        <p class="font-body-md text-body-md text-on-surface-variant">
+                            Kami berkomitmen untuk terus berinovasi dalam pelayanan publik, menjaga kelestarian
+                            lingkungan, dan memberdayakan setiap warga demi mewujudkan masyarakat yang mandiri dan
+                            berdaya saing tinggi.
+                        </p>
+                        <div class="pt-4 border-t border-outline-variant grid grid-cols-2 gap-4">
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-tertiary">verified</span>
+                                <span class="font-label-md text-on-surface">Terakreditasi Digital</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-tertiary">groups</span>
+                                <span class="font-label-md text-on-surface">Gotong Royong</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Layanan & Navigasi (Bento Grid Style) -->
+            <div id="layanan" class="py-xl bg-surface-container-low scroll-mt-20">
+                <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                    <div class="text-center mb-lg">
+                        <h2 class="font-headline-lg text-headline-lg text-primary mb-2">Layanan &amp; Navigasi</h2>
+                        <p class="text-on-surface-variant max-w-xl mx-auto">Akses informasi publik dan potensi unggulan
+                            Padukuhan Gaten secara cepat dan terintegrasi.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                        <!-- Statistik -->
+                        <a class="md:col-span-8 group relative overflow-hidden rounded-3xl bg-white p-md shadow-sm hover:shadow-xl transition-all duration-300"
+                            href="#statistik">
+                            <div class="flex flex-col h-full justify-between relative z-10">
+                                <div>
+                                    <span class="material-symbols-outlined text-primary text-4xl mb-4">analytics</span>
+                                    <h3 class="font-headline-md text-headline-md text-primary">Statistik Desa</h3>
+                                    <p class="text-on-surface-variant max-w-sm mt-2">Data kependudukan, demografi, dan
+                                        capaian pembangunan desa yang diperbarui secara berkala.</p>
+                                </div>
+                                <div
+                                    class="mt-8 flex items-center text-tertiary font-bold gap-2 group-hover:gap-4 transition-all">
+                                    Lihat Detail <span class="material-symbols-outlined">arrow_forward</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Potensi -->
+                        <a class="md:col-span-4 group overflow-hidden rounded-3xl bg-primary text-on-primary p-md shadow-sm hover:shadow-xl transition-all duration-300"
+                            href="#potensi">
+                            <div class="flex flex-col h-full justify-between">
+                                <div>
+                                    <span
+                                        class="material-symbols-outlined text-secondary-fixed text-4xl mb-4">potted_plant</span>
+                                    <h3 class="font-headline-md text-headline-md text-on-primary">Potensi Desa</h3>
+                                    <p class="text-primary-fixed-dim mt-2 text-primary-fixed-dim/90">Keunggulan ekonomi,
+                                        wisata, dan hasil bumi lokal.</p>
+                                </div>
+                                <div class="mt-8 flex items-center text-secondary-fixed font-bold gap-2">
+                                    Jelajahi <span class="material-symbols-outlined">explore</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Organisasi -->
+                        <a class="md:col-span-4 group overflow-hidden rounded-3xl bg-secondary-container p-md shadow-sm hover:shadow-xl transition-all duration-300"
+                            href="#organisasi">
+                            <div class="flex flex-col h-full justify-between">
+                                <div>
+                                    <span
+                                        class="material-symbols-outlined text-on-secondary-container text-4xl mb-4">account_tree</span>
+                                    <h3 class="font-headline-md text-headline-md text-on-secondary-container">Organisasi
+                                    </h3>
+                                    <p class="text-on-secondary-fixed-variant mt-2">Struktur pemerintahan dan lembaga
+                                        kemasyarakatan.</p>
+                                </div>
+                                <div class="mt-8 flex items-center text-primary font-bold gap-2">
+                                    Struktur <span class="material-symbols-outlined">group</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Lokasi -->
+                        <a class="md:col-span-8 group relative overflow-hidden rounded-3xl bg-white p-md shadow-sm hover:shadow-xl transition-all duration-300"
+                            href="#lokasi">
+                            <div
+                                class="absolute inset-0 z-0 opacity-20 grayscale group-hover:grayscale-0 transition-all">
+                                <div class="w-full h-full bg-cover bg-center"
+                                    data-alt="A clean, minimalist vector-style map showing the geographical layout of Padukuhan Gaten. The map uses subtle laurel greens and earth tones, with clear markers for the village hall, main roads, and green spaces. The design is modern, professional, and easy to read, fitting the village's identity of tradition meeting modernity."
+                                    style="background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Jalan%20Desa.jpg')">
+                                </div>
+                            </div>
+                            <div class="flex flex-col h-full justify-between relative z-10">
+                                <div>
+                                    <span
+                                        class="material-symbols-outlined text-tertiary text-4xl mb-4">location_on</span>
+                                    <h3 class="font-headline-md text-headline-md text-primary">Lokasi &amp; Navigasi
+                                    </h3>
+                                    <p class="text-on-surface-variant max-w-sm mt-2">Panduan rute menuju wilayah
+                                        Padukuhan Gaten dan titik penting lainnya.</p>
+                                </div>
+                                <div class="mt-8 flex items-center text-tertiary font-bold gap-2">
+                                    Buka Peta <span class="material-symbols-outlined">map</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kegiatan Terbaru Section -->
+            <div class="py-xl bg-surface">
+                <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                    <div class="flex flex-col md:flex-row justify-between items-end mb-lg gap-4">
+                        <div class="max-w-xl">
+                            <h2 class="font-headline-lg text-headline-lg text-primary">Kegiatan Terbaru</h2>
+                            <p class="text-on-surface-variant mt-2">Dinamika kehidupan warga dan agenda pembangunan
+                                Padukuhan Gaten yang sedang berlangsung.</p>
+                        </div>
+                        <button
+                            class="border-b-2 border-tertiary text-tertiary font-bold hover:pb-1 transition-all">Lihat
+                            Semua Agenda</button>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                        <!-- Agenda 1 -->
+                        <div
+                            class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all">
+                            <div class="h-48 overflow-hidden">
+                                <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                                    data-alt="Students from a KKN program teaching local children in a modern village library in Padukuhan Gaten. Bright, cheerful lighting with soft shadows. The scene is filled with colorful books and traditional educational toys. Modern digital photography style, clean and professional."
+                                    style="background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Perempuan%20dan%20anak%20di%20perpustakaan.jpg')">
+                                </div>
+                            </div>
+                            <div class="p-md space-y-3">
+                                <div class="flex gap-2 text-caption font-label-md text-tertiary uppercase">
+                                    <span>12 Okt 2024</span>
+                                    <span>•</span>
+                                    <span>Program KKN</span>
+                                </div>
+                                <h4 class="font-headline-md text-primary group-hover:text-tertiary transition-colors">
+                                    Program Literasi Digital Mahasiswa KKN</h4>
+                                <p class="text-on-surface-variant line-clamp-2">Inisiatif mahasiswa dalam memberikan
+                                    edukasi teknologi bagi anak-anak dan remaja desa Gaten.</p>
+                            </div>
+                        </div>
+                        <!-- Agenda 2 -->
+                        <div
+                            class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all">
+                            <div class="h-48 overflow-hidden">
+                                <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                                    data-alt="A vibrant local community market in the village square of Padukuhan Gaten. Local residents are selling fresh organic produce and handmade traditional crafts. The morning light is warm and inviting. The scene is bustling but organized, showcasing modern rural commerce. Professional photography."
+                                    style="background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Godean%20traditional%20market%20in%20Yogyakarta.jpg')">
+                                </div>
+                            </div>
+                            <div class="p-md space-y-3">
+                                <div class="flex gap-2 text-caption font-label-md text-tertiary uppercase">
+                                    <span>08 Okt 2024</span>
+                                    <span>•</span>
+                                    <span>Ekonomi</span>
+                                </div>
+                                <h4 class="font-headline-md text-primary group-hover:text-tertiary transition-colors">
+                                    Pasar Rakyat Mingguan Gaten Mandiri</h4>
+                                <p class="text-on-surface-variant line-clamp-2">Meningkatkan ekonomi lokal melalui wadah
+                                    jual beli hasil bumi dan kerajinan tangan warga.</p>
+                            </div>
+                        </div>
+                        <!-- Agenda 3 -->
+                        <div
+                            class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all">
+                            <div class="h-48 overflow-hidden">
+                                <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                                    data-alt="A clean and organized community meeting in the village hall of Padukuhan Gaten. Village leaders are presenting development plans on a projector screen to an attentive audience of diverse ages. Professional atmosphere, with a focus on transparency and community engagement. Soft indoor lighting."
+                                    style="background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Pendopo%20Desa.jpg')">
+                                </div>
+                            </div>
+                            <div class="p-md space-y-3">
+                                <div class="flex gap-2 text-caption font-label-md text-tertiary uppercase">
+                                    <span>05 Okt 2024</span>
+                                    <span>•</span>
+                                    <span>Pembangunan</span>
+                                </div>
+                                <h4 class="font-headline-md text-primary group-hover:text-tertiary transition-colors">
+                                    Musyawarah Perencanaan Desa 2025</h4>
+                                <p class="text-on-surface-variant line-clamp-2">Sinergi antara pemerintah desa dan warga
+                                    dalam merancang arah pembangunan tahun depan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION 2: STATISTIK ================= -->
+        <section id="statistik" class="scroll-mt-20 border-t border-outline-variant/30 py-xl bg-background">
+            <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                <!-- Header Section -->
+                <div class="mb-xl text-center md:text-left">
+                    <h2 class="font-display text-display text-primary mb-4">Statistik Warga</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                        Transparansi data kependudukan Padukuhan Gaten sebagai dasar perencanaan pembangunan desa yang
+                        berkelanjutan dan berbasis data akurat.
+                    </p>
+                </div>
+
+                <!-- GANTI: Semua angka statistik di bawah ini (total penduduk, jumlah KK, rasio gender, dll)
+                     masih CONTOH/PLACEHOLDER. Ganti dengan data asli dari buku induk penduduk / kantor Padukuhan
+                     sebelum website ini dipublikasikan. -->
+                <div class="mb-md">
+                    <span class="inline-flex items-center gap-1 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-md text-label-md">
+                        # DUMMY — seluruh data statistik di bawah ini masih contoh
+                    </span>
+                </div>
+                <!-- Key Metrics Bento Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-md mb-xl">
+                    <!-- Total Penduduk -->
+                    <div class="tonal-card p-md rounded-xl border border-secondary/10 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="p-2 bg-secondary-container text-on-secondary-container rounded-lg">
+                                    <span class="material-symbols-outlined">groups</span>
+                                </span>
+                                <span class="text-secondary font-label-md">+2.4% Thn</span>
+                            </div>
+                            <p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">
+                                Total Penduduk</p>
+                            <h3 class="font-display text-headline-lg text-primary">1,284</h3>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-outline-variant/30 text-caption text-on-surface-variant">
+                            Jiwa terdaftar di Gaten
+                        </div>
+                    </div>
+                    <!-- Jumlah KK -->
+                    <div class="tonal-card p-md rounded-xl border border-secondary/10 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="p-2 bg-tertiary-fixed text-on-tertiary-fixed rounded-lg">
+                                    <span class="material-symbols-outlined">home</span>
+                                </span>
+                                <span class="text-tertiary font-label-md">Aktif</span>
+                            </div>
+                            <p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">
+                                Jumlah KK</p>
+                            <h3 class="font-display text-headline-lg text-primary">412</h3>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-outline-variant/30 text-caption text-on-surface-variant">
+                            Kepala Keluarga
+                        </div>
+                    </div>
+                    <!-- Rasio Gender -->
+                    <div class="tonal-card p-md rounded-xl border border-secondary/10 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="p-2 bg-primary-fixed text-on-primary-fixed rounded-lg">
+                                    <span class="material-symbols-outlined">wc</span>
+                                </span>
+                            </div>
+                            <p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">
+                                Rasio Gender</p>
+                            <div class="flex items-baseline gap-2">
+                                <h3 class="font-display text-headline-lg text-primary">1.02</h3>
+                                <span class="font-body-md text-on-surface-variant">L/P</span>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <div class="w-full bg-surface-container-high h-2 rounded-full flex overflow-hidden">
+                                <div class="bg-primary h-full" style="width: 51%"></div>
+                                <div class="bg-secondary-container h-full" style="width: 49%"></div>
+                            </div>
+                            <div class="flex justify-between mt-2 text-caption text-on-surface-variant">
+                                <span>L: 51%</span>
+                                <span>P: 49%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kelompok Usia Dominan -->
+                    <div class="tonal-card p-md rounded-xl border border-secondary/10 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="p-2 bg-surface-container-highest text-on-surface-variant rounded-lg">
+                                    <span class="material-symbols-outlined">qr_code_2</span>
+                                </span>
+                            </div>
+                            <p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Usia
+                                Produktif</p>
+                            <h3 class="font-display text-headline-lg text-primary">68%</h3>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-outline-variant/30 text-caption text-on-surface-variant">
+                            Usia 15 - 64 Tahun
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Section -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xl">
+                    <!-- Age Distribution Pie Chart Card -->
+                    <div class="tonal-card p-md md:p-lg rounded-2xl border border-secondary/5">
+                        <div class="flex items-center justify-between mb-lg">
+                            <h3 class="font-headline-md text-headline-md text-primary">Distribusi Usia</h3>
+                            <span class="material-symbols-outlined text-outline cursor-help"
+                                title="Data per Q4 2023">info</span>
+                        </div>
+                        <div class="flex flex-col md:flex-row items-center gap-lg">
+                            <div class="relative w-48 h-48 flex-shrink-0">
+                                <!-- Custom SVG Pie Chart -->
+                                <svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+                                    <circle cx="18" cy="18" fill="transparent" r="16" stroke="#f0eee9" stroke-width="4">
+                                    </circle>
+                                    <circle cx="18" cy="18" fill="transparent" r="16" stroke="#435544"
+                                        stroke-dasharray="25 100" stroke-width="4"></circle>
+                                    <circle cx="18" cy="18" fill="transparent" r="16" stroke="#5a6241"
+                                        stroke-dasharray="45 100" stroke-dashoffset="-25" stroke-width="4"></circle>
+                                    <circle cx="18" cy="18" fill="transparent" r="16" stroke="#7d4000"
+                                        stroke-dasharray="15 100" stroke-dashoffset="-70" stroke-width="4"></circle>
+                                    <circle cx="18" cy="18" fill="transparent" r="16" stroke="#dfe7bd"
+                                        stroke-dasharray="15 100" stroke-dashoffset="-85" stroke-width="4"></circle>
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div class="text-center">
+                                        <span class="block font-headline-md text-primary">1.2k</span>
+                                        <span class="block text-caption uppercase text-on-surface-variant">Total</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-grow space-y-3 w-full">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-3 h-3 rounded-full bg-primary"></span>
+                                        <span class="font-label-md text-on-surface">Anak-anak (0-14)</span>
+                                    </div>
+                                    <span class="font-body-md font-bold">25%</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-3 h-3 rounded-full bg-secondary"></span>
+                                        <span class="font-label-md text-on-surface">Produktif (15-64)</span>
+                                    </div>
+                                    <span class="font-body-md font-bold">45%</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-3 h-3 rounded-full bg-tertiary"></span>
+                                        <span class="font-label-md text-on-surface">Lansia (65+)</span>
+                                    </div>
+                                    <span class="font-body-md font-bold">15%</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+                                        <span class="font-label-md text-on-surface">Balita</span>
+                                    </div>
+                                    <span class="font-body-md font-bold">15%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Bar Chart Card -->
+                    <div class="tonal-card p-md md:p-lg rounded-2xl border border-secondary/5">
+                        <div class="flex items-center justify-between mb-lg">
+                            <h3 class="font-headline-md text-headline-md text-primary">Tingkat Pendidikan</h3>
+                            <button class="text-secondary font-label-md hover:underline">Detail Data</button>
+                        </div>
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-label-md text-on-surface">Sarjana (S1/S2/S3)</span>
+                                    <span class="text-caption text-on-surface-variant">156 Jiwa</span>
+                                </div>
+                                <div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+                                    <div class="bg-primary h-full transition-all duration-1000" style="width: 45%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-label-md text-on-surface">SMA/SMK Sederajat</span>
+                                    <span class="text-caption text-on-surface-variant">482 Jiwa</span>
+                                </div>
+                                <div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+                                    <div class="bg-secondary h-full transition-all duration-1000" style="width: 75%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-label-md text-on-surface">SMP Sederajat</span>
+                                    <span class="text-caption text-on-surface-variant">210 Jiwa</span>
+                                </div>
+                                <div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+                                    <div class="bg-primary-container h-full transition-all duration-1000"
+                                        style="width: 55%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-label-md text-on-surface">SD Sederajat</span>
+                                    <span class="text-caption text-on-surface-variant">185 Jiwa</span>
+                                </div>
+                                <div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+                                    <div class="bg-outline-variant h-full transition-all duration-1000"
+                                        style="width: 40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Population Table Section -->
+                <div class="mb-xl">
+                    <div class="tonal-card overflow-hidden rounded-2xl border border-secondary/5">
+                        <div
+                            class="p-md md:p-lg bg-surface-container-low flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                            <div>
+                                <h3 class="font-headline-md text-headline-md text-primary">Data Penduduk per RT</h3>
+                                <p class="text-caption text-on-surface-variant">Total 6 Rukun Tetangga (RT)</p>
+                                <span class="inline-flex items-center gap-1 mt-2 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-md text-label-md">
+                                    # DUMMY — nama ketua RT & data jiwa masih contoh
+                                </span>
+                                <!-- GANTI: nama ketua RT dan jumlah jiwa per RT di bawah ini masih contoh.
+                                     Ganti dengan nama dan data asli sebelum publish, agar tidak salah info. -->
+                            </div>
+                            <div class="flex gap-2 w-full md:w-auto">
+                                <div class="relative flex-1 md:flex-none">
+                                    <input
+                                        class="w-full bg-surface border border-outline-variant rounded-lg px-10 py-2 text-label-md focus:ring-secondary focus:border-secondary transition-all"
+                                        placeholder="Cari RT..." type="text" />
+                                    <span
+                                        class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant">search</span>
+                                </div>
+                                <button
+                                    class="bg-white border border-outline-variant p-2 rounded-lg text-on-surface hover:bg-surface-container-high transition-colors"
+                                    aria-label="Filter List">
+                                    <span class="material-symbols-outlined">filter_list</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="bg-surface-container-high border-b border-outline-variant">
+                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Unit Wilayah
+                                        </th>
+                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Ketua RT</th>
+                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Jumlah KK</th>
+                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Laki-laki</th>
+                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Perempuan</th>
+                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Total Jiwa</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-surface-container-highest">
+                                    <tr class="hover:bg-surface-container-low transition-colors">
+                                        <td class="px-lg py-4 font-label-md">RT 01</td>
+                                        <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Suhardi</td>
+                                        <td class="px-lg py-4 font-body-md">72</td>
+                                        <td class="px-lg py-4 font-body-md">112</td>
+                                        <td class="px-lg py-4 font-body-md">108</td>
+                                        <td class="px-lg py-4 font-label-md text-primary">220</td>
+                                    </tr>
+                                    <tr class="hover:bg-surface-container-low transition-colors">
+                                        <td class="px-lg py-4 font-label-md">RT 02</td>
+                                        <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Martono</td>
+                                        <td class="px-lg py-4 font-body-md">68</td>
+                                        <td class="px-lg py-4 font-body-md">98</td>
+                                        <td class="px-lg py-4 font-body-md">102</td>
+                                        <td class="px-lg py-4 font-label-md text-primary">200</td>
+                                    </tr>
+                                    <tr class="hover:bg-surface-container-low transition-colors">
+                                        <td class="px-lg py-4 font-label-md">RT 03</td>
+                                        <td class="px-lg py-4 font-body-md text-on-surface-variant">Ibu Endah</td>
+                                        <td class="px-lg py-4 font-body-md">75</td>
+                                        <td class="px-lg py-4 font-body-md">115</td>
+                                        <td class="px-lg py-4 font-body-md">119</td>
+                                        <td class="px-lg py-4 font-label-md text-primary">234</td>
+                                    </tr>
+                                    <tr class="hover:bg-surface-container-low transition-colors">
+                                        <td class="px-lg py-4 font-label-md">RT 04</td>
+                                        <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Bambang</td>
+                                        <td class="px-lg py-4 font-body-md">65</td>
+                                        <td class="px-lg py-4 font-body-md">105</td>
+                                        <td class="px-lg py-4 font-body-md">98</td>
+                                        <td class="px-lg py-4 font-label-md text-primary">203</td>
+                                    </tr>
+                                    <tr class="hover:bg-surface-container-low transition-colors">
+                                        <td class="px-lg py-4 font-label-md">RT 05</td>
+                                        <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Yulianto</td>
+                                        <td class="px-lg py-4 font-body-md">70</td>
+                                        <td class="px-lg py-4 font-body-md">110</td>
+                                        <td class="px-lg py-4 font-body-md">115</td>
+                                        <td class="px-lg py-4 font-label-md text-primary">225</td>
+                                    </tr>
+                                    <tr class="hover:bg-surface-container-low transition-colors">
+                                        <td class="px-lg py-4 font-label-md">RT 06</td>
+                                        <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Kusuma</td>
+                                        <td class="px-lg py-4 font-body-md">62</td>
+                                        <td class="px-lg py-4 font-body-md">102</td>
+                                        <td class="px-lg py-4 font-body-md">100</td>
+                                        <td class="px-lg py-4 font-label-md text-primary">202</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION 3: POTENSI ================= -->
+        <section id="potensi" class="scroll-mt-20 border-t border-outline-variant/30 py-xl bg-surface-container-low">
+            <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                <!-- History Narrative Section -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center mb-xl">
+                    <div class="space-y-md">
+                        <div class="flex items-center gap-sm text-tertiary">
+                            <span class="h-[2px] w-12 bg-tertiary"></span>
+                            <span class="font-label-md text-label-md tracking-widest uppercase">Tapak Tilas &amp;
+                                Sejarah</span>
+                        </div>
+                        <h2 class="font-display text-display text-primary leading-tight">Asal-Usul Nama Padukuhan Gaten
+                        </h2>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            Nama Padukuhan Gaten memiliki dua versi cerita mengenai asal-usulnya. Versi pertama
+                            menyebutkan bahwa nama Gaten berasal dari nama Nyai Katean. Katean dalam bahasa Jawa
+                            memiliki arti kasembadan kang disedya, yaitu terkabulnya sesuatu yang dicita-citakan. Dari
+                            nama tokoh tersebut, wilayah ini kemudian dikenal dan disebut dengan nama Gaten.
+
+                        </p>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            Versi kedua menyebutkan bahwa nama Gaten berasal dari nama Kyai dan Nyai Gati Mulya. Gati
+                            dalam bahasa Jawa berarti nyata, têmên, tingkah, tata, ulah, sêngsêm, dan sacumbana,
+                            sedangkan Mulya berarti mulia. Dari nama kedua tokoh tersebut, wilayah ini kemudian dikenal
+                            dan disebut dengan nama Gaten hingga sekarang.
+                        </p>
+                    </div>
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-secondary-container rounded-3xl -z-10 transform rotate-2">
+                        </div>
+                        <img class="w-full h-[500px] object-cover rounded-2xl card-shadow group-hover:scale-[1.02] transition-transform duration-500"
+                            data-alt="A cinematic, high-angle photograph of a lush Indonesian village landscape at sunrise. The scene features traditional Javanese houses with distinctive Joglo roofs nestled among vibrant green rice paddies and tall tropical trees. The morning mist rolls gently over the fields, illuminated by a warm, golden sunlight that creates a serene and timeless atmosphere. The colors are rich in natural greens, earthy browns, and soft yellows, reflecting a professional light-mode aesthetic of rural serenity."
+                            src="https://commons.wikimedia.org/wiki/Special:FilePath/Jatiluwih%20rice%20terraces.jpg" />
+                    </div>
+                </div>
+
+                <!-- Potensi Desa Section: Interactive Grid -->
+                <div class="text-center max-w-2xl mx-auto mb-xl">
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-base">Potensi Desa Gaten</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Kekuatan kolektif kami dalam membangun
+                        ekonomi, menjaga alam, dan melestarikan budaya untuk masa depan yang lebih baik.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-lg mb-xl">
+                    <!-- Ekonomi Card -->
+                    <div
+                        class="group bg-white p-lg rounded-3xl card-shadow border border-surface-container hover:border-primary/20 transition-all duration-300">
+                        <div
+                            class="w-16 h-16 bg-primary-container rounded-2xl flex items-center justify-center text-on-primary-container mb-md transition-colors">
+                            <span class="material-symbols-outlined text-4xl">storefront</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-sm">Ekonomi &amp; UMKM</h3>
+                        <p class="text-on-surface-variant mb-md">Pusat kerajinan tangan lokal dan hasil pertanian
+                            organik yang telah menembus pasar regional, memberdayakan ratusan kepala keluarga.</p>
+                        <ul class="space-y-xs text-on-surface-variant font-label-md text-label-md">
+                            <li class="flex items-center gap-xs"><span
+                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> 45+
+                                Pelaku UMKM Aktif</li>
+                            <li class="flex items-center gap-xs"><span
+                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> Koperasi
+                                Mandiri Desa</li>
+                            <li class="flex items-center gap-xs"><span
+                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> Produk
+                                Ekspor Unggulan</li>
+                        </ul>
+                    </div>
+                    <!-- Wisata Card -->
+                    <div
+                        class="group bg-white p-lg rounded-3xl card-shadow border border-surface-container hover:border-secondary/20 transition-all duration-300">
+                        <div
+                            class="w-16 h-16 bg-secondary-container rounded-2xl flex items-center justify-center text-on-secondary-container mb-md transition-colors">
+                            <span class="material-symbols-outlined text-4xl">explore</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-secondary mb-sm">Wisata Budaya</h3>
+                        <p class="text-on-surface-variant mb-md">Destinasi wisata edukasi yang menawarkan pengalaman
+                            hidup di desa, mulai dari bertani tradisional hingga workshop kesenian daerah.</p>
+                        <ul class="space-y-xs text-on-surface-variant font-label-md text-label-md">
+                            <li class="flex items-center gap-xs"><span
+                                    class="material-symbols-outlined text-secondary scale-75">check_circle</span> Paket
+                                Edukasi Pertanian</li>
+                            <li class="flex items-center gap-xs"><span
+                                    class="material-symbols-outlined text-secondary scale-75">check_circle</span>
+                                Homestay Ramah Lingkungan</li>
+                            <li class="flex items-center gap-xs"><span
+                                    class="material-symbols-outlined text-secondary scale-75">check_circle</span>
+                                Festival Budaya Tahunan</li>
+                        </ul>
+                    </div>
+                    <!-- SDA Card -->
+                    <div
+                        class="group bg-white p-lg rounded-3xl card-shadow border border-surface-container hover:border-tertiary/20 transition-all duration-300">
+                        <div
+                            class="w-16 h-16 bg-tertiary-fixed rounded-2xl flex items-center justify-center text-on-tertiary-fixed mb-md transition-colors">
+                            <span class="material-symbols-outlined text-4xl">eco</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-tertiary mb-sm">Sumber Daya Alam</h3>
+                        <p class="text-on-surface-variant mb-md">Pengelolaan lahan subur dan sumber mata air murni yang
+                            dijaga dengan prinsip keberlanjutan untuk kesejahteraan jangka panjang.</p>
+                        <ul class="space-y-xs text-on-surface-variant font-label-md text-label-md">
+                            <li class="flex items-center gap-xs"><span
+                                    class="material-symbols-outlined text-tertiary scale-75">check_circle</span>
+                                Pengairan Sawah Terpadu</li>
+                            <li class="flex items-center gap-xs"><span
+                                    class="material-symbols-outlined text-tertiary scale-75">check_circle</span> Area
+                                Hutan Konservasi</li>
+                            <li class="flex items-center gap-xs"><span
+                                    class="material-symbols-outlined text-tertiary scale-75">check_circle</span>
+                                Pertanian Berkelanjutan</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Galeri Potensi: Masonry Grid -->
+                <div class="mb-xl">
+                    <div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
+                        <div>
+                            <h2 class="font-headline-lg text-headline-lg text-primary">Galeri Potensi &amp; Kegiatan
+                            </h2>
+                            <p class="text-on-surface-variant mt-sm">Momen keseharian dan keindahan alam Padukuhan Gaten
+                                dalam lensa.</p>
+                        </div>
+                        <div class="flex gap-sm">
+                            <button
+                                class="bg-surface-container hover:bg-surface-container-high p-4 rounded-full transition-colors"
+                                aria-label="Filter galeri">
+                                <span class="material-symbols-outlined">filter_list</span>
+                            </button>
+                            <button
+                                class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-md text-label-md">Lihat
+                                Semua Foto</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-md md:grid-rows-2 h-auto md:h-[800px]">
+                        <!-- Large Feature -->
+                        <div
+                            class="col-span-2 row-span-2 relative group overflow-hidden rounded-3xl min-h-[300px] md:min-h-0">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                                data-alt="A stunning wide-angle shot of traditional batik artisans working under a sunlit wooden pavilion. The golden afternoon light catches the intricate patterns on the cloth and the smoke from the wax pots. The setting is surrounded by lush green foliage, and the overall color palette features deep earth tones, vibrant greens, and ivory whites. Professional documentary style photography with high clarity and warm ambiance."
+                                style="background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Batik%20craftswomen%20in%20Java%20handmarking%20resist%20on%20batik%20tulis%20cloth%20with%20tjantings.jpg')">
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-lg">
+                                <span
+                                    class="text-white/80 font-label-md text-label-md uppercase tracking-widest mb-xs">Kerajinan</span>
+                                <h4 class="text-white font-headline-md text-headline-md">Seni Batik Tulis Tradisional
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- Grid Item 2 -->
+                        <div class="relative group overflow-hidden rounded-3xl min-h-[150px] md:min-h-0">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                                data-alt="A detailed close-up of organic green rice stalks dripping with morning dew in a terraced field. The morning sunlight creates a sparkling, high-key effect on the water droplets. The background is a soft blur of deep forest greens. Clean, professional light-mode aesthetic, emphasizing nature and fertility."
+                                style="background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Petani%20padi.jpg')">
+                            </div>
+                            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+                        </div>
+                        <!-- Grid Item 3 -->
+                        <div class="relative group overflow-hidden rounded-3xl min-h-[150px] md:min-h-0">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                                data-alt="A joyful group of village elders and youth participating in a traditional Javanese harvest ceremony. They are dressed in colorful traditional batik attire, carrying baskets of golden rice. The scene is bright and communal, set against a backdrop of a clear blue sky and distant hills. Vivid colors and a sense of community spirit."
+                                style="background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Panen%20Padi%20Tradisional.jpg')">
+                            </div>
+                            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+                        </div>
+                        <!-- Grid Item 4 -->
+                        <div class="col-span-2 relative group overflow-hidden rounded-3xl h-64 md:h-auto">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                                data-alt="An inviting, modern eco-tourism homestay in a Javanese village, featuring clean white walls, dark wood accents, and a large open porch overlooking a garden of tropical flowers and herbs. The lighting is soft and ambient, suggesting a peaceful evening. The design is a mix of minimalist architecture and traditional craftsmanship."
+                                style="background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Rumah%20Joglo%20Yogyakarta.jpg')">
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-md">
+                                <span class="text-white/80 font-label-md text-label-md">Wisata</span>
+                                <h4 class="text-white font-headline-md text-headline-md">Homestay Gaten Lestari</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action Section -->
+                <div class="bg-primary rounded-3xl p-xl text-center relative overflow-hidden">
+                    <h3 class="font-display text-display text-on-primary mb-md relative z-10">Jelajahi Potensi Kami
+                        Lebih Jauh</h3>
+                    <p class="font-body-lg text-body-lg text-on-primary/80 mb-lg max-w-2xl mx-auto relative z-10">
+                        Padukuhan Gaten membuka pintu selebar-lebarnya untuk kolaborasi, kunjungan wisata, dan
+                        pemberdayaan ekonomi lokal.</p>
+                    <div class="flex flex-wrap justify-center gap-md relative z-10">
+                        <button
+                            class="bg-tertiary text-white px-xl py-4 rounded-full font-label-md text-label-md hover:scale-105 transition-transform">Hubungi
+                            Pengelola</button>
+                        <button
+                            class="bg-white/10 text-white backdrop-blur-md border border-white/20 px-xl py-4 rounded-full font-label-md text-label-md hover:bg-white/20 transition-all">Unduh
+                            Profil Desa (PDF)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION 4: ORGANISASI ================= -->
+        <section id="organisasi" class="scroll-mt-20 border-t border-outline-variant/30 py-xl bg-background">
+            <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                <!-- Hero Section / Title -->
+                <div class="mb-xl text-center">
+                    <h2 class="font-display text-display text-primary mb-md">Struktur Organisasi</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                        Mengenal lebih dekat para penggerak dan pengabdi masyarakat di Padukuhan Gaten yang berkomitmen
+                        untuk mewujudkan desa ramah budaya dan modern.
+                    </p>
+                </div>
+
+                <!-- Organigram Section -->
+                <div class="mb-xl">
+                    <div class="text-center mb-lg">
+                        <span
+                            class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md mb-xs">Struktur
+                            Desa</span>
+                        <h3 class="font-headline-lg text-headline-lg text-primary">Pemerintah Padukuhan</h3>
+                        <span class="inline-flex items-center gap-1 mt-2 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-md text-label-md">
+                            # DUMMY — nama pejabat masih contoh
+                        </span>
+                    </div>
+                    <!-- GANTI: nama Dukuh, Sekretaris, dan Bendahara di bawah ini masih contoh.
+                         Ganti dengan nama pejabat/pengurus yang benar-benar menjabat saat ini,
+                         karena ini adalah informasi resmi yang bisa diverifikasi warga. -->
+                    <div class="flex flex-col items-center">
+                        <!-- Dukuh (The Head) -->
+                        <div class="organigram-line vertical-line mb-12 group">
+                            <div
+                                class="glass-card p-6 rounded-xl flex flex-col items-center text-center w-64 transform transition-transform hover:scale-105">
+                                <div class="w-20 h-20 rounded-full mb-4 border-2 border-secondary overflow-hidden">
+                                    <img class="w-full h-full object-cover"
+                                        data-alt="A professional portrait of a village leader in traditional Javanese batik clothing, serene expression, warm morning sunlight, blurred green foliage background, soft lighting, 8k resolution, minimalist corporate style."
+                                        src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523dfe7bd%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%25235a6241%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%25235a6241%27/%3E%3C/svg%3E" />
+                                </div>
+                                <h4 class="font-headline-md text-headline-md text-primary mb-1">Bp. Chinda</h4>
+                                <p class="font-label-md text-label-md text-tertiary">Dukuh Gaten</p>
+                            </div>
+                        </div>
+                        <!-- Secondary Tier -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter w-full max-w-4xl">
+                            <div class="glass-card p-5 rounded-xl flex items-center gap-md border-l-4 border-secondary">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container flex-shrink-0">
+                                    <img class="w-full h-full object-cover"
+                                        data-alt="A portrait of a male village secretary in a clean white formal shirt, professional and approachable, minimalist indoor background with soft warm tones, modern corporate photography style."
+                                        src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
+                                </div>
+                                <div>
+                                    <h4 class="font-headline-md text-headline-md text-primary">Sekretaris</h4>
+                                    <p class="font-body-md text-body-md text-on-surface-variant">Bp. Ahmad Fauzi</p>
+                                </div>
+                            </div>
+                            <div class="glass-card p-5 rounded-xl flex items-center gap-md border-l-4 border-secondary">
+                                <div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container flex-shrink-0">
+                                    <img class="w-full h-full object-cover"
+                                        data-alt="A portrait of a professional female treasurer, warm smile, wearing modest professional attire, background featuring organic textures of a modern village office, soft focus, daylight."
+                                        src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523ffdcc4%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%25237d4000%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%25237d4000%27/%3E%3C/svg%3E" />
+                                </div>
+                                <div>
+                                    <h4 class="font-headline-md text-headline-md text-primary">Bendahara</h4>
+                                    <p class="font-body-md text-body-md text-on-surface-variant">Ibu Siti Aminah</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organizations Grid (Bento Style) -->
+                <div class="mb-xl">
+                    <div class="text-center mb-lg">
+                        <span
+                            class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md mb-xs">Lembaga
+                            Kemasyarakatan</span>
+                        <h3 class="font-headline-lg text-headline-lg text-primary">Organisasi Padukuhan</h3>
+                        <span class="inline-flex items-center gap-1 mt-2 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-md text-label-md">
+                            # DUMMY — nama pengurus masih contoh
+                        </span>
+                    </div>
+                    <!-- GANTI: nama ketua PKK, Karang Taruna, dan Kelompok Tani di bawah ini masih contoh.
+                         Ganti dengan nama asli pengurus yang aktif saat ini. -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+                        <!-- PKK -->
+                        <div
+                            class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-primary-container transition-all duration-300">
+                            <div
+                                class="bg-secondary-container w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-primary-container transition-colors">
+                                <span
+                                    class="material-symbols-outlined text-secondary group-hover:text-primary">groups</span>
+                            </div>
+                            <h4
+                                class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-primary-container">
+                                PKK Gaten</h4>
+                            <p
+                                class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-primary-container/80 flex-grow">
+                                Pemberdayaan Kesejahteraan Keluarga yang berfokus pada kesehatan ibu dan anak, serta
+                                peningkatan ekonomi kreatif rumah tangga.
+                            </p>
+                            <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
+                                <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
+                                    <img class="w-full h-full object-cover"
+                                        data-alt="Close up portrait of an elderly Javanese woman, coordinator of a women's organization, wisdom and kindness in her eyes, soft natural lighting, heritage village vibe."
+                                        src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523dfe7bd%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%25235a6241%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%25235a6241%27/%3E%3C/svg%3E" />
+                                </div>
+                                <div>
+                                    <p
+                                        class="font-caption text-caption text-on-surface-variant group-hover:text-on-primary-container/60">
+                                        Ketua Penggerak</p>
+                                    <p
+                                        class="font-label-md text-label-md text-primary group-hover:text-on-primary-container">
+                                        Ibu Hj. Rahayu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Karang Taruna -->
+                        <div
+                            class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-tertiary-container transition-all duration-300">
+                            <div
+                                class="bg-tertiary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-tertiary-container transition-colors">
+                                <span
+                                    class="material-symbols-outlined text-tertiary group-hover:text-primary">sports_kabaddi</span>
+                            </div>
+                            <h4
+                                class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-tertiary-container">
+                                Karang Taruna</h4>
+                            <p
+                                class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-tertiary-container/80 flex-grow">
+                                Wadah pengembangan generasi muda dalam bidang olahraga, seni budaya, dan aksi sosial
+                                kemasyarakatan.
+                            </p>
+                            <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
+                                <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
+                                    <img class="w-full h-full object-cover"
+                                        data-alt="Portrait of a young energetic male leader, wearing a modern organization uniform, bright outdoors background, professional and dynamic feel, soft cinematic lighting."
+                                        src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523ffdcc4%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%25237d4000%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%25237d4000%27/%3E%3C/svg%3E" />
+                                </div>
+                                <div>
+                                    <p
+                                        class="font-caption text-caption text-on-surface-variant group-hover:text-on-tertiary-container/60">
+                                        Ketua Pemuda</p>
+                                    <p
+                                        class="font-label-md text-label-md text-primary group-hover:text-on-tertiary-container">
+                                        Bagus Setiawan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Kelompok Tani -->
+                        <div
+                            class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
+                            <div
+                                class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-secondary-container transition-colors">
+                                <span
+                                    class="material-symbols-outlined text-primary group-hover:text-secondary">agriculture</span>
+                            </div>
+                            <h4
+                                class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
+                                Kelompok Tani</h4>
+                            <p
+                                class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
+                                Gabungan para petani lokal untuk modernisasi alat pertanian, distribusi pupuk, dan
+                                pengembangan sistem irigasi berkelanjutan.
+                            </p>
+                            <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
+                                <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
+                                    <img class="w-full h-full object-cover"
+                                        data-alt="Portrait of a seasoned farmer with a sun-kissed face, standing in a lush green rice field, wearing a conical hat, high detail, warm golden hour lighting, peaceful rural atmosphere."
+                                        src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
+                                </div>
+                                <div>
+                                    <p
+                                        class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
+                                        Koordinator Tani</p>
+                                    <p
+                                        class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
+                                        Bp. Hadi Wiyono</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="relative overflow-hidden rounded-3xl bg-primary py-lg px-md md:py-xl md:px-xl text-center">
+                    <div class="absolute inset-0 opacity-10">
+                        <div class="w-full h-full"
+                            style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;">
+                        </div>
+                    </div>
+                    <div class="relative z-10">
+                        <h3 class="font-display text-display-mobile md:text-display text-on-primary mb-md">Ingin
+                            Berkontribusi?</h3>
+                        <p class="font-body-lg text-body-lg text-on-primary/80 max-w-xl mx-auto mb-lg">
+                            Setiap warga memiliki kesempatan untuk bergabung dan membangun Padukuhan Gaten menjadi lebih
+                            baik. Mari bergabung dalam organisasi kami.
+                        </p>
+                        <div class="flex flex-col md:flex-row gap-base justify-center">
+                            <button
+                                class="bg-tertiary text-white px-8 py-3 rounded-xl font-label-md text-label-md hover:bg-tertiary-container transition-transform active:scale-95 shadow-lg">Pendaftaran
+                                Anggota</button>
+                            <button
+                                class="bg-transparent border border-on-primary text-on-primary px-8 py-3 rounded-xl font-label-md text-label-md hover:bg-on-primary/10 transition-colors">Unduh
+                                Berkas Organisasi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION 5: LOKASI ================= -->
+        <section id="lokasi" class="scroll-mt-20 border-t border-outline-variant/30 py-xl bg-surface-container-low">
+            <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                <!-- Map Card Hero -->
+                <div class="relative h-[614px] min-h-[400px] w-full overflow-hidden rounded-3xl mb-lg">
+                    <div class="absolute inset-0 w-full h-full bg-surface-container">
+                        <img class="w-full h-full object-cover"
+                            data-alt="A clean, minimalist topographical map illustration showing a peaceful rural village layout in Bantul, Yogyakarta. The map features soft green patches for agricultural land, earthy tones for village clusters, and crisp white lines for roads. The aesthetic is modern and professional, using a nature-inspired palette of sage greens and warm beiges, with clear iconography for key community landmarks."
+                            src="https://commons.wikimedia.org/wiki/Special:FilePath/Suasana%20pedesaan.jpg" />
+                    </div>
+                    <div class="absolute inset-0 map-gradient-overlay pointer-events-none"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-end p-lg">
+                        <div
+                            class="max-w-2xl bg-white/95 backdrop-blur-md p-md md:p-lg rounded-2xl shadow-lg border border-secondary-fixed-dim/35">
+                            <span
+                                class="bg-tertiary-fixed text-on-tertiary-fixed px-4 py-1 rounded-full font-label-md text-label-md mb-2 inline-block">Geografi
+                                Desa</span>
+                            <h2 class="font-display text-headline-lg text-primary mb-2">Lokasi &amp; Wilayah</h2>
+                            <p class="font-body-md text-body-md text-on-surface-variant">Padukuhan Gaten terletak di
+                                jantung Desa Tirtomulyo, dikelilingi oleh hamparan sawah hijau dan keramahan khas
+                                Yogyakarta.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Borders & Quick Info Section -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start mb-xl">
+                    <!-- Batas Wilayah -->
+                    <div class="lg:col-span-7 space-y-md">
+                        <div class="flex items-center gap-base mb-2">
+                            <span class="material-symbols-outlined text-primary">distance</span>
+                            <h3 class="font-headline-md text-headline-md text-primary">Batas Wilayah</h3>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+                            <!-- North -->
+                            <div
+                                class="bg-white p-md rounded-xl border border-outline-variant/30 group hover:shadow-lg transition-all duration-300">
+                                <p class="font-label-md text-label-md text-secondary mb-1">Utara</p>
+                                <p class="font-headline-md text-headline-md text-on-surface">Bulak Sawah Gaten</p>
+                                <p class="font-caption text-caption text-on-surface-variant mt-2">Area pertanian
+                                    produktif yang berbatasan langsung dengan irigasi utama.</p>
+                            </div>
+                            <!-- East -->
+                            <div
+                                class="bg-white p-md rounded-xl border border-outline-variant/30 group hover:shadow-lg transition-all duration-300">
+                                <p class="font-label-md text-label-md text-secondary mb-1">Timur</p>
+                                <p class="font-headline-md text-headline-md text-on-surface">Padukuhan Karang</p>
+                                <p class="font-caption text-caption text-on-surface-variant mt-2">Terhubung melalui
+                                    jalan aspal desa yang asri.</p>
+                            </div>
+                            <!-- South -->
+                            <div
+                                class="bg-white p-md rounded-xl border border-outline-variant/30 group hover:shadow-lg transition-all duration-300">
+                                <p class="font-label-md text-label-md text-secondary mb-1">Selatan</p>
+                                <p class="font-headline-md text-headline-md text-on-surface">Jalan Raya Srandakan</p>
+                                <p class="font-caption text-caption text-on-surface-variant mt-2">Akses utama yang
+                                    menghubungkan antar kabupaten.</p>
+                            </div>
+                            <!-- West -->
+                            <div
+                                class="bg-white p-md rounded-xl border border-outline-variant/30 group hover:shadow-lg transition-all duration-300">
+                                <p class="font-label-md text-label-md text-secondary mb-1">Barat</p>
+                                <p class="font-headline-md text-headline-md text-on-surface">Padukuhan Karangasem</p>
+                                <p class="font-caption text-caption text-on-surface-variant mt-2">Wilayah pemukiman
+                                    padat penduduk dengan budaya gotong royong kuat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fast Facts Sidebar -->
+                    <div class="lg:col-span-5 space-y-md">
+                        <div class="bg-primary-container p-lg rounded-xl text-on-primary-container shadow-xl">
+                            <h4 class="font-headline-md text-headline-md mb-2">Informasi Geografis</h4>
+                            <span class="inline-flex items-center gap-1 mb-4 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-md text-label-md">
+                                # DUMMY — luas wilayah & ketinggian masih contoh (koordinat sudah asli)
+                            </span>
+                            <ul class="space-y-4">
+                                <li class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined mt-1">terrain</span>
+                                    <div>
+                                        <p class="font-label-md text-label-md opacity-80">Luas Wilayah</p>
+                                        <p class="font-body-lg text-body-lg font-bold">~45 Hektar</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined mt-1">explore</span>
+                                    <div>
+                                        <p class="font-label-md text-label-md opacity-80">Koordinat</p>
+                                        <p class="font-body-lg text-body-lg font-bold">7.976058° S, 110.293926° E</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined mt-1">mountain_flag</span>
+                                    <div>
+                                        <p class="font-label-md text-label-md opacity-80">Ketinggian</p>
+                                        <p class="font-body-lg text-body-lg font-bold">15 mdpl</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-md bg-white rounded-xl border border-secondary-fixed shadow-sm">
+                            <div class="flex items-center gap-base mb-4">
+                                <span class="material-symbols-outlined text-tertiary">info</span>
+                                <p class="font-label-md text-label-md text-on-surface font-semibold">Tahukah Anda?</p>
+                            </div>
+                            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Padukuhan Gaten merupakan titik tertinggi di Desa Tirtomulyo yang menjadikannya area
+                                bebas banjir selama lebih dari 50 tahun terakhir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Access & Directions Section -->
+                <div class="bg-white rounded-3xl p-md md:p-lg border border-outline-variant/30 shadow-sm mb-xl">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-md mb-lg">
+                        <div class="max-w-xl">
+                            <h3 class="font-headline-lg text-headline-lg text-primary mb-2">Akses &amp; Petunjuk Arah
+                            </h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant">Panduan langkah-demi-langkah
+                                menuju Padukuhan Gaten dari pusat pemerintahan Kalurahan Tirtomulyo.</p>
+                        </div>
+                        <a class="inline-flex items-center gap-2 text-tertiary font-label-md text-label-md hover:underline underline-offset-4"
+                            href="https://www.google.com/maps?q=-7.976057991509914,110.29392590770978" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="material-symbols-outlined">directions</span>
+                            Buka di Google Maps
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                        <!-- Step 1 -->
+                        <div class="relative group">
+                            <div
+                                class="mb-4 aspect-square rounded-2xl overflow-hidden bg-surface border border-outline-variant shadow-sm">
+                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    data-alt="A professional architectural photograph of the Tirtomulyo Village Hall entrance, featuring traditional Javanese Joglo roof structures with modern glass windows. The building is surrounded by neat tropical landscaping under a clear blue morning sky, representing the starting point of the journey. The lighting is soft and natural."
+                                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Rumah%20Joglo%20Muhadi.jpg" />
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span
+                                    class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold flex-shrink-0">1</span>
+                                <div>
+                                    <h4 class="font-label-md text-label-md text-primary mb-1">Mulai dari Kalurahan</h4>
+                                    <p class="font-caption text-caption text-on-surface-variant">Keluar dari gerbang
+                                        utama Kalurahan Tirtomulyo ke arah Barat (menuju Jl. Srandakan).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="relative group">
+                            <div
+                                class="mb-4 aspect-square rounded-2xl overflow-hidden bg-surface border border-outline-variant shadow-sm">
+                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    data-alt="A high-quality wide-angle shot of a smooth asphalt rural road in Yogyakarta, flanked by vibrant green rice fields and coconut trees. A small direction sign points toward Gaten. The sun is shining brightly, creating a warm, inviting atmosphere typical of the Indonesian countryside."
+                                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Jalan%20kampung.JPG" />
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span
+                                    class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold flex-shrink-0">2</span>
+                                <div>
+                                    <h4 class="font-label-md text-label-md text-primary mb-1">Lurus Sejauh 500m</h4>
+                                    <p class="font-caption text-caption text-on-surface-variant">Ikuti jalan utama desa
+                                        hingga Anda melewati jembatan irigasi kecil di sisi kanan.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="relative group">
+                            <div
+                                class="mb-4 aspect-square rounded-2xl overflow-hidden bg-surface border border-outline-variant shadow-sm">
+                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    data-alt="A detailed close-up of a white and green village entrance gate (Gapura) with traditional Javanese motifs and a sign that reads Gaten in clean typography. The gate is well-maintained and stands under the shade of a large banyan tree, representing a welcoming entrance to the neighborhood."
+                                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Gapura%20Desa.jpg" />
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span
+                                    class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold flex-shrink-0">3</span>
+                                <div>
+                                    <h4 class="font-label-md text-label-md text-primary mb-1">Belok Kanan di Gapura</h4>
+                                    <p class="font-caption text-caption text-on-surface-variant">Anda akan melihat
+                                        Gapura putih bertuliskan 'Padukuhan Gaten'. Belok kanan memasuki jalan tersebut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="relative group">
+                            <div
+                                class="mb-4 aspect-square rounded-2xl overflow-hidden bg-surface border border-outline-variant shadow-sm">
+                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    data-alt="A serene photo of a village square in Gaten, showing a clean community gathering space with a Balai Dusun (meeting hall). People are seen in the distance, and the area is peaceful and clean, signifying the final destination. The scene is captured during the golden hour for a warm, welcoming feel."
+                                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Ploso%20balai%20desa%20joglo.jpg" />
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span
+                                    class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold flex-shrink-0">4</span>
+                                <div>
+                                    <h4 class="font-label-md text-label-md text-primary mb-1">Tiba di Pusat Dusun</h4>
+                                    <p class="font-caption text-caption text-on-surface-variant">Lanjutkan sekitar 200m
+                                        hingga menemui Balai Dusun Gaten di sebelah kiri jalan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transport Options -->
+                <div
+                    class="bg-white rounded-3xl p-lg border border-secondary-fixed-dim/30 shadow-sm flex flex-col md:flex-row items-center gap-lg">
+                    <div class="md:w-1/3">
+                        <h3 class="font-headline-md text-headline-md text-primary mb-4">Pilihan Transportasi</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Padukuhan Gaten dapat diakses
+                            dengan berbagai moda transportasi umum dan pribadi.</p>
+                    </div>
+                    <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-3 gap-md">
+                        <div class="p-md rounded-xl bg-surface-bright flex flex-col items-center text-center">
+                            <span class="material-symbols-outlined text-secondary text-4xl mb-2">motorcycle</span>
+                            <h5 class="font-label-md text-label-md font-semibold text-primary">Motor / Mobil</h5>
+                            <p class="font-caption text-caption text-on-surface-variant">Sangat disarankan. Parkir
+                                tersedia luas di area Balai Dusun.</p>
+                        </div>
+                        <div class="p-md rounded-xl bg-surface-bright flex flex-col items-center text-center">
+                            <span class="material-symbols-outlined text-secondary text-4xl mb-2">directions_bus</span>
+                            <h5 class="font-label-md text-label-md font-semibold text-primary">Transportasi Umum</h5>
+                            <p class="font-caption text-caption text-on-surface-variant">Turun di halte bus terdekat
+                                (Simpang Srandakan).</p>
+                        </div>
+                        <div class="p-md rounded-xl bg-surface-bright flex flex-col items-center text-center">
+                            <span class="material-symbols-outlined text-secondary text-4xl mb-2">directions_bike</span>
+                            <h5 class="font-label-md text-label-md font-semibold text-primary">Sepeda</h5>
+                            <p class="font-caption text-caption text-on-surface-variant">Rute favorit bagi pesepeda
+                                karena pemandangan sawahnya.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full rounded-t-xl bg-surface-container-highest">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-lg px-margin-desktop py-xl max-w-max-width mx-auto">
+            <div class="space-y-4">
+                <div class="font-headline-md text-headline-md font-bold text-primary">Padukuhan Gaten</div>
+                <p class="text-on-surface-variant font-body-md">Menyinergikan nilai luhur tradisional dengan efisiensi
+                    tata kelola modern untuk kesejahteraan seluruh warga.</p>
+                <!-- GANTI: isi href di bawah dengan alamat medsos/email asli Padukuhan Gaten -->
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white transition-colors"
+                        href="https://gaten.desa.id/" aria-label="Website resmi"><span
+                            class="material-symbols-outlined">public</span></a>
+                    <a class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white transition-colors"
+                        href="mailto:padukuhangaten@example.com" aria-label="Kontak E-mail"><span
+                            class="material-symbols-outlined">mail</span></a>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-label-md text-primary uppercase tracking-widest font-semibold">Tautan Cepat</h4>
+                <nav class="flex flex-col gap-2">
+                    <a class="text-on-surface-variant hover:text-primary transition-colors hover:underline decoration-tertiary underline-offset-4"
+                        href="#">Kebijakan Privasi</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-colors hover:underline decoration-tertiary underline-offset-4"
+                        href="#">Peta Situs</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-colors hover:underline decoration-tertiary underline-offset-4"
+                        href="#">Kontak Kami</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-colors hover:underline decoration-tertiary underline-offset-4"
+                        href="#">Dokumentasi</a>
+                </nav>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-label-md text-primary uppercase tracking-widest font-semibold">Kontak &amp; Alamat</h4>
+                <span class="inline-flex items-center gap-1 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-md text-label-md">
+                    # DUMMY — alamat & telepon masih contoh
+                </span>
+                <div class="space-y-2 text-on-surface-variant">
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-tertiary">location_on</span>
+                        <span>Jl. Padukuhan Gaten No. 12, Sleman, Yogyakarta, Indonesia.</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-tertiary">call</span>
+                        <span>(0274) 123-4567</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-outline-variant/30 py-6 text-center text-on-surface-variant text-caption">
+            © 2024 Padukuhan Gaten. Desa Ramah Budaya &amp; Modern.
+        </div>
+    </footer>
+
+    <script>
+        // Micro-interaction for navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2', 'shadow-md');
+                header.classList.remove('h-20');
+            } else {
+                header.classList.remove('py-2', 'shadow-md');
+                header.classList.add('h-20');
+            }
+        });
+
+        // Mobile Menu Drawer Control
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+            mobileMenu.classList.add('translate-x-0');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-0');
+            mobileMenu.classList.add('translate-x-full');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-x-0');
+                mobileMenu.classList.add('translate-x-full');
+            });
+        });
+
+        // Active Link Scroll Spy
+        const navLinks = document.querySelectorAll('header nav a');
+        const sections = document.querySelectorAll('main > section[id]');
+
+        function updateActiveLink() {
+            let currentSec = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                // Trigger early (offset by header height)
+                if (window.scrollY >= sectionTop - 120) {
+                    currentSec = section.getAttribute('id');
+                }
+            });
+
+            if (window.scrollY < 200) {
+                currentSec = 'beranda';
+            }
+
+            // Desktop links highlight
+            navLinks.forEach(link => {
+                link.classList.remove('text-tertiary', 'border-b-2', 'border-tertiary', 'pb-1');
+                link.classList.add('text-on-surface', 'hover:text-primary');
+                const href = link.getAttribute('href');
+                if (href === `#${currentSec}`) {
+                    link.classList.add('text-tertiary', 'border-b-2', 'border-tertiary', 'pb-1');
+                    link.classList.remove('text-on-surface', 'hover:text-primary');
+                }
+            });
+
+            // Mobile drawer links highlight
+            mobileLinks.forEach(link => {
+                link.classList.remove('text-tertiary', 'border-b', 'border-outline-variant/30');
+                link.classList.add('text-on-surface');
+                const href = link.getAttribute('href');
+                if (href === `#${currentSec}`) {
+                    link.classList.add('text-tertiary');
+                    link.classList.remove('text-on-surface');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveLink);
+        window.addEventListener('DOMContentLoaded', updateActiveLink);
+
+        // Smooth scroll offset adjustment for top nav bar height
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const targetSec = document.querySelector(href);
+                    if (targetSec) {
+                        const topOffset = targetSec.offsetTop - 80;
+                        window.scrollTo({
+                            top: topOffset,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Dynamic stats counters trigger with Intersection Observer (only runs once)
+        const statsSection = document.getElementById('statistik');
+        let countersAnimated = false;
+
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !countersAnimated) {
+                    countersAnimated = true;
+                    const counters = document.querySelectorAll('#statistik h3');
+                    counters.forEach(counter => {
+                        const text = counter.innerText.trim();
+                        if (!text.includes('%') && !text.includes('.') && !isNaN(parseInt(text.replace(',', '')))) {
+                            const target = parseInt(text.replace(',', ''));
+                            let count = 0;
+                            const increment = target / 40;
+                            const updateCount = () => {
+                                if (count < target) {
+                                    count += increment;
+                                    counter.innerText = Math.ceil(count).toLocaleString();
+                                    setTimeout(updateCount, 25);
+                                } else {
+                                    counter.innerText = target.toLocaleString();
+                                }
+                            }
+                            updateCount();
+                        }
+                    });
+                }
+            });
+        }, { threshold: 0.1 });
+
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+
+        // Scroll reveal animation for sections
+        const revealObserverOptions = {
+            threshold: 0.05,
+            rootMargin: "0px 0px -40px 0px"
+        };
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, revealObserverOptions);
+
+        document.querySelectorAll('main > section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'ease-out', 'opacity-0', 'translate-y-8');
+            revealObserver.observe(section);
+        });
+
+        // Card hover and simple animations in JS (organisasi cards)
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-4px)';
+            });
+            card.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+
+</html>

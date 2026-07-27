@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gaten.desa.id/sitemap.xml
