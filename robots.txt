@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jejeee28.github.io/padukuhan-gaten/sitemap.xml
+Sitemap: https://padukuhan-gaten.dukuh.id/sitemap.xml
