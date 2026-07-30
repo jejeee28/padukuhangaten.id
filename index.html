@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html class="scroll-smooth" lang="id">
 
 <head>
@@ -307,9 +307,9 @@
             <div class="relative h-[870px] flex items-center overflow-hidden">
                 <div class="absolute inset-0 z-0">
                     <div class="w-full h-full bg-cover bg-center"
-    data-alt="Foto gapura Padukuhan Gaten"
-    style="background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Ploso%20balai%20desa%20joglo.jpg'')">
-</div>
+                        data-alt="A serene landscape of Padukuhan Gaten at sunrise, showing lush green rice fields and traditional Javanese architecture with a soft morning mist. The lighting is golden and warm, reflecting a peaceful rural modernity style. The scene captures the balance between nature and small village development, using a palette of soft laurel greens and warm beige tones. High-end photography with deep field of view."
+                        style="background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Rice-fields-Indonesia-%28Java%29.jpg')">
+                    </div>
                     <div class="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent">
                     </div>
                 </div>
@@ -898,22 +898,18 @@
                             <span class="material-symbols-outlined text-4xl">storefront</span>
                         </div>
                         <h3 class="font-headline-md text-headline-md text-primary mb-sm">Ekonomi &amp; UMKM</h3>
-                        <p class="text-on-surface-variant mb-md">Pusat potensi ekonomi berbasis kemandirian warga, 
-                         mulai dari peternakan itik terpadu, produksi telur asin KWT, bank sampah pemuda, hingga seni kerajinan patung, 
-                         layangan, dan kuliner tradisional yang memberdayakan masyarakat Padukuhan Gaten.</p>
+                        <p class="text-on-surface-variant mb-md">Pusat kerajinan tangan lokal dan hasil pertanian
+                            organik yang telah menembus pasar regional, memberdayakan ratusan kepala keluarga.</p>
                         <ul class="space-y-xs text-on-surface-variant font-label-md text-label-md">
                             <li class="flex items-center gap-xs"><span
-                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> Populasi 1.000+ 
-                                Ekor Itik & 1.000+ Telur Asin/Minggu (Dikelola Kelompok Ternak Lumintuning Kamulyan & KWT Mas Sinangling)</li>
+                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> 45+
+                                Pelaku UMKM Aktif</li>
                             <li class="flex items-center gap-xs"><span
-                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> Kerajinan 
-                                Seni Patung GRC & Layang-Layang Pegon</li>
+                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> Koperasi
+                                Mandiri Desa</li>
                             <li class="flex items-center gap-xs"><span
-                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> Kelola 
-                                Bank Sampah Mandiri Karang Taruna</li>
-                            <li class="flex items-center gap-xs"><span
-                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> Produksi
-                                Kuliner Tradisional (Produsen Rempeyek & Kue Adrem Khas untuk Pasar dan Pesanan)
+                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> Produk
+                                Ekspor Unggulan</li>
                         </ul>
                     </div>
                     <!-- Wisata Card -->
@@ -1599,24 +1595,6 @@
 
         window.addEventListener('scroll', updateActiveLink);
         window.addEventListener('DOMContentLoaded', updateActiveLink);
-
-        // Smooth scroll offset adjustment for top nav bar height
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#') {
-                    e.preventDefault();
-                    const targetSec = document.querySelector(href);
-                    if (targetSec) {
-                        const topOffset = targetSec.offsetTop - 80;
-                        window.scrollTo({
-                            top: topOffset,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-            });
-        });
 
         // Dynamic stats counters trigger with Intersection Observer (only runs once)
         const statsSection = document.getElementById('statistik');
