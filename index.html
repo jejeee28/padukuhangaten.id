@@ -222,7 +222,6 @@
             transform: rotate(180deg);
         }
     </style>
-    </style>
 
     <!-- Data terstruktur: membantu Google memahami ini adalah halaman resmi sebuah wilayah/desa -->
     <script type="application/ld+json">
@@ -565,7 +564,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- ================= SECTION 2: STATISTIK ================= -->
         <section id="statistik" class="scroll-mt-20 border-t border-outline-variant/30 py-xl bg-background">
             <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
@@ -582,7 +581,8 @@
                      masih CONTOH/PLACEHOLDER. Ganti dengan data asli dari buku induk penduduk / kantor Padukuhan
                      sebelum website ini dipublikasikan. -->
                 <div class="mb-md">
-                    <span class="inline-flex items-center gap-1 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-md text-label-md">
+                    <span
+                        class="inline-flex items-center gap-1 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-md text-label-md">
                         # DUMMY — seluruh data statistik di bawah ini masih contoh
                     </span>
                 </div>
@@ -704,87 +704,96 @@
                         </div>
                     </div>
 
-                <!-- Population Table Section -->
-                <div class="mb-xl">
-                    <div class="tonal-card overflow-hidden rounded-2xl border border-secondary/5">
-                        <div
-                            class="p-md md:p-lg bg-surface-container-low flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                            <div>
-                                <h3 class="font-headline-md text-headline-md text-primary">Data Penduduk per RT</h3>
-                                <p class="text-caption text-on-surface-variant">Total 6 Rukun Tetangga (RT)</p>
-                                <span class="inline-flex items-center gap-1 mt-2 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-md text-label-md">
-                                    # DUMMY — nama ketua RT & data jiwa masih contoh
-                                </span>
-                                <!-- GANTI: nama ketua RT dan jumlah jiwa per RT di bawah ini masih contoh.
-                                     Ganti dengan nama dan data asli sebelum publish, agar tidak salah info. -->
-                            </div>
-                            <div class="flex gap-2 w-full md:w-auto">
-                                <div class="relative flex-1 md:flex-none">
-                                    <input
-                                        class="w-full bg-surface border border-outline-variant rounded-lg px-10 py-2 text-label-md focus:ring-secondary focus:border-secondary transition-all"
-                                        placeholder="Cari RT..." type="text" />
+                    <!-- Population Table Section -->
+                    <div class="mb-xl">
+                        <div class="tonal-card overflow-hidden rounded-2xl border border-secondary/5">
+                            <div
+                                class="p-md md:p-lg bg-surface-container-low flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                                <div>
+                                    <h3 class="font-headline-md text-headline-md text-primary">Data Penduduk per RT</h3>
+                                    <p class="text-caption text-on-surface-variant">Total 6 Rukun Tetangga (RT)</p>
                                     <span
-                                        class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant">search</span>
+                                        class="inline-flex items-center gap-1 mt-2 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-md text-label-md">
+                                        # DUMMY — nama ketua RT & data jiwa masih contoh
+                                    </span>
+                                    <!-- GANTI: nama ketua RT dan jumlah jiwa per RT di bawah ini masih contoh.
+                                     Ganti dengan nama dan data asli sebelum publish, agar tidak salah info. -->
                                 </div>
-                                <button
-                                    class="bg-white border border-outline-variant p-2 rounded-lg text-on-surface hover:bg-surface-container-high transition-colors"
-                                    aria-label="Filter List">
-                                    <span class="material-symbols-outlined">filter_list</span>
-                                </button>
+                                <div class="flex gap-2 w-full md:w-auto">
+                                    <div class="relative flex-1 md:flex-none">
+                                        <input
+                                            class="w-full bg-surface border border-outline-variant rounded-lg px-10 py-2 text-label-md focus:ring-secondary focus:border-secondary transition-all"
+                                            placeholder="Cari RT..." type="text" />
+                                        <span
+                                            class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant">search</span>
+                                    </div>
+                                    <button
+                                        class="bg-white border border-outline-variant p-2 rounded-lg text-on-surface hover:bg-surface-container-high transition-colors"
+                                        aria-label="Filter List">
+                                        <span class="material-symbols-outlined">filter_list</span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="overflow-x-auto">
-                            <table class="w-full text-left border-collapse">
-                                <thead>
-                                    <tr class="bg-surface-container-high border-b border-outline-variant">
-                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Unit Wilayah
-                                        </th>
-                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Ketua RT</th>
-                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Jumlah KK</th>
-                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Laki-laki</th>
-                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Perempuan</th>
-                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Total Jiwa</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="divide-y divide-surface-container-highest">
-                                    <tr class="hover:bg-surface-container-low transition-colors">
-                                        <td class="px-lg py-4 font-label-md">RT 01</td>
-                                        <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Wajidi</td>
-                                        <td class="px-lg py-4 font-body-md">72</td>
-                                        <td class="px-lg py-4 font-body-md">112</td>
-                                        <td class="px-lg py-4 font-body-md">108</td>
-                                        <td class="px-lg py-4 font-label-md text-primary">220</td>
-                                    </tr>
-                                    <tr class="hover:bg-surface-container-low transition-colors">
-                                        <td class="px-lg py-4 font-label-md">RT 02</td>
-                                        <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Wahyudianto</td>
-                                        <td class="px-lg py-4 font-body-md">68</td>
-                                        <td class="px-lg py-4 font-body-md">98</td>
-                                        <td class="px-lg py-4 font-body-md">102</td>
-                                        <td class="px-lg py-4 font-label-md text-primary">200</td>
-                                    </tr>
-                                    <tr class="hover:bg-surface-container-low transition-colors">
-                                        <td class="px-lg py-4 font-label-md">RT 03</td>
-                                        <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Tri Sudarmadi</td>
-                                        <td class="px-lg py-4 font-body-md">75</td>
-                                        <td class="px-lg py-4 font-body-md">115</td>
-                                        <td class="px-lg py-4 font-body-md">119</td>
-                                        <td class="px-lg py-4 font-label-md text-primary">234</td>
-                                    </tr>
-                                    <tr class="hover:bg-surface-container-low transition-colors">
-                                        <td class="px-lg py-4 font-label-md">RT 04</td>
-                                        <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Muhbiyanta</td>
-                                        <td class="px-lg py-4 font-body-md">65</td>
-                                        <td class="px-lg py-4 font-body-md">105</td>
-                                        <td class="px-lg py-4 font-body-md">98</td>
-                                        <td class="px-lg py-4 font-label-md text-primary">203</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-left border-collapse">
+                                    <thead>
+                                        <tr class="bg-surface-container-high border-b border-outline-variant">
+                                            <th class="px-lg py-4 font-label-md text-label-md text-primary">Unit Wilayah
+                                            </th>
+                                            <th class="px-lg py-4 font-label-md text-label-md text-primary">Ketua RT
+                                            </th>
+                                            <th class="px-lg py-4 font-label-md text-label-md text-primary">Jumlah KK
+                                            </th>
+                                            <th class="px-lg py-4 font-label-md text-label-md text-primary">Laki-laki
+                                            </th>
+                                            <th class="px-lg py-4 font-label-md text-label-md text-primary">Perempuan
+                                            </th>
+                                            <th class="px-lg py-4 font-label-md text-label-md text-primary">Total Jiwa
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-surface-container-highest">
+                                        <tr class="hover:bg-surface-container-low transition-colors">
+                                            <td class="px-lg py-4 font-label-md">RT 01</td>
+                                            <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Wajidi</td>
+                                            <td class="px-lg py-4 font-body-md">72</td>
+                                            <td class="px-lg py-4 font-body-md">112</td>
+                                            <td class="px-lg py-4 font-body-md">108</td>
+                                            <td class="px-lg py-4 font-label-md text-primary">220</td>
+                                        </tr>
+                                        <tr class="hover:bg-surface-container-low transition-colors">
+                                            <td class="px-lg py-4 font-label-md">RT 02</td>
+                                            <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Wahyudianto
+                                            </td>
+                                            <td class="px-lg py-4 font-body-md">68</td>
+                                            <td class="px-lg py-4 font-body-md">98</td>
+                                            <td class="px-lg py-4 font-body-md">102</td>
+                                            <td class="px-lg py-4 font-label-md text-primary">200</td>
+                                        </tr>
+                                        <tr class="hover:bg-surface-container-low transition-colors">
+                                            <td class="px-lg py-4 font-label-md">RT 03</td>
+                                            <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Tri
+                                                Sudarmadi</td>
+                                            <td class="px-lg py-4 font-body-md">75</td>
+                                            <td class="px-lg py-4 font-body-md">115</td>
+                                            <td class="px-lg py-4 font-body-md">119</td>
+                                            <td class="px-lg py-4 font-label-md text-primary">234</td>
+                                        </tr>
+                                        <tr class="hover:bg-surface-container-low transition-colors">
+                                            <td class="px-lg py-4 font-label-md">RT 04</td>
+                                            <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Muhbiyanta
+                                            </td>
+                                            <td class="px-lg py-4 font-body-md">65</td>
+                                            <td class="px-lg py-4 font-body-md">105</td>
+                                            <td class="px-lg py-4 font-body-md">98</td>
+                                            <td class="px-lg py-4 font-label-md text-primary">203</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <!-- ================= SECTION 3: POTENSI ================= -->
@@ -805,7 +814,7 @@
                             menyebutkan bahwa nama Gaten berasal dari nama Nyai Katean. Katean dalam bahasa Jawa
                             memiliki arti kasembadan kang disedya, yaitu terkabulnya sesuatu yang dicita-citakan. Dari
                             nama tokoh tersebut, wilayah ini kemudian dikenal dan disebut dengan nama Gaten.
- 
+
                         </p>
                         <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
                             Versi kedua menyebutkan bahwa nama Gaten berasal dari nama Kyai dan Nyai Gati Mulya. Gati
@@ -822,7 +831,7 @@
                             src="https://commons.wikimedia.org/wiki/Special:FilePath/Jatiluwih%20rice%20terraces.jpg" />
                     </div>
                 </div>
- 
+
                 <!-- Potensi Desa Section: Interactive Grid -->
                 <div class="text-center max-w-2xl mx-auto mb-xl">
                     <h2 class="font-headline-lg text-headline-lg text-primary mb-base">Potensi Desa Gaten</h2>
@@ -839,24 +848,26 @@
                             <span class="material-symbols-outlined text-4xl">storefront</span>
                         </div>
                         <h3 class="font-headline-md text-headline-md text-primary mb-sm">Ekonomi &amp; UMKM</h3>
-                        <p class="text-on-surface-variant mb-md">Pusat potensi ekonomi berbasis kemandirian warga, 
-                            mulai dari peternakan itik terpadu, produksi telur asin KWT, bank sampah pemuda, hingga 
-                            seni kerajinan patung, layangan, dan kuliner tradisional yang memberdayakan masyarakat Padukuhan Gaten.</p>
+                        <p class="text-on-surface-variant mb-md">Pusat potensi ekonomi berbasis kemandirian warga,
+                            mulai dari peternakan itik terpadu, produksi telur asin KWT, bank sampah pemuda, hingga
+                            seni kerajinan patung, layangan, dan kuliner tradisional yang memberdayakan masyarakat
+                            Padukuhan Gaten.</p>
                         <ul class="space-y-xs text-on-surface-variant font-label-md text-label-md">
                             <li class="flex items-center gap-xs"><span
-                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> 
+                                    class="material-symbols-outlined text-primary scale-75">check_circle</span>
                                 Populasi 1.000+ Ekor Itik & 1.000+ Telur Asin/Minggu</li>
                             <li class="flex items-center gap-xs"><span
-                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> 
+                                    class="material-symbols-outlined text-primary scale-75">check_circle</span>
                                 Kerajinan Seni Patung GRC & Layang-Layang Pegon</li>
                             <li class="flex items-center gap-xs"><span
-                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> 
+                                    class="material-symbols-outlined text-primary scale-75">check_circle</span>
                                 Kelola Bank Sampah Mandiri Karang Taruna</li>
                             <li class="flex items-center gap-xs"><span
-                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> 
+                                    class="material-symbols-outlined text-primary scale-75">check_circle</span>
                                 Produksi Kuliner Tradisional</li>
                         </ul>
-                        <div class="mt-md pt-md border-t border-outline-variant/30 flex items-center text-primary font-bold gap-2 group-hover:gap-4 transition-all">
+                        <div
+                            class="mt-md pt-md border-t border-outline-variant/30 flex items-center text-primary font-bold gap-2 group-hover:gap-4 transition-all">
                             Lihat Detail <span class="material-symbols-outlined">arrow_forward</span>
                         </div>
                     </div>
@@ -868,11 +879,13 @@
                             <span class="material-symbols-outlined text-4xl">explore</span>
                         </div>
                         <h3 class="font-headline-md text-headline-md text-secondary mb-sm">Kegiatan Kebudayaan</h3>
-                        <p class="text-on-surface-variant mb-md">Wujud nyata pelestarian adat dan seni tradisi Jawa di Padukuhan Gaten, 
-                            mulai dari upacara adat Merti Dusun, pertunjukan seni pertunjukan lokal, hingga penulisan aksara Jawa di ruang publik sebagai warisan budaya adiluhung.</p>
+                        <p class="text-on-surface-variant mb-md">Wujud nyata pelestarian adat dan seni tradisi Jawa di
+                            Padukuhan Gaten,
+                            mulai dari upacara adat Merti Dusun, pertunjukan seni pertunjukan lokal, hingga penulisan
+                            aksara Jawa di ruang publik sebagai warisan budaya adiluhung.</p>
                         <ul class="space-y-xs text-on-surface-variant font-label-md text-label-md">
                             <li class="flex items-center gap-xs"><span
-                                    class="material-symbols-outlined text-secondary scale-75">check_circle</span> 
+                                    class="material-symbols-outlined text-secondary scale-75">check_circle</span>
                                 Ritual Adat Merti Dusun Tahunan</li>
                             <li class="flex items-center gap-xs"><span
                                     class="material-symbols-outlined text-secondary scale-75">check_circle</span>
@@ -884,7 +897,8 @@
                                     class="material-symbols-outlined text-secondary scale-75">check_circle</span>
                                 Pembinaan Seni Tari Lintas Generasi</li>
                         </ul>
-                        <div class="mt-md pt-md border-t border-outline-variant/30 flex items-center text-secondary font-bold gap-2 group-hover:gap-4 transition-all">
+                        <div
+                            class="mt-md pt-md border-t border-outline-variant/30 flex items-center text-secondary font-bold gap-2 group-hover:gap-4 transition-all">
                             Lihat Detail <span class="material-symbols-outlined">arrow_forward</span>
                         </div>
                     </div>
@@ -911,7 +925,7 @@
                         </ul>
                     </div>
                 </div>
- 
+
                 <!-- Galeri Potensi: Masonry Grid -->
                 <div class="mb-xl">
                     <div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
@@ -978,7 +992,7 @@
                         </div>
                     </div>
                 </div>
- 
+
                 <!-- Call to Action Section -->
                 <div class="bg-primary rounded-3xl p-xl text-center relative overflow-hidden">
                     <h3 class="font-display text-display text-on-primary mb-md relative z-10">Jelajahi Potensi Kami
@@ -997,7 +1011,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- ================= SECTION 4: ORGANISASI ================= -->
         <section id="organisasi" class="scroll-mt-20 border-t border-outline-variant/30 py-xl bg-background">
             <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
@@ -1026,7 +1040,7 @@
                          Ganti dengan nama pejabat/pengurus yang benar-benar menjabat saat ini,
                          karena ini adalah informasi resmi yang bisa diverifikasi warga. -->
                     <div class="flex flex-col items-center">
-                            <!-- Dukuh (The Head) -->
+                        <!-- Dukuh (The Head) -->
                         <div class="organigram-line vertical-line mb-12 group">
                             <div
                                 class="glass-card p-6 rounded-xl flex flex-col items-center text-center w-64 transform transition-transform hover:scale-105">
@@ -1042,8 +1056,10 @@
                         <!-- Secondary Tier -->
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-5xl">
                             <!-- RT 1 -->
-                            <div class="glass-card p-4 rounded-xl flex items-center gap-3 border-t-4 border-secondary hover:shadow-md transition-shadow">
-                                <div class="w-12 h-12 rounded-full overflow-hidden bg-primary-fixed flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="glass-card p-4 rounded-xl flex items-center gap-3 border-t-4 border-secondary hover:shadow-md transition-shadow">
+                                <div
+                                    class="w-12 h-12 rounded-full overflow-hidden bg-primary-fixed flex items-center justify-center flex-shrink-0">
                                     <span class="font-headline-md text-primary font-bold">1</span>
                                 </div>
                                 <div>
@@ -1052,8 +1068,10 @@
                                 </div>
                             </div>
                             <!-- RT 2 -->
-                            <div class="glass-card p-4 rounded-xl flex items-center gap-3 border-t-4 border-secondary hover:shadow-md transition-shadow">
-                                <div class="w-12 h-12 rounded-full overflow-hidden bg-primary-fixed flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="glass-card p-4 rounded-xl flex items-center gap-3 border-t-4 border-secondary hover:shadow-md transition-shadow">
+                                <div
+                                    class="w-12 h-12 rounded-full overflow-hidden bg-primary-fixed flex items-center justify-center flex-shrink-0">
                                     <span class="font-headline-md text-primary font-bold">2</span>
                                 </div>
                                 <div>
@@ -1062,8 +1080,10 @@
                                 </div>
                             </div>
                             <!-- RT 3 -->
-                            <div class="glass-card p-4 rounded-xl flex items-center gap-3 border-t-4 border-secondary hover:shadow-md transition-shadow">
-                                <div class="w-12 h-12 rounded-full overflow-hidden bg-primary-fixed flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="glass-card p-4 rounded-xl flex items-center gap-3 border-t-4 border-secondary hover:shadow-md transition-shadow">
+                                <div
+                                    class="w-12 h-12 rounded-full overflow-hidden bg-primary-fixed flex items-center justify-center flex-shrink-0">
                                     <span class="font-headline-md text-primary font-bold">3</span>
                                 </div>
                                 <div>
@@ -1072,8 +1092,10 @@
                                 </div>
                             </div>
                             <!-- RT 4 -->
-                            <div class="glass-card p-4 rounded-xl flex items-center gap-3 border-t-4 border-secondary hover:shadow-md transition-shadow">
-                                <div class="w-12 h-12 rounded-full overflow-hidden bg-primary-fixed flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="glass-card p-4 rounded-xl flex items-center gap-3 border-t-4 border-secondary hover:shadow-md transition-shadow">
+                                <div
+                                    class="w-12 h-12 rounded-full overflow-hidden bg-primary-fixed flex items-center justify-center flex-shrink-0">
                                     <span class="font-headline-md text-primary font-bold">4</span>
                                 </div>
                                 <div>
@@ -1082,8 +1104,10 @@
                                 </div>
                             </div>
                             <!-- POKGIAT -->
-                            <div class="glass-card p-4 rounded-xl flex items-center gap-3 border-t-4 border-tertiary hover:shadow-md transition-shadow">
-                                <div class="w-12 h-12 rounded-full overflow-hidden bg-tertiary-fixed flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="glass-card p-4 rounded-xl flex items-center gap-3 border-t-4 border-tertiary hover:shadow-md transition-shadow">
+                                <div
+                                    class="w-12 h-12 rounded-full overflow-hidden bg-tertiary-fixed flex items-center justify-center flex-shrink-0">
                                     <span class="material-symbols-outlined text-tertiary">construction</span>
                                 </div>
                                 <div>
@@ -1092,8 +1116,10 @@
                                 </div>
                             </div>
                             <!-- Kelompok Tani -->
-                            <div class="glass-card p-4 rounded-xl flex items-center gap-3 border-t-4 border-tertiary hover:shadow-md transition-shadow">
-                                <div class="w-12 h-12 rounded-full overflow-hidden bg-tertiary-fixed flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="glass-card p-4 rounded-xl flex items-center gap-3 border-t-4 border-tertiary hover:shadow-md transition-shadow">
+                                <div
+                                    class="w-12 h-12 rounded-full overflow-hidden bg-tertiary-fixed flex items-center justify-center flex-shrink-0">
                                     <span class="material-symbols-outlined text-tertiary">agriculture</span>
                                 </div>
                                 <div>
@@ -1102,8 +1128,10 @@
                                 </div>
                             </div>
                             <!-- KWT -->
-                            <div class="glass-card p-4 rounded-xl flex items-center gap-3 border-t-4 border-tertiary hover:shadow-md transition-shadow">
-                                <div class="w-12 h-12 rounded-full overflow-hidden bg-tertiary-fixed flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="glass-card p-4 rounded-xl flex items-center gap-3 border-t-4 border-tertiary hover:shadow-md transition-shadow">
+                                <div
+                                    class="w-12 h-12 rounded-full overflow-hidden bg-tertiary-fixed flex items-center justify-center flex-shrink-0">
                                     <span class="material-symbols-outlined text-tertiary">potted_plant</span>
                                 </div>
                                 <div>
@@ -1112,8 +1140,10 @@
                                 </div>
                             </div>
                             <!-- Karang Taruna -->
-                            <div class="glass-card p-4 rounded-xl flex items-center gap-3 border-t-4 border-tertiary hover:shadow-md transition-shadow">
-                                <div class="w-12 h-12 rounded-full overflow-hidden bg-tertiary-fixed flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="glass-card p-4 rounded-xl flex items-center gap-3 border-t-4 border-tertiary hover:shadow-md transition-shadow">
+                                <div
+                                    class="w-12 h-12 rounded-full overflow-hidden bg-tertiary-fixed flex items-center justify-center flex-shrink-0">
                                     <span class="material-symbols-outlined text-tertiary">diversity_3</span>
                                 </div>
                                 <div>
@@ -1139,7 +1169,7 @@
                     <!-- GANTI: nama ketua PKK, Karang Taruna, dan Kelompok Tani di bawah ini masih contoh.
                          Ganti dengan nama asli pengurus yang aktif saat ini. -->
                     <div class="grid grid-cols-1 md:grid-cols-4 gap-md">
-                         <!-- Rukun Tetangga -->
+                        <!-- Rukun Tetangga -->
                         <div
                             class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-primary-container transition-all duration-300">
                             <div
@@ -1152,7 +1182,8 @@
                                 Rukun Tetangga</h4>
                             <p
                                 class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-primary-container/80 flex-grow">
-                                Pilar utama tata kelola wilayah yang terbagi menjadi 4 RT, masing-masing memiliki manajemen organisasi 
+                                Pilar utama tata kelola wilayah yang terbagi menjadi 4 RT, masing-masing memiliki
+                                manajemen organisasi
                                 dan pengelolaan keuangan mandiri demi pelayanan warga yang optimal.
                             </p>
                             <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
@@ -1164,10 +1195,10 @@
                                 <div>
                                     <p
                                         class="font-caption text-caption text-on-surface-variant group-hover:text-on-primary-container/60">
-                                        </p>
+                                    </p>
                                     <p
                                         class="font-label-md text-label-md text-primary group-hover:text-on-primary-container">
-                                        </p>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1184,8 +1215,9 @@
                                 Kader Posyandu</h4>
                             <p
                                 class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-tertiary-container/80 flex-grow">
-                                Wadah pelayanan kesehatan masyarakat yang dikelola oleh 7 kader aktif, 
-                                menaungi program kesehatan lansia (Rambutan) serta pemantauan tumbuh kembang balita (Arbei).
+                                Wadah pelayanan kesehatan masyarakat yang dikelola oleh 7 kader aktif,
+                                menaungi program kesehatan lansia (Rambutan) serta pemantauan tumbuh kembang balita
+                                (Arbei).
                             </p>
                             <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
                                 <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
@@ -1196,10 +1228,10 @@
                                 <div>
                                     <p
                                         class="font-caption text-caption text-on-surface-variant group-hover:text-on-tertiary-container/60">
-                                        </p>
+                                    </p>
                                     <p
                                         class="font-label-md text-label-md text-primary group-hover:text-on-tertiary-container">
-                                        </p>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1216,7 +1248,7 @@
                                 KWT Mas Sinangling</h4>
                             <p
                                 class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
-                                Kelompok Wanita Tani terdaftar di DKPP Bantul yang beranggotakan 20 wanita warga Gaten, 
+                                Kelompok Wanita Tani terdaftar di DKPP Bantul yang beranggotakan 20 wanita warga Gaten,
                                 aktif mengelola demplot pertanian serta memproduksi telur asin unggulan.
                             </p>
                             <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
@@ -1228,10 +1260,10 @@
                                 <div>
                                     <p
                                         class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
-                                        </p>
+                                    </p>
                                     <p
                                         class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
-                                        </p>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1248,7 +1280,8 @@
                                 Kelompok Tani Luminating Kamulyan</h4>
                             <p
                                 class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
-                                Organisasi pertanian berbadan hukum Kemenkumham (berdiri 2021) yang bertugas mengatur pola tanam, 
+                                Organisasi pertanian berbadan hukum Kemenkumham (berdiri 2021) yang bertugas mengatur
+                                pola tanam,
                                 jadwal olah tanah, serta memelopori peternakan itik padukuhan.
                             </p>
                             <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
@@ -1269,241 +1302,257 @@
                         </div>
                     </div>
                     <!-- Collapsible container: cards 5-11 tersembunyi, terlihat sedikit (peek) -->
-                    <div id="org-extra-cards" class="relative overflow-hidden transition-all duration-500 ease-in-out" style="max-height: 80px;">
+                    <div id="org-extra-cards" class="relative overflow-hidden transition-all duration-500 ease-in-out"
+                        style="max-height: 80px;">
                         <div class="grid grid-cols-1 md:grid-cols-4 gap-md mt-md">
-                        <!-- Kelompok Ternak -->
-                        <div
-                            class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
+                            <!-- Kelompok Ternak -->
                             <div
-                                class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-secondary-container transition-colors">
-                                <span
-                                    class="material-symbols-outlined text-primary group-hover:text-secondary">agriculture</span>
-                            </div>
-                            <h4
-                                class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
-                                Kelompok Ternak</h4>
-                            <p
-                                class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
-                                Wadah resmi terdaftar di DKPP Bantul yang menunjang sektor pertanian melalui 
-                                budidaya ternak itik dan ayam joper untuk meningkatkan ekonomi warga.
-                            </p>
-                            <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
-                                <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
-                                    <img class="w-full h-full object-cover"
-                                        data-alt="Portrait of a seasoned farmer with a sun-kissed face, standing in a lush green rice field, wearing a conical hat, high detail, warm golden hour lighting, peaceful rural atmosphere."
-                                        src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
+                                class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
+                                <div
+                                    class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-secondary-container transition-colors">
+                                    <span
+                                        class="material-symbols-outlined text-primary group-hover:text-secondary">agriculture</span>
                                 </div>
-                                <div>
-                                    <p
-                                        class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
+                                <h4
+                                    class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
+                                    Kelompok Ternak</h4>
+                                <p
+                                    class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
+                                    Wadah resmi terdaftar di DKPP Bantul yang menunjang sektor pertanian melalui
+                                    budidaya ternak itik dan ayam joper untuk meningkatkan ekonomi warga.
+                                </p>
+                                <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
+                                        <img class="w-full h-full object-cover"
+                                            data-alt="Portrait of a seasoned farmer with a sun-kissed face, standing in a lush green rice field, wearing a conical hat, high detail, warm golden hour lighting, peaceful rural atmosphere."
+                                            src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
                                         </p>
-                                    <p
-                                        class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
-                                        Bp. </p>
+                                        <p
+                                            class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
+                                            Bp. </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Paguyuban Seni Campursani Dhemes Pro -->
-                        <div
-                            class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
+                            <!-- Paguyuban Seni Campursani Dhemes Pro -->
                             <div
-                                class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-secondary-container transition-colors">
-                                <span
-                                    class="material-symbols-outlined text-primary group-hover:text-secondary">agriculture</span>
-                            </div>
-                            <h4
-                                class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
-                                Paguyuban Seni Campursani Dhemes Pro</h4>
-                            <p
-                                class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
-                                Grup kesenian terdaftar di Disbud Bantul yang wadahi pemuda Gaten dalam 
-                                melestarikan musik campursari dan aktif mengisi berbagai pentas seni hingga luar daerah.
-                            </p>
-                            <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
-                                <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
-                                    <img class="w-full h-full object-cover"
-                                        data-alt="Portrait of a seasoned farmer with a sun-kissed face, standing in a lush green rice field, wearing a conical hat, high detail, warm golden hour lighting, peaceful rural atmosphere."
-                                        src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
+                                class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
+                                <div
+                                    class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-secondary-container transition-colors">
+                                    <span
+                                        class="material-symbols-outlined text-primary group-hover:text-secondary">agriculture</span>
                                 </div>
-                                <div>
-                                    <p
-                                        class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
+                                <h4
+                                    class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
+                                    Paguyuban Seni Campursani Dhemes Pro</h4>
+                                <p
+                                    class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
+                                    Grup kesenian terdaftar di Disbud Bantul yang wadahi pemuda Gaten dalam
+                                    melestarikan musik campursari dan aktif mengisi berbagai pentas seni hingga luar
+                                    daerah.
+                                </p>
+                                <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
+                                        <img class="w-full h-full object-cover"
+                                            data-alt="Portrait of a seasoned farmer with a sun-kissed face, standing in a lush green rice field, wearing a conical hat, high detail, warm golden hour lighting, peaceful rural atmosphere."
+                                            src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
                                         </p>
-                                    <p
-                                        class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
-                                        Bp. </p>
+                                        <p
+                                            class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
+                                            Bp. </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Paguyuban Jathilan -->
-                        <div
-                            class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
+                            <!-- Paguyuban Jathilan -->
                             <div
-                                class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-secondary-container transition-colors">
-                                <span
-                                    class="material-symbols-outlined text-primary group-hover:text-secondary">agriculture</span>
-                            </div>
-                            <h4
-                                class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
-                                Paguyuban Jathilan Bekso Wiratama</h4>
-                            <p
-                                class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
-                                Wadah pelestarian seni tari tradisional bertaring sejak 2017 (terdaftar Disbud Bantul) yang 
-                                rutin menggelar pementasan seni jathilan tahunan oleh pemuda lokal.
-                            </p>
-                            <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
-                                <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
-                                    <img class="w-full h-full object-cover"
-                                        data-alt="Portrait of a seasoned farmer with a sun-kissed face, standing in a lush green rice field, wearing a conical hat, high detail, warm golden hour lighting, peaceful rural atmosphere."
-                                        src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
+                                class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
+                                <div
+                                    class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-secondary-container transition-colors">
+                                    <span
+                                        class="material-symbols-outlined text-primary group-hover:text-secondary">agriculture</span>
                                 </div>
-                                <div>
-                                    <p
-                                        class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
+                                <h4
+                                    class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
+                                    Paguyuban Jathilan Bekso Wiratama</h4>
+                                <p
+                                    class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
+                                    Wadah pelestarian seni tari tradisional bertaring sejak 2017 (terdaftar Disbud
+                                    Bantul) yang
+                                    rutin menggelar pementasan seni jathilan tahunan oleh pemuda lokal.
+                                </p>
+                                <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
+                                        <img class="w-full h-full object-cover"
+                                            data-alt="Portrait of a seasoned farmer with a sun-kissed face, standing in a lush green rice field, wearing a conical hat, high detail, warm golden hour lighting, peaceful rural atmosphere."
+                                            src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
                                         </p>
-                                    <p
-                                        class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
-                                        Bp. </p>
+                                        <p
+                                            class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
+                                            Bp. </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- POKGIAT -->
-                        <div
-                            class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
+                            <!-- POKGIAT -->
                             <div
-                                class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-secondary-container transition-colors">
-                                <span
-                                    class="material-symbols-outlined text-primary group-hover:text-secondary">agriculture</span>
-                            </div>
-                            <h4
-                                class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
-                                POKGIAT</h4>
-                            <p
-                                class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
-                                Lembaga penggerak pembangunan sarana prasarana fisik (corblok, drainase, RTLH) 
-                                serta pelaksana musyawarah bulanan potensi dan masalah desa bersama kelompok tani.
-                            </p>
-                            <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
-                                <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
-                                    <img class="w-full h-full object-cover"
-                                        data-alt="Portrait of a seasoned farmer with a sun-kissed face, standing in a lush green rice field, wearing a conical hat, high detail, warm golden hour lighting, peaceful rural atmosphere."
-                                        src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
+                                class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
+                                <div
+                                    class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-secondary-container transition-colors">
+                                    <span
+                                        class="material-symbols-outlined text-primary group-hover:text-secondary">agriculture</span>
                                 </div>
-                                <div>
-                                    <p
-                                        class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
+                                <h4
+                                    class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
+                                    POKGIAT</h4>
+                                <p
+                                    class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
+                                    Lembaga penggerak pembangunan sarana prasarana fisik (corblok, drainase, RTLH)
+                                    serta pelaksana musyawarah bulanan potensi dan masalah desa bersama kelompok tani.
+                                </p>
+                                <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
+                                        <img class="w-full h-full object-cover"
+                                            data-alt="Portrait of a seasoned farmer with a sun-kissed face, standing in a lush green rice field, wearing a conical hat, high detail, warm golden hour lighting, peaceful rural atmosphere."
+                                            src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
                                         </p>
-                                    <p
-                                        class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
-                                        Bp. </p>
+                                        <p
+                                            class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
+                                            Bp. </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Karang Taruna Omega -->
-                        <div
-                            class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
+                            <!-- Karang Taruna Omega -->
                             <div
-                                class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-secondary-container transition-colors">
-                                <span
-                                    class="material-symbols-outlined text-primary group-hover:text-secondary">agriculture</span>
-                            </div>
-                            <h4
-                                class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
-                                Karang Taruna Omega</h4>
-                            <p
-                                class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
-                                Organisasi kepemudaan dengan masa bakti bergilir 2 tahun yang aktif mengelola bank sampah mandiri, 
-                                pemanfaatan pekarangan, hingga penyelenggaraan event kemasyarakatan.
-                            </p>
-                            <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
-                                <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
-                                    <img class="w-full h-full object-cover"
-                                        data-alt="Portrait of a seasoned farmer with a sun-kissed face, standing in a lush green rice field, wearing a conical hat, high detail, warm golden hour lighting, peaceful rural atmosphere."
-                                        src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
+                                class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
+                                <div
+                                    class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-secondary-container transition-colors">
+                                    <span
+                                        class="material-symbols-outlined text-primary group-hover:text-secondary">agriculture</span>
                                 </div>
-                                <div>
-                                    <p
-                                        class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
+                                <h4
+                                    class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
+                                    Karang Taruna Omega</h4>
+                                <p
+                                    class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
+                                    Organisasi kepemudaan dengan masa bakti bergilir 2 tahun yang aktif mengelola bank
+                                    sampah mandiri,
+                                    pemanfaatan pekarangan, hingga penyelenggaraan event kemasyarakatan.
+                                </p>
+                                <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
+                                        <img class="w-full h-full object-cover"
+                                            data-alt="Portrait of a seasoned farmer with a sun-kissed face, standing in a lush green rice field, wearing a conical hat, high detail, warm golden hour lighting, peaceful rural atmosphere."
+                                            src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
                                         </p>
-                                    <p
-                                        class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
-                                        Bp. </p>
+                                        <p
+                                            class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
+                                            Bp. </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Takmir Masjid Al – Barokah -->
-                        <div
-                            class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
+                            <!-- Takmir Masjid Al – Barokah -->
                             <div
-                                class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-secondary-container transition-colors">
-                                <span
-                                    class="material-symbols-outlined text-primary group-hover:text-secondary">agriculture</span>
-                            </div>
-                            <h4
-                                class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
-                                Takmir Masjid Al – Barokah</h4>
-                            <p
-                                class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
-                                Lembaga keagamaan yang mengelola kegiatan ibadah, peringatan hari besar Islam, 
-                                manajemen keuangan infak, serta pemeliharaan kebersihan pusat ibadah Padukuhan Gaten.
-                            </p>
-                            <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
-                                <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
-                                    <img class="w-full h-full object-cover"
-                                        data-alt="Portrait of a seasoned farmer with a sun-kissed face, standing in a lush green rice field, wearing a conical hat, high detail, warm golden hour lighting, peaceful rural atmosphere."
-                                        src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
+                                class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
+                                <div
+                                    class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-secondary-container transition-colors">
+                                    <span
+                                        class="material-symbols-outlined text-primary group-hover:text-secondary">agriculture</span>
                                 </div>
-                                <div>
-                                    <p
-                                        class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
+                                <h4
+                                    class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
+                                    Takmir Masjid Al – Barokah</h4>
+                                <p
+                                    class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
+                                    Lembaga keagamaan yang mengelola kegiatan ibadah, peringatan hari besar Islam,
+                                    manajemen keuangan infak, serta pemeliharaan kebersihan pusat ibadah Padukuhan
+                                    Gaten.
+                                </p>
+                                <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
+                                        <img class="w-full h-full object-cover"
+                                            data-alt="Portrait of a seasoned farmer with a sun-kissed face, standing in a lush green rice field, wearing a conical hat, high detail, warm golden hour lighting, peaceful rural atmosphere."
+                                            src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
                                         </p>
-                                    <p
-                                        class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
-                                        Bp. </p>
+                                        <p
+                                            class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
+                                            Bp. </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Tim Bola Voly Omega -->
-                        <div
-                            class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
+                            <!-- Tim Bola Voly Omega -->
                             <div
-                                class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-secondary-container transition-colors">
-                                <span
-                                    class="material-symbols-outlined text-primary group-hover:text-secondary">agriculture</span>
-                            </div>
-                            <h4
-                                class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
-                                Tim Bola Voly Omega</h4>
-                            <p
-                                class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
-                                Wadah olahraga kepemudaan dengan agenda latihan rutin, terbukti berprestasi dengan meraih 
-                                Juara 1 Turnamen Bola Voli Porkal/Piala Lurah Tirtomulyo 2023.
-                            </p>
-                            <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
-                                <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
-                                    <img class="w-full h-full object-cover"
-                                        data-alt="Portrait of a seasoned farmer with a sun-kissed face, standing in a lush green rice field, wearing a conical hat, high detail, warm golden hour lighting, peaceful rural atmosphere."
-                                        src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
+                                class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
+                                <div
+                                    class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-secondary-container transition-colors">
+                                    <span
+                                        class="material-symbols-outlined text-primary group-hover:text-secondary">agriculture</span>
                                 </div>
-                                <div>
-                                    <p
-                                        class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
+                                <h4
+                                    class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
+                                    Tim Bola Voly Omega</h4>
+                                <p
+                                    class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
+                                    Wadah olahraga kepemudaan dengan agenda latihan rutin, terbukti berprestasi dengan
+                                    meraih
+                                    Juara 1 Turnamen Bola Voli Porkal/Piala Lurah Tirtomulyo 2023.
+                                </p>
+                                <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
+                                        <img class="w-full h-full object-cover"
+                                            data-alt="Portrait of a seasoned farmer with a sun-kissed face, standing in a lush green rice field, wearing a conical hat, high detail, warm golden hour lighting, peaceful rural atmosphere."
+                                            src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
                                         </p>
-                                    <p
-                                        class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
-                                        Bp. </p>
+                                        <p
+                                            class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
+                                            Bp. </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
                         <!-- Gradient overlay untuk efek peek -->
-                        <div id="org-fade" class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-surface-container-low to-transparent pointer-events-none transition-opacity duration-300"></div>
+                        <div id="org-fade"
+                            class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-surface-container-low to-transparent pointer-events-none transition-opacity duration-300">
+                        </div>
                     </div>
                     <!-- Tombol toggle expand/collapse -->
                     <div class="text-center mt-md">
                         <button id="org-toggle-btn" onclick="toggleOrgCards()"
                             class="inline-flex items-center justify-center w-12 h-12 bg-white border border-outline-variant rounded-full text-primary hover:bg-surface-container-high hover:shadow-md transition-all duration-300 cursor-pointer">
-                            <span id="org-toggle-icon" class="material-symbols-outlined transition-transform duration-300 text-2xl">expand_more</span>
+                            <span id="org-toggle-icon"
+                                class="material-symbols-outlined transition-transform duration-300 text-2xl">expand_more</span>
                         </button>
                     </div>
                 </div>
@@ -1828,7 +1877,7 @@
             </div>
         </div>
     </div>
-    
+
     <script>
         // Micro-interaction for navbar scroll effect
         window.addEventListener('scroll', () => {
