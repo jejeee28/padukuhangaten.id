@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html class="scroll-smooth" lang="id">
 
 <head>
@@ -898,22 +898,22 @@
                             <span class="material-symbols-outlined text-4xl">storefront</span>
                         </div>
                         <h3 class="font-headline-md text-headline-md text-primary mb-sm">Ekonomi &amp; UMKM</h3>
-                        <p class="text-on-surface-variant mb-md">Pusat potensi ekonomi berbasis kemandirian warga, 
-                         mulai dari peternakan itik terpadu, produksi telur asin KWT, bank sampah pemuda, hingga seni kerajinan patung, 
-                         layangan, dan kuliner tradisional yang memberdayakan masyarakat Padukuhan Gaten.</p>
+                        <p class="text-on-surface-variant mb-md">PPusat potensi ekonomi berbasis kemandirian warga, 
+                            mulai dari peternakan itik terpadu, produksi telur asin KWT, bank sampah pemuda, hingga 
+                            seni kerajinan patung, layangan, dan kuliner tradisional yang memberdayakan masyarakat Padukuhan Gaten.</p>
                         <ul class="space-y-xs text-on-surface-variant font-label-md text-label-md">
                             <li class="flex items-center gap-xs"><span
-                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> Populasi 1.000+ 
-                                Ekor Itik & 1.000+ Telur Asin/Minggu (Dikelola Kelompok Ternak Lumintuning Kamulyan & KWT Mas Sinangling)</li>
+                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> Populasi 1.000+ Ekor Itik & 1.000+ Telur Asin/Minggu
+                                (Dikelola Kelompok Ternak Lumintuning Kamulyan & KWT Mas Sinangling)</li>
                             <li class="flex items-center gap-xs"><span
-                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> Kerajinan 
-                                Seni Patung GRC & Layang-Layang Pegon</li>
+                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> Kerajinan Seni Patung GRC & Layang-Layang Pegon
+                                (Karya Sentra Lokal yang Melayani Pesanan Hingga Luar Daerah)</li>
                             <li class="flex items-center gap-xs"><span
-                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> Kelola 
-                                Bank Sampah Mandiri Karang Taruna</li>
+                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> Kelola Bank Sampah Mandiri Karang Taruna
+                                (Gerakan Berkelanjutan oleh Pemuda Karang Taruna Omega Gaten)</li>
                             <li class="flex items-center gap-xs"><span
-                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> Produksi
-                                Kuliner Tradisional (Produsen Rempeyek & Kue Adrem Khas untuk Pasar dan Pesanan)
+                                    class="material-symbols-outlined text-primary scale-75">check_circle</span> Produksi Kuliner Tradisional
+                                (Produsen Rempeyek & Kue Adrem Khas untuk Pasar dan Pesanan)</li>
                         </ul>
                     </div>
                     <!-- Wisata Card -->
@@ -1599,24 +1599,6 @@
 
         window.addEventListener('scroll', updateActiveLink);
         window.addEventListener('DOMContentLoaded', updateActiveLink);
-
-        // Smooth scroll offset adjustment for top nav bar height
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#') {
-                    e.preventDefault();
-                    const targetSec = document.querySelector(href);
-                    if (targetSec) {
-                        const topOffset = targetSec.offsetTop - 80;
-                        window.scrollTo({
-                            top: topOffset,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-            });
-        });
 
         // Dynamic stats counters trigger with Intersection Observer (only runs once)
         const statsSection = document.getElementById('statistik');
