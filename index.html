@@ -205,6 +205,32 @@
             height: 1px;
             width: 100%;
         }
+
+        .potensi-card {
+            cursor: pointer;
+        }
+
+        #potensi-modal-backdrop {
+            transition: opacity 0.25s ease;
+        }
+
+        #potensi-modal-panel {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .accordion-item.open .accordion-chevron {
+            transform: rotate(180deg);
+        }
+
+        .accordion-item .accordion-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .accordion-item.open .accordion-body {
+            max-height: 600px;
+        }
     </style>
 
     <!-- Data terstruktur: membantu Google memahami ini adalah halaman resmi sebuah wilayah/desa -->
@@ -810,12 +836,13 @@
                 <div class="text-center max-w-2xl mx-auto mb-xl">
                     <h2 class="font-headline-lg text-headline-lg text-primary mb-base">Potensi Desa Gaten</h2>
                     <p class="font-body-md text-body-md text-on-surface-variant">Kekuatan kolektif kami dalam membangun
-                        ekonomi, menjaga alam, dan melestarikan budaya untuk masa depan yang lebih baik.</p>
+                        ekonomi, menjaga alam, dan melestarikan budaya untuk masa depan yang lebih baik. Klik salah
+                        satu kartu untuk melihat detail lengkap.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-lg mb-xl">
                     <!-- Ekonomi Card -->
-                    <div
-                        class="group bg-white p-lg rounded-3xl card-shadow border border-surface-container hover:border-primary/20 transition-all duration-300">
+                    <div data-potensi="ekonomi"
+                        class="potensi-card group bg-white p-lg rounded-3xl card-shadow border border-surface-container hover:border-primary/20 transition-all duration-300">
                         <div
                             class="w-16 h-16 bg-primary-container rounded-2xl flex items-center justify-center text-on-primary-container mb-md transition-colors">
                             <span class="material-symbols-outlined text-4xl">storefront</span>
@@ -838,10 +865,13 @@
                                     class="material-symbols-outlined text-primary scale-75">check_circle</span> 
                                 Produksi Kuliner Tradisional</li>
                         </ul>
+                        <div class="mt-md pt-md border-t border-outline-variant/30 flex items-center text-primary font-bold gap-2 group-hover:gap-4 transition-all">
+                            Lihat Detail <span class="material-symbols-outlined">arrow_forward</span>
+                        </div>
                     </div>
                     <!-- Wisata Card -->
-                    <div
-                        class="group bg-white p-lg rounded-3xl card-shadow border border-surface-container hover:border-secondary/20 transition-all duration-300">
+                    <div data-potensi="budaya"
+                        class="potensi-card group bg-white p-lg rounded-3xl card-shadow border border-surface-container hover:border-secondary/20 transition-all duration-300">
                         <div
                             class="w-16 h-16 bg-secondary-container rounded-2xl flex items-center justify-center text-on-secondary-container mb-md transition-colors">
                             <span class="material-symbols-outlined text-4xl">explore</span>
@@ -863,6 +893,9 @@
                                     class="material-symbols-outlined text-secondary scale-75">check_circle</span>
                                 Pembinaan Seni Tari Lintas Generasi</li>
                         </ul>
+                        <div class="mt-md pt-md border-t border-outline-variant/30 flex items-center text-secondary font-bold gap-2 group-hover:gap-4 transition-all">
+                            Lihat Detail <span class="material-symbols-outlined">arrow_forward</span>
+                        </div>
                     </div>
                     <!-- SDA Card -->
                     <div
@@ -1184,9 +1217,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Collapsible container: cards 5-11 tersembunyi, terlihat sedikit (peek) -->
-                        <div id="org-extra-cards" class="relative overflow-hidden transition-all duration-500 ease-in-out" style="max-height: 80px;">
-                            <div class="grid grid-cols-1 md:grid-cols-4 gap-md mt-md">
                         <!-- Kelompok Tani -->
                         <div
                             class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
@@ -1347,81 +1377,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Kelompok Tani -->
-                        <div
-                            class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
-                            <div
-                                class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-secondary-container transition-colors">
-                                <span
-                                    class="material-symbols-outlined text-primary group-hover:text-secondary">agriculture</span>
-                            </div>
-                            <h4
-                                class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
-                                Kelompok Tani</h4>
-                            <p
-                                class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
-                                Gabungan para petani lokal untuk modernisasi alat pertanian, distribusi pupuk, dan
-                                pengembangan sistem irigasi berkelanjutan.
-                            </p>
-                            <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
-                                <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
-                                    <img class="w-full h-full object-cover"
-                                        data-alt="Portrait of a seasoned farmer with a sun-kissed face, standing in a lush green rice field, wearing a conical hat, high detail, warm golden hour lighting, peaceful rural atmosphere."
-                                        src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
-                                </div>
-                                <div>
-                                    <p
-                                        class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
-                                        Koordinator Tani</p>
-                                    <p
-                                        class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
-                                        Bp. Hadi Wiyono</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Kelompok Tani -->
-                        <div
-                            class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
-                            <div
-                                class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:bg-on-secondary-container transition-colors">
-                                <span
-                                    class="material-symbols-outlined text-primary group-hover:text-secondary">agriculture</span>
-                            </div>
-                            <h4
-                                class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
-                                Kelompok Tani</h4>
-                            <p
-                                class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-on-secondary-container/80 flex-grow">
-                                Gabungan para petani lokal untuk modernisasi alat pertanian, distribusi pupuk, dan
-                                pengembangan sistem irigasi berkelanjutan.
-                            </p>
-                            <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
-                                <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0">
-                                    <img class="w-full h-full object-cover"
-                                        data-alt="Portrait of a seasoned farmer with a sun-kissed face, standing in a lush green rice field, wearing a conical hat, high detail, warm golden hour lighting, peaceful rural atmosphere."
-                                        src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%2523d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%2523435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%2523435544%27/%3E%3C/svg%3E" />
-                                </div>
-                                <div>
-                                    <p
-                                        class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
-                                        Koordinator Tani</p>
-                                    <p
-                                        class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
-                                        Bp. Hadi Wiyono</p>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <!-- Gradient overlay untuk efek peek -->
-                        <div id="org-fade" class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-surface-container-low to-transparent pointer-events-none transition-opacity duration-300"></div>
-                    </div>
-                    <!-- Tombol toggle expand/collapse -->
-                    <div class="text-center mt-md">
-                        <button id="org-toggle-btn" onclick="toggleOrgCards()"
-                            class="inline-flex items-center gap-2 bg-white border border-outline-variant px-6 py-3 rounded-xl font-label-md text-label-md text-primary hover:bg-surface-container-high hover:shadow-md transition-all duration-300 cursor-pointer">
-                            <span id="org-toggle-text">Tampilkan 7 Organisasi Lainnya</span>
-                            <span id="org-toggle-icon" class="material-symbols-outlined transition-transform duration-300">expand_more</span>
-                        </button>
                     </div>
                 </div>
         </section>
@@ -1664,6 +1619,30 @@
         </section>
     </main>
 
+    <!-- ================= MODAL DETAIL POTENSI ================= -->
+    <div id="potensi-modal-backdrop"
+        class="fixed inset-0 z-[100] bg-on-background/60 backdrop-blur-sm hidden opacity-0 items-start md:items-center justify-center p-0 md:p-6 overflow-y-auto">
+        <div id="potensi-modal-panel"
+            class="relative w-full md:max-w-3xl bg-surface md:rounded-3xl shadow-2xl min-h-full md:min-h-0 md:my-10 opacity-0 translate-y-6 md:translate-y-0 md:scale-95">
+            <!-- Header -->
+            <div id="potensi-modal-header" class="p-lg md:p-xl rounded-t-none md:rounded-t-3xl relative overflow-hidden">
+                <button id="potensi-modal-close"
+                    class="absolute top-5 right-5 w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-md flex items-center justify-center text-white transition-colors z-10"
+                    aria-label="Tutup">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+                <div class="relative z-10">
+                    <span id="potensi-modal-badge"
+                        class="inline-block px-4 py-1 rounded-full bg-white/20 text-white font-label-md text-label-md uppercase tracking-wider mb-3"></span>
+                    <h2 id="potensi-modal-title" class="font-display text-headline-lg md:text-display text-white mb-2"></h2>
+                    <p id="potensi-modal-desc" class="font-body-md text-body-md text-white/85 max-w-xl"></p>
+                </div>
+            </div>
+            <!-- Body: Accordion list -->
+            <div id="potensi-modal-body" class="p-md md:p-lg space-y-3 max-h-[65vh] overflow-y-auto"></div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="w-full rounded-t-xl bg-surface-container-highest">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-lg px-margin-desktop py-xl max-w-max-width mx-auto">
@@ -1862,26 +1841,265 @@
             });
         });
 
-        // Toggle expand/collapse untuk cards organisasi
-        let orgExpanded = false;
-        function toggleOrgCards() {
-            const container = document.getElementById('org-extra-cards');
-            const fade = document.getElementById('org-fade');
-            const icon = document.getElementById('org-toggle-icon');
-            const text = document.getElementById('org-toggle-text');
-            orgExpanded = !orgExpanded;
-            if (orgExpanded) {
-                container.style.maxHeight = container.scrollHeight + 'px';
-                fade.style.opacity = '0';
-                icon.style.transform = 'rotate(180deg)';
-                text.textContent = 'Sembunyikan';
-            } else {
-                container.style.maxHeight = '80px';
-                fade.style.opacity = '1';
-                icon.style.transform = 'rotate(0deg)';
-                text.textContent = 'Tampilkan 7 Organisasi Lainnya';
+        // ============================================================
+        // MODAL DETAIL POTENSI DESA (Ekonomi & UMKM / Kegiatan Kebudayaan)
+        // Sumber data: profil UMKM & Lembaga Dusun Padukuhan Gaten
+        // ============================================================
+        const potensiData = {
+            ekonomi: {
+                badge: "Ekonomi & UMKM",
+                title: "Potensi Ekonomi & UMKM Gaten",
+                desc: "Pusat penggerak ekonomi warga Padukuhan Gaten, dari peternakan itik terpadu hingga kerajinan tangan dan kuliner tradisional.",
+                headerClass: "bg-primary",
+                icon: "storefront",
+                items: [
+                    {
+                        nama: "Peternakan Itik",
+                        icon: "egg",
+                        deskripsi: "Salah satu sumber penghasilan yang menjadi kas padukuhan. Bermula dari hibah itik oleh Dinas Peternakan Pelihari (Kalimantan) yang bekerja sama dengan Dinas Peternakan Kabupaten Bantul pada akhir 2020, populasi itik kini berkembang hingga kurang lebih 1.000 ekor berkat kegigihan warga.",
+                        kegiatan: [
+                            "Pemeliharaan & perawatan itik harian",
+                            "Pengembangan populasi sejak akhir 2020",
+                            "Pasokan telur bebek untuk produksi telur asin KWT"
+                        ],
+                        pengelola: "Kelompok Tani & Kelompok Ternak Lumintuning Kamulyan Gaten"
+                    },
+                    {
+                        nama: "Produsen Telur Asin",
+                        icon: "egg_alt",
+                        deskripsi: "Inovasi ibu-ibu KWT Mas Sinangling Gaten yang mengolah telur bebek dari Kelompok Ternak Lumintuning Kamulyan menjadi telur asin bernilai jual lebih tinggi, dengan produksi lebih dari 1.000 butir setiap minggunya.",
+                        kegiatan: [
+                            "Produksi >1.000 butir telur asin/minggu",
+                            "Pemasaran lewat media massa, gethok tular, dan warung",
+                            "Penjualan di pasar tradisional",
+                            "Hasil penjualan masuk Kas KWT Mas Sinangling Gaten"
+                        ],
+                        pengelola: "KWT Mas Sinangling Gaten"
+                    },
+                    {
+                        nama: "Bank Sampah",
+                        icon: "recycling",
+                        deskripsi: "Usaha pengelolaan sampah yang digeluti Karang Taruna Omega bersama warga. Sampah plastik dan sampah layak jual dikumpulkan tiap rumah, lalu diambil rutin sebulan sekali dan dikumpulkan di bangunan bekas SD yang dialihfungsikan sebagai bank sampah.",
+                        kegiatan: [
+                            "Pengumpulan sampah rumah tangga oleh warga",
+                            "Penjemputan keliling kampung sebulan sekali",
+                            "Hasil penjualan sampah masuk Kas Karang Taruna Omega"
+                        ],
+                        pengelola: "Karang Taruna Omega Gaten"
+                    },
+                    {
+                        nama: "Kerajinan Layang-Layang",
+                        icon: "kite",
+                        deskripsi: "Usaha kerajinan layang-layang jenis pegon dan bapangan milik Bapak Palgunadi, warga RT 04. Diminati banyak pelanggan dari berbagai usia dengan permintaan ukuran dan bentuk yang beragam.",
+                        kegiatan: [
+                            "Produksi layang-layang jenis pegon & bapangan",
+                            "Melayani pesanan berbagai ukuran dan bentuk"
+                        ],
+                        pengelola: "Bapak Palgunadi (RT 04)"
+                    },
+                    {
+                        nama: "Kerajinan Seni Patung & GRC",
+                        icon: "sculpture",
+                        deskripsi: "Usaha kerajinan patung oleh Bapak Sutarjo, yang juga menjabat sebagai anggota Bamuskal Kalurahan Tirtomulyo. Karyanya bahkan dipesan hingga luar kota. Pada 2024 beliau membuat patung ikan gurame yang dipajang di Kampung Gurame Kergan, Tirtomulyo, Kretek, Bantul, sedangkan pada 2023 membuat patung itik dan togor yang kini menjadi ikon Padukuhan Gaten.",
+                        kegiatan: [
+                            "Pembuatan patung sesuai pesanan (termasuk luar kota)",
+                            "Karya 2024: Patung ikan gurame — Kampung Gurame Kergan, Tirtomulyo",
+                            "Karya 2023: Patung itik & togor — ikon Padukuhan Gaten"
+                        ],
+                        pengelola: "Bapak Sutarjo (Anggota Bamuskal Kalurahan Tirtomulyo)"
+                    },
+                    {
+                        nama: "Produksi Kuliner: Peyek & Adrem",
+                        icon: "bakery_dining",
+                        deskripsi: "Produksi kuliner tradisional rempeyek dan adrem oleh Ibu Tumiyati, warga Padukuhan Gaten. Ratusan potong diproduksi setiap harinya untuk dijual di pasar, selain juga melayani pesanan warga.",
+                        kegiatan: [
+                            "Produksi harian ratusan rempeyek & adrem",
+                            "Penjualan di pasar",
+                            "Melayani pesanan warga"
+                        ],
+                        pengelola: "Ibu Tumiyati"
+                    }
+                ]
+            },
+            budaya: {
+                badge: "Kegiatan Kebudayaan",
+                title: "Seni & Pelestarian Budaya Gaten",
+                desc: "Wujud nyata pelestarian adat dan seni tradisi Jawa di Padukuhan Gaten, dari ritual Merti Dusun hingga penulisan aksara Jawa di ruang publik.",
+                headerClass: "bg-secondary",
+                icon: "explore",
+                items: [
+                    {
+                        nama: "Merti Dusun",
+                        icon: "temple_hindu",
+                        deskripsi: "Kegiatan rutin tahunan yang diadakan setiap bulan Muharam sebagai upaya pelestarian budaya Jawa. Rangkaian acara meliputi bersih desa secara gotong royong, kirab ingkung, dan umbul dunga. Pada 2023, kegiatan ini didampingi langsung oleh Dinas Kebudayaan Kabupaten Bantul.",
+                        kegiatan: [
+                            "Bersih desa gotong royong",
+                            "Kirab ingkung",
+                            "Umbul dunga",
+                            "Diadakan setiap bulan Muharam"
+                        ],
+                        pengelola: "Warga Padukuhan Gaten, didampingi Dinas Kebudayaan Kabupaten Bantul (2023)"
+                    },
+                    {
+                        nama: "Paguyuban Jathilan \"Bekso Wiratama\"",
+                        icon: "theater_comedy",
+                        deskripsi: "Dibentuk sejak 2017 sebagai upaya pelestarian seni dan budaya, dan telah teregister resmi di Dinas Kebudayaan Kabupaten Bantul dengan nomor 137/disbud/VIII/17. Menggelar pentas rutin setiap tahun sejak 2017 hingga 2024, kecuali 2019–2020 karena larangan pentas akibat pandemi COVID-19.",
+                        kegiatan: [
+                            "Pentas rutin tahunan (2017–2024, absen 2019–2020)",
+                            "Terdaftar resmi di Dinas Kebudayaan Kab. Bantul No. 137/disbud/VIII/17"
+                        ],
+                        pengelola: "Ketua: Saudara Adnan Ardi Kuntoro"
+                    },
+                    {
+                        nama: "Pelestarian Seni Tari",
+                        icon: "sports_gymnastics",
+                        deskripsi: "Kegiatan seni tari yang dijalankan oleh adik-adik tingkat PAUD, Sekolah Dasar, hingga Sekolah Menengah. Latihan rutin dilakukan sebulan sekali dan biasa dipentaskan di berbagai acara dusun.",
+                        kegiatan: [
+                            "Latihan rutin sebulan sekali",
+                            "Pentas di peringatan Kemerdekaan RI",
+                            "Pentas di peringatan Sumpah Pemuda",
+                            "Pentas di hajatan warga"
+                        ],
+                        pengelola: "Anak-anak & remaja PAUD, SD, dan SMP warga Gaten"
+                    },
+                    {
+                        nama: "Paguyuban Seni Campursari \"Dhemes Pro\"",
+                        icon: "music_note",
+                        deskripsi: "Kelompok seni campursari yang berdiri pada 9 Oktober 2023 dan telah teregister di Dinas Kebudayaan Bantul dengan nomor 07-06-01197. Beranggotakan pemuda-pemudi Gaten, kelompok ini beberapa kali diundang mengisi acara di Museum Batik Imogiri, Pantai Baru, dan berbagai wilayah lain.",
+                        kegiatan: [
+                            "Berdiri 9 Oktober 2023, terdaftar di Dinas Kebudayaan Bantul No. 07-06-01197",
+                            "Mengisi acara di Museum Batik Imogiri",
+                            "Mengisi acara di Pantai Baru & wilayah lain",
+                            "Tampil di hajatan & acara formal warga"
+                        ],
+                        pengelola: "Ketua: Saudara Dwi Ari Pamuji"
+                    },
+                    {
+                        nama: "Pelestarian Aksara Jawa",
+                        icon: "translate",
+                        deskripsi: "Upaya pelestarian aksara Jawa dengan menghadirkannya di ruang publik agar generasi muda mengenal warisan budaya yang adiluhung ini.",
+                        kegiatan: [
+                            "Penulisan nama jalan dalam aksara Jawa",
+                            "Papan pengumuman beraksara Jawa",
+                            "Nama limasan, nama dukuh & RT",
+                            "Togor padukuhan beraksara Jawa"
+                        ],
+                        pengelola: "Pemerintah & warga Padukuhan Gaten"
+                    },
+                    {
+                        nama: "Budaya Genduri",
+                        icon: "ramen_dining",
+                        deskripsi: "Tradisi bersedekah dalam bentuk makanan yang masih sangat kental dijalankan warga Padukuhan Gaten hingga sekarang, sebagai wujud kebersamaan dan rasa syukur.",
+                        kegiatan: [
+                            "Genduri peringatan orang meninggal",
+                            "Genduri pernikahan",
+                            "Genduri tingkepan",
+                            "Genduri suran"
+                        ],
+                        pengelola: "Warga Padukuhan Gaten"
+                    }
+                ]
             }
+        };
+
+        const modalBackdrop = document.getElementById('potensi-modal-backdrop');
+        const modalPanel = document.getElementById('potensi-modal-panel');
+        const modalHeader = document.getElementById('potensi-modal-header');
+        const modalBadge = document.getElementById('potensi-modal-badge');
+        const modalTitle = document.getElementById('potensi-modal-title');
+        const modalDesc = document.getElementById('potensi-modal-desc');
+        const modalBody = document.getElementById('potensi-modal-body');
+        const modalCloseBtn = document.getElementById('potensi-modal-close');
+
+        function buildAccordionItem(item, index) {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'accordion-item bg-white border border-outline-variant/40 rounded-2xl overflow-hidden';
+
+            const kegiatanList = item.kegiatan.map(k =>
+                `<li class="flex items-start gap-2">
+                    <span class="material-symbols-outlined text-primary scale-75 mt-0.5">check_circle</span>
+                    <span>${k}</span>
+                </li>`
+            ).join('');
+
+            wrapper.innerHTML = `
+                <button type="button" class="accordion-trigger w-full flex items-center gap-4 p-md md:p-lg text-left hover:bg-surface-container-low transition-colors">
+                    <span class="w-11 h-11 flex-shrink-0 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center">
+                        <span class="material-symbols-outlined">${item.icon}</span>
+                    </span>
+                    <span class="flex-grow font-headline-md text-headline-md text-primary text-base md:text-lg">${item.nama}</span>
+                    <span class="material-symbols-outlined accordion-chevron text-outline transition-transform duration-300 flex-shrink-0">expand_more</span>
+                </button>
+                <div class="accordion-body px-md md:px-lg">
+                    <div class="pb-md md:pb-lg space-y-4 border-t border-outline-variant/30 pt-4">
+                        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">${item.deskripsi}</p>
+                        <div>
+                            <p class="font-label-md text-label-md text-primary uppercase tracking-wider mb-2">Kegiatan</p>
+                            <ul class="space-y-1.5 text-on-surface-variant font-body-md text-body-md">${kegiatanList}</ul>
+                        </div>
+                        <div class="flex items-start gap-2 pt-2 border-t border-outline-variant/20">
+                            <span class="material-symbols-outlined text-tertiary scale-90 mt-0.5">badge</span>
+                            <div>
+                                <p class="font-label-md text-label-md text-tertiary uppercase tracking-wider">Pengelola</p>
+                                <p class="font-body-md text-body-md text-on-surface">${item.pengelola}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            wrapper.querySelector('.accordion-trigger').addEventListener('click', () => {
+                const isOpen = wrapper.classList.contains('open');
+                modalBody.querySelectorAll('.accordion-item').forEach(el => el.classList.remove('open'));
+                if (!isOpen) wrapper.classList.add('open');
+            });
+
+            return wrapper;
         }
+
+        function openPotensiModal(key) {
+            const data = potensiData[key];
+            if (!data) return;
+
+            modalHeader.className = 'p-lg md:p-xl rounded-t-none md:rounded-t-3xl relative overflow-hidden ' + data.headerClass;
+            modalBadge.textContent = data.badge;
+            modalTitle.textContent = data.title;
+            modalDesc.textContent = data.desc;
+
+            modalBody.innerHTML = '';
+            data.items.forEach((item, i) => modalBody.appendChild(buildAccordionItem(item, i)));
+
+            modalBackdrop.classList.remove('hidden');
+            modalBackdrop.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+
+            requestAnimationFrame(() => {
+                modalBackdrop.classList.remove('opacity-0');
+                modalPanel.classList.remove('opacity-0', 'translate-y-6', 'md:scale-95');
+            });
+        }
+
+        function closePotensiModal() {
+            modalBackdrop.classList.add('opacity-0');
+            modalPanel.classList.add('opacity-0', 'translate-y-6', 'md:scale-95');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                modalBackdrop.classList.add('hidden');
+                modalBackdrop.classList.remove('flex');
+            }, 300);
+        }
+
+        document.querySelectorAll('[data-potensi]').forEach(card => {
+            card.addEventListener('click', () => openPotensiModal(card.getAttribute('data-potensi')));
+        });
+
+        modalCloseBtn.addEventListener('click', closePotensiModal);
+        modalBackdrop.addEventListener('click', (e) => {
+            if (e.target === modalBackdrop) closePotensiModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modalBackdrop.classList.contains('hidden')) closePotensiModal();
+        });
     </script>
 </body>
 
