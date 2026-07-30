@@ -2180,6 +2180,24 @@
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && !modalBackdrop.classList.contains('hidden')) closePotensiModal();
         });
+
+        // Toggle expand/collapse untuk cards organisasi
+        let orgExpanded = false;
+        function toggleOrgCards() {
+            const container = document.getElementById('org-extra-cards');
+            const fade = document.getElementById('org-fade');
+            const icon = document.getElementById('org-toggle-icon');
+            orgExpanded = !orgExpanded;
+            if (orgExpanded) {
+                container.style.maxHeight = container.scrollHeight + 'px';
+                fade.style.opacity = '0';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                container.style.maxHeight = '80px';
+                fade.style.opacity = '1';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
     </script>
 </body>
 
