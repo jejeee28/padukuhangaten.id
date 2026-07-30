@@ -1418,9 +1418,8 @@
                     <!-- Tombol toggle expand/collapse -->
                     <div class="text-center mt-md">
                         <button id="org-toggle-btn" onclick="toggleOrgCards()"
-                            class="inline-flex items-center gap-2 bg-white border border-outline-variant px-6 py-3 rounded-xl font-label-md text-label-md text-primary hover:bg-surface-container-high hover:shadow-md transition-all duration-300 cursor-pointer">
-                            <span id="org-toggle-text">Tampilkan 7 Organisasi Lainnya</span>
-                            <span id="org-toggle-icon" class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                            class="inline-flex items-center justify-center w-12 h-12 bg-white border border-outline-variant rounded-full text-primary hover:bg-surface-container-high hover:shadow-md transition-all duration-300 cursor-pointer">
+                            <span id="org-toggle-icon" class="material-symbols-outlined transition-transform duration-300 text-2xl">expand_more</span>
                         </button>
                     </div>
                 </div>
@@ -1868,18 +1867,15 @@
             const container = document.getElementById('org-extra-cards');
             const fade = document.getElementById('org-fade');
             const icon = document.getElementById('org-toggle-icon');
-            const text = document.getElementById('org-toggle-text');
             orgExpanded = !orgExpanded;
             if (orgExpanded) {
                 container.style.maxHeight = container.scrollHeight + 'px';
                 fade.style.opacity = '0';
                 icon.style.transform = 'rotate(180deg)';
-                text.textContent = 'Sembunyikan';
             } else {
                 container.style.maxHeight = '80px';
                 fade.style.opacity = '1';
                 icon.style.transform = 'rotate(0deg)';
-                text.textContent = 'Tampilkan 7 Organisasi Lainnya';
             }
         }
     </script>
