@@ -548,8 +548,8 @@
                 </div>
             </div>
         </section>
-
-                <!-- ================= SECTION 2: STATISTIK ================= -->
+        
+        <!-- ================= SECTION 2: STATISTIK ================= -->
         <section id="statistik" class="scroll-mt-20 border-t border-outline-variant/30 py-xl bg-background">
             <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
                 <!-- Header Section -->
@@ -565,10 +565,210 @@
                      masih CONTOH/PLACEHOLDER. Ganti dengan data asli dari buku induk penduduk / kantor Padukuhan
                      sebelum website ini dipublikasikan. -->
                 <div class="mb-md">
-                    <span
-                        class="inline-flex items-center gap-1 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-md text-label-md">
+                    <span class="inline-flex items-center gap-1 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-md text-label-md">
                         # DUMMY — seluruh data statistik di bawah ini masih contoh
                     </span>
+                </div>
+                <!-- Key Metrics Bento Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-md mb-xl">
+                    <!-- Total Penduduk -->
+                    <div class="tonal-card p-md rounded-xl border border-secondary/10 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="p-2 bg-secondary-container text-on-secondary-container rounded-lg">
+                                    <span class="material-symbols-outlined">groups</span>
+                                </span>
+                                <span class="text-secondary font-label-md">+2.4% Thn</span>
+                            </div>
+                            <p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">
+                                Total Penduduk</p>
+                            <h3 class="font-display text-headline-lg text-primary">1,284</h3>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-outline-variant/30 text-caption text-on-surface-variant">
+                            Jiwa terdaftar di Gaten
+                        </div>
+                    </div>
+                    <!-- Jumlah KK -->
+                    <div class="tonal-card p-md rounded-xl border border-secondary/10 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="p-2 bg-tertiary-fixed text-on-tertiary-fixed rounded-lg">
+                                    <span class="material-symbols-outlined">home</span>
+                                </span>
+                                <span class="text-tertiary font-label-md">Aktif</span>
+                            </div>
+                            <p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">
+                                Jumlah KK</p>
+                            <h3 class="font-display text-headline-lg text-primary">412</h3>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-outline-variant/30 text-caption text-on-surface-variant">
+                            Kepala Keluarga
+                        </div>
+                    </div>
+                    <!-- Kelompok Usia Dominan -->
+                    <div class="tonal-card p-md rounded-xl border border-secondary/10 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="p-2 bg-surface-container-highest text-on-surface-variant rounded-lg">
+                                    <span class="material-symbols-outlined">qr_code_2</span>
+                                </span>
+                            </div>
+                            <p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Usia
+                                Produktif</p>
+                            <h3 class="font-display text-headline-lg text-primary">68%</h3>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-outline-variant/30 text-caption text-on-surface-variant">
+                            Usia 15 - 64 Tahun
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Section -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xl">
+                    <!-- Age Distribution Pie Chart Card -->
+                    <div class="tonal-card p-md md:p-lg rounded-2xl border border-secondary/5">
+                        <div class="flex items-center justify-between mb-lg">
+                            <h3 class="font-headline-md text-headline-md text-primary">Distribusi Usia</h3>
+                            <span class="material-symbols-outlined text-outline cursor-help"
+                                title="Data per Q4 2023">info</span>
+                        </div>
+                        <div class="flex flex-col md:flex-row items-center gap-lg">
+                            <div class="relative w-48 h-48 flex-shrink-0">
+                                <!-- Custom SVG Pie Chart -->
+                                <svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+                                    <circle cx="18" cy="18" fill="transparent" r="16" stroke="#f0eee9" stroke-width="4">
+                                    </circle>
+                                    <circle cx="18" cy="18" fill="transparent" r="16" stroke="#435544"
+                                        stroke-dasharray="25 100" stroke-width="4"></circle>
+                                    <circle cx="18" cy="18" fill="transparent" r="16" stroke="#5a6241"
+                                        stroke-dasharray="45 100" stroke-dashoffset="-25" stroke-width="4"></circle>
+                                    <circle cx="18" cy="18" fill="transparent" r="16" stroke="#7d4000"
+                                        stroke-dasharray="15 100" stroke-dashoffset="-70" stroke-width="4"></circle>
+                                    <circle cx="18" cy="18" fill="transparent" r="16" stroke="#dfe7bd"
+                                        stroke-dasharray="15 100" stroke-dashoffset="-85" stroke-width="4"></circle>
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div class="text-center">
+                                        <span class="block font-headline-md text-primary">1.2k</span>
+                                        <span class="block text-caption uppercase text-on-surface-variant">Total</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-grow space-y-3 w-full">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-3 h-3 rounded-full bg-primary"></span>
+                                        <span class="font-label-md text-on-surface">Anak-anak (0-14)</span>
+                                    </div>
+                                    <span class="font-body-md font-bold">25%</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-3 h-3 rounded-full bg-secondary"></span>
+                                        <span class="font-label-md text-on-surface">Produktif (15-64)</span>
+                                    </div>
+                                    <span class="font-body-md font-bold">45%</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-3 h-3 rounded-full bg-tertiary"></span>
+                                        <span class="font-label-md text-on-surface">Lansia (65+)</span>
+                                    </div>
+                                    <span class="font-body-md font-bold">15%</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+                                        <span class="font-label-md text-on-surface">Balita</span>
+                                    </div>
+                                    <span class="font-body-md font-bold">15%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Population Table Section -->
+                <div class="mb-xl">
+                    <div class="tonal-card overflow-hidden rounded-2xl border border-secondary/5">
+                        <div
+                            class="p-md md:p-lg bg-surface-container-low flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                            <div>
+                                <h3 class="font-headline-md text-headline-md text-primary">Data Penduduk per RT</h3>
+                                <p class="text-caption text-on-surface-variant">Total 6 Rukun Tetangga (RT)</p>
+                                <span class="inline-flex items-center gap-1 mt-2 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-md text-label-md">
+                                    # DUMMY — nama ketua RT & data jiwa masih contoh
+                                </span>
+                                <!-- GANTI: nama ketua RT dan jumlah jiwa per RT di bawah ini masih contoh.
+                                     Ganti dengan nama dan data asli sebelum publish, agar tidak salah info. -->
+                            </div>
+                            <div class="flex gap-2 w-full md:w-auto">
+                                <div class="relative flex-1 md:flex-none">
+                                    <input
+                                        class="w-full bg-surface border border-outline-variant rounded-lg px-10 py-2 text-label-md focus:ring-secondary focus:border-secondary transition-all"
+                                        placeholder="Cari RT..." type="text" />
+                                    <span
+                                        class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant">search</span>
+                                </div>
+                                <button
+                                    class="bg-white border border-outline-variant p-2 rounded-lg text-on-surface hover:bg-surface-container-high transition-colors"
+                                    aria-label="Filter List">
+                                    <span class="material-symbols-outlined">filter_list</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="bg-surface-container-high border-b border-outline-variant">
+                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Unit Wilayah
+                                        </th>
+                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Ketua RT</th>
+                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Jumlah KK</th>
+                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Laki-laki</th>
+                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Perempuan</th>
+                                        <th class="px-lg py-4 font-label-md text-label-md text-primary">Total Jiwa</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-surface-container-highest">
+                                    <tr class="hover:bg-surface-container-low transition-colors">
+                                        <td class="px-lg py-4 font-label-md">RT 01</td>
+                                        <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Wajidi</td>
+                                        <td class="px-lg py-4 font-body-md">72</td>
+                                        <td class="px-lg py-4 font-body-md">112</td>
+                                        <td class="px-lg py-4 font-body-md">108</td>
+                                        <td class="px-lg py-4 font-label-md text-primary">220</td>
+                                    </tr>
+                                    <tr class="hover:bg-surface-container-low transition-colors">
+                                        <td class="px-lg py-4 font-label-md">RT 02</td>
+                                        <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Wahyudianto</td>
+                                        <td class="px-lg py-4 font-body-md">68</td>
+                                        <td class="px-lg py-4 font-body-md">98</td>
+                                        <td class="px-lg py-4 font-body-md">102</td>
+                                        <td class="px-lg py-4 font-label-md text-primary">200</td>
+                                    </tr>
+                                    <tr class="hover:bg-surface-container-low transition-colors">
+                                        <td class="px-lg py-4 font-label-md">RT 03</td>
+                                        <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Tri Sudarmadi</td>
+                                        <td class="px-lg py-4 font-body-md">75</td>
+                                        <td class="px-lg py-4 font-body-md">115</td>
+                                        <td class="px-lg py-4 font-body-md">119</td>
+                                        <td class="px-lg py-4 font-label-md text-primary">234</td>
+                                    </tr>
+                                    <tr class="hover:bg-surface-container-low transition-colors">
+                                        <td class="px-lg py-4 font-label-md">RT 04</td>
+                                        <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Muhbiyanta</td>
+                                        <td class="px-lg py-4 font-body-md">65</td>
+                                        <td class="px-lg py-4 font-body-md">105</td>
+                                        <td class="px-lg py-4 font-body-md">98</td>
+                                        <td class="px-lg py-4 font-label-md text-primary">203</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- ================= SECTION 3: POTENSI ================= -->
         <section id="potensi" class="scroll-mt-20 border-t border-outline-variant/30 py-xl bg-surface-container-low">
