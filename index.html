@@ -587,7 +587,7 @@
                     </span>
                 </div>
                 <!-- Key Metrics Bento Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-md mb-xl">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-md mb-xl">
                     <!-- Total Penduduk -->
                     <div class="tonal-card p-md rounded-xl border border-secondary/10 flex flex-col justify-between">
                         <div>
@@ -640,72 +640,70 @@
                     </div>
                 </div>
 
-                <!-- Charts Section -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xl">
-                    <!-- Age Distribution Pie Chart Card -->
-                    <div class="tonal-card p-md md:p-lg rounded-2xl border border-secondary/5">
-                        <div class="flex items-center justify-between mb-lg">
-                            <h3 class="font-headline-md text-headline-md text-primary">Distribusi Usia</h3>
-                            <span class="material-symbols-outlined text-outline cursor-help"
-                                title="Data per Q4 2023">info</span>
-                        </div>
-                        <div class="flex flex-col md:flex-row items-center gap-lg">
-                            <div class="relative w-48 h-48 flex-shrink-0">
-                                <!-- Custom SVG Pie Chart -->
-                                <svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
-                                    <circle cx="18" cy="18" fill="transparent" r="16" stroke="#f0eee9" stroke-width="4">
-                                    </circle>
-                                    <circle cx="18" cy="18" fill="transparent" r="16" stroke="#435544"
-                                        stroke-dasharray="25 100" stroke-width="4"></circle>
-                                    <circle cx="18" cy="18" fill="transparent" r="16" stroke="#5a6241"
-                                        stroke-dasharray="45 100" stroke-dashoffset="-25" stroke-width="4"></circle>
-                                    <circle cx="18" cy="18" fill="transparent" r="16" stroke="#7d4000"
-                                        stroke-dasharray="15 100" stroke-dashoffset="-70" stroke-width="4"></circle>
-                                    <circle cx="18" cy="18" fill="transparent" r="16" stroke="#dfe7bd"
-                                        stroke-dasharray="15 100" stroke-dashoffset="-85" stroke-width="4"></circle>
-                                </svg>
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <div class="text-center">
-                                        <span class="block font-headline-md text-primary">1.2k</span>
-                                        <span class="block text-caption uppercase text-on-surface-variant">Total</span>
-                                    </div>
+                <!-- Distribusi Usia Section -->
+                <div class="tonal-card p-md md:p-lg rounded-2xl border border-secondary/5 mb-xl">
+                    <div class="flex items-center justify-between mb-lg">
+                        <h3 class="font-headline-md text-headline-md text-primary">Distribusi Usia</h3>
+                        <span class="material-symbols-outlined text-outline cursor-help"
+                            title="Data per Q4 2023">info</span>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center gap-lg">
+                        <div class="relative w-48 h-48 flex-shrink-0">
+                            <!-- Custom SVG Pie Chart -->
+                            <svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+                                <circle cx="18" cy="18" fill="transparent" r="16" stroke="#f0eee9" stroke-width="4">
+                                </circle>
+                                <circle cx="18" cy="18" fill="transparent" r="16" stroke="#435544"
+                                    stroke-dasharray="25 100" stroke-width="4"></circle>
+                                <circle cx="18" cy="18" fill="transparent" r="16" stroke="#5a6241"
+                                    stroke-dasharray="45 100" stroke-dashoffset="-25" stroke-width="4"></circle>
+                                <circle cx="18" cy="18" fill="transparent" r="16" stroke="#7d4000"
+                                    stroke-dasharray="15 100" stroke-dashoffset="-70" stroke-width="4"></circle>
+                                <circle cx="18" cy="18" fill="transparent" r="16" stroke="#dfe7bd"
+                                    stroke-dasharray="15 100" stroke-dashoffset="-85" stroke-width="4"></circle>
+                            </svg>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="text-center">
+                                    <span class="block font-headline-md text-primary">1.2k</span>
+                                    <span class="block text-caption uppercase text-on-surface-variant">Total</span>
                                 </div>
                             </div>
-                            <div class="flex-grow space-y-3 w-full">
-                                <div class="flex items-center justify-between">
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-3 h-3 rounded-full bg-primary"></span>
-                                        <span class="font-label-md text-on-surface">Anak-anak (0-14)</span>
-                                    </div>
-                                    <span class="font-body-md font-bold">25%</span>
+                        </div>
+                        <div class="flex-grow space-y-3 w-full">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-3 h-3 rounded-full bg-primary"></span>
+                                    <span class="font-label-md text-on-surface">Anak-anak (0-14)</span>
                                 </div>
-                                <div class="flex items-center justify-between">
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-3 h-3 rounded-full bg-secondary"></span>
-                                        <span class="font-label-md text-on-surface">Produktif (15-64)</span>
-                                    </div>
-                                    <span class="font-body-md font-bold">45%</span>
+                                <span class="font-body-md font-bold">25%</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-3 h-3 rounded-full bg-secondary"></span>
+                                    <span class="font-label-md text-on-surface">Produktif (15-64)</span>
                                 </div>
-                                <div class="flex items-center justify-between">
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-3 h-3 rounded-full bg-tertiary"></span>
-                                        <span class="font-label-md text-on-surface">Lansia (65+)</span>
-                                    </div>
-                                    <span class="font-body-md font-bold">15%</span>
+                                <span class="font-body-md font-bold">45%</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-3 h-3 rounded-full bg-tertiary"></span>
+                                    <span class="font-label-md text-on-surface">Lansia (65+)</span>
                                 </div>
-                                <div class="flex items-center justify-between">
-                                    <div class="flex items-center gap-2">
-                                        <span class="w-3 h-3 rounded-full bg-secondary-container"></span>
-                                        <span class="font-label-md text-on-surface">Balita</span>
-                                    </div>
-                                    <span class="font-body-md font-bold">15%</span>
+                                <span class="font-body-md font-bold">15%</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+                                    <span class="font-label-md text-on-surface">Balita</span>
                                 </div>
+                                <span class="font-body-md font-bold">15%</span>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Population Table Section -->
-                    <div class="mb-xl">
+                <!-- Population Table Section -->
+                <div class="mb-xl">
                         <div class="tonal-card overflow-hidden rounded-2xl border border-secondary/5">
                             <div
                                 class="p-md md:p-lg bg-surface-container-low flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
@@ -1697,16 +1695,18 @@
                             <div
                                 class="mb-4 aspect-square rounded-2xl overflow-hidden bg-surface border border-outline-variant shadow-sm">
                                 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                    data-alt="A professional architectural photograph of the Tirtomulyo Village Hall entrance, featuring traditional Javanese Joglo roof structures with modern glass windows. The building is surrounded by neat tropical landscaping under a clear blue morning sky, representing the starting point of the journey. The lighting is soft and natural."
+                                    data-alt="Pemandangan Balai Desa Tirtomulyo sebagai titik awal rute perjalanan menuju Padukuhan Gaten."
                                     src="https://commons.wikimedia.org/wiki/Special:FilePath/Rumah%20Joglo%20Muhadi.jpg" />
                             </div>
                             <div class="flex items-start gap-4">
                                 <span
                                     class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold flex-shrink-0">1</span>
                                 <div>
-                                    <h4 class="font-label-md text-label-md text-primary mb-1">Mulai dari Kalurahan</h4>
-                                    <p class="font-caption text-caption text-on-surface-variant">Keluar dari gerbang
-                                        utama Kalurahan Tirtomulyo ke arah Barat (menuju Jl. Srandakan).</p>
+                                    <h4 class="font-label-md text-label-md text-primary mb-1">Dari Balai Desa Tirtomulyo
+                                    </h4>
+                                    <p class="font-caption text-caption text-on-surface-variant">Mulai perjalanan dari
+                                        Balai Desa Tirtomulyo menyusuri jalan utama ke arah barat (~1,2 km / 3 menit).
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1715,16 +1715,16 @@
                             <div
                                 class="mb-4 aspect-square rounded-2xl overflow-hidden bg-surface border border-outline-variant shadow-sm">
                                 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                    data-alt="A high-quality wide-angle shot of a smooth asphalt rural road in Yogyakarta, flanked by vibrant green rice fields and coconut trees. A small direction sign points toward Gaten. The sun is shining brightly, creating a warm, inviting atmosphere typical of the Indonesian countryside."
+                                    data-alt="Jalan utama melewati area Merten City dan KPG Tirtomulyo Kretek."
                                     src="https://commons.wikimedia.org/wiki/Special:FilePath/Jalan%20kampung.JPG" />
                             </div>
                             <div class="flex items-start gap-4">
                                 <span
                                     class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold flex-shrink-0">2</span>
                                 <div>
-                                    <h4 class="font-label-md text-label-md text-primary mb-1">Lurus Sejauh 500m</h4>
-                                    <p class="font-caption text-caption text-on-surface-variant">Ikuti jalan utama desa
-                                        hingga Anda melewati jembatan irigasi kecil di sisi kanan.</p>
+                                    <h4 class="font-label-md text-label-md text-primary mb-1">Melewati Merten City</h4>
+                                    <p class="font-caption text-caption text-on-surface-variant">Ikuti jalan utama
+                                        melewati KPG Tirtomulyo Kretek hingga menemukan patokan Merten City.</p>
                                 </div>
                             </div>
                         </div>
@@ -1733,17 +1733,18 @@
                             <div
                                 class="mb-4 aspect-square rounded-2xl overflow-hidden bg-surface border border-outline-variant shadow-sm">
                                 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                    data-alt="A detailed close-up of a white and green village entrance gate (Gapura) with traditional Javanese motifs and a sign that reads Gaten in clean typography. The gate is well-maintained and stands under the shade of a large banyan tree, representing a welcoming entrance to the neighborhood."
+                                    data-alt="Gapura Rama & Shinta sebagai penanda gerbang masuk Padukuhan Gaten."
                                     src="https://commons.wikimedia.org/wiki/Special:FilePath/Gapura%20Desa.jpg" />
                             </div>
                             <div class="flex items-start gap-4">
                                 <span
                                     class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold flex-shrink-0">3</span>
                                 <div>
-                                    <h4 class="font-label-md text-label-md text-primary mb-1">Belok Kanan di Gapura</h4>
-                                    <p class="font-caption text-caption text-on-surface-variant">Anda akan melihat
-                                        Gapura putih bertuliskan 'Padukuhan Gaten'. Belok kanan memasuki jalan tersebut.
-                                    </p>
+                                    <h4 class="font-label-md text-label-md text-primary mb-1">Gapura Rama &amp; Shinta
+                                    </h4>
+                                    <p class="font-caption text-caption text-on-surface-variant">Lurus sedikit dari
+                                        Merten City, Anda akan melihat Gapura Rama &amp; Shinta penanda resmi masuk
+                                        Padukuhan Gaten.</p>
                                 </div>
                             </div>
                         </div>
@@ -1752,16 +1753,17 @@
                             <div
                                 class="mb-4 aspect-square rounded-2xl overflow-hidden bg-surface border border-outline-variant shadow-sm">
                                 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                    data-alt="A serene photo of a village square in Gaten, showing a clean community gathering space with a Balai Dusun (meeting hall). People are seen in the distance, and the area is peaceful and clean, signifying the final destination. The scene is captured during the golden hour for a warm, welcoming feel."
+                                    data-alt="Tiba di lokasi Balai Dukuh Padukuhan Gaten."
                                     src="https://commons.wikimedia.org/wiki/Special:FilePath/Ploso%20balai%20desa%20joglo.jpg" />
                             </div>
                             <div class="flex items-start gap-4">
                                 <span
                                     class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold flex-shrink-0">4</span>
                                 <div>
-                                    <h4 class="font-label-md text-label-md text-primary mb-1">Tiba di Pusat Dusun</h4>
-                                    <p class="font-caption text-caption text-on-surface-variant">Lanjutkan sekitar 200m
-                                        hingga menemui Balai Dusun Gaten di sebelah kiri jalan.</p>
+                                    <h4 class="font-label-md text-label-md text-primary mb-1">Tiba di Balai Dukuh Gaten
+                                    </h4>
+                                    <p class="font-caption text-caption text-on-surface-variant">Terus lurus beberapa
+                                        meter dari gapura hingga tiba di lokasi Balai Dukuh Padukuhan Gaten.</p>
                                 </div>
                             </div>
                         </div>
