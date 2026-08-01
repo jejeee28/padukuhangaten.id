@@ -926,70 +926,59 @@
                     </div>
                 </div>
 
-                <!-- Galeri Potensi: Masonry Grid -->
+                <!-- Galeri Potensi: Filterable Gallery + Lightbox -->
                 <div class="mb-xl">
-                    <div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
+                    <div class="flex flex-col md:flex-row justify-between items-end mb-lg gap-md">
                         <div>
                             <h2 class="font-headline-lg text-headline-lg text-primary">Galeri Potensi &amp; Kegiatan
                             </h2>
-                            <p class="text-on-surface-variant mt-sm">Momen keseharian dan keindahan alam Padukuhan Gaten
-                                dalam lensa.</p>
-                        </div>
-                        <div class="flex gap-sm">
-                            <button
-                                class="bg-surface-container hover:bg-surface-container-high p-4 rounded-full transition-colors"
-                                aria-label="Filter galeri">
-                                <span class="material-symbols-outlined">filter_list</span>
-                            </button>
-                            <button
-                                class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-md text-label-md">Lihat
-                                Semua Foto</button>
+                            <p class="text-on-surface-variant mt-sm">Momen keseharian dan kegiatan warga Padukuhan
+                                Gaten dalam lensa.</p>
                         </div>
                     </div>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-md md:grid-rows-2 h-auto md:h-[800px]">
-                        <!-- Large Feature -->
-                        <div
-                            class="col-span-2 row-span-2 relative group overflow-hidden rounded-3xl min-h-[300px] md:min-h-0">
-                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                                data-alt="Kegiatan Karang Taruna Omega Padukuhan Gaten."
-                                style="background-image: url('https://raw.githubusercontent.com/jejeee28/padukuhangaten.id/main/gaten-karangtaruna.jpeg')">
-                            </div>
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-lg">
-                                <span
-                                    class="text-white/80 font-label-md text-label-md uppercase tracking-widest mb-xs">Kepemudaan</span>
-                                <h4 class="text-white font-headline-md text-headline-md">Kegiatan Karang Taruna Omega
-                                </h4>
-                            </div>
-                        </div>
-                        <!-- Grid Item 2 -->
-                        <div class="relative group overflow-hidden rounded-3xl min-h-[150px] md:min-h-0">
-                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                                data-alt="Kegiatan Karang Taruna Omega Padukuhan Gaten."
-                                style="background-image: url('https://raw.githubusercontent.com/jejeee28/padukuhangaten.id/main/gaten-karangtaruna2.jpeg')">
-                            </div>
-                            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
-                        </div>
-                        <!-- Grid Item 3 -->
-                        <div class="relative group overflow-hidden rounded-3xl min-h-[150px] md:min-h-0">
-                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                                data-alt="Kegiatan Karang Taruna Omega Padukuhan Gaten."
-                                style="background-image: url('https://raw.githubusercontent.com/jejeee28/padukuhangaten.id/main/gaten-karangtaruna3.jpeg')">
-                            </div>
-                            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
-                        </div>
-                        <!-- Grid Item 4 -->
-                        <div class="col-span-2 relative group overflow-hidden rounded-3xl h-64 md:h-auto">
-                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                                data-alt="Kegiatan Karang Taruna Omega Padukuhan Gaten."
-                                style="background-image: url('https://raw.githubusercontent.com/jejeee28/padukuhangaten.id/main/gaten-karangtaruna4.jpeg')">
-                            </div>
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-md">
-                                <span class="text-white/80 font-label-md text-label-md">Kepemudaan</span>
-                                <h4 class="text-white font-headline-md text-headline-md">Karang Taruna Omega Gaten</h4>
-                            </div>
-                        </div>
+                    <!-- Filter Buttons -->
+                    <div class="flex flex-wrap gap-2 mb-lg" id="gallery-filters">
+                        <button data-filter="semua"
+                            class="gallery-filter-btn active px-6 py-2.5 rounded-full font-label-md text-label-md bg-primary text-on-primary transition-all">Semua</button>
+                        <button data-filter="karangtaruna"
+                            class="gallery-filter-btn px-6 py-2.5 rounded-full font-label-md text-label-md bg-white border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all">Karang
+                            Taruna</button>
+                        <button data-filter="kemerdekaan"
+                            class="gallery-filter-btn px-6 py-2.5 rounded-full font-label-md text-label-md bg-white border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all">Kemerdekaan
+                            RI</button>
+                        <button data-filter="kerjabakti"
+                            class="gallery-filter-btn px-6 py-2.5 rounded-full font-label-md text-label-md bg-white border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all">Kerja
+                            Bakti</button>
+                        <button data-filter="mertidusun"
+                            class="gallery-filter-btn px-6 py-2.5 rounded-full font-label-md text-label-md bg-white border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all">Merti
+                            Dusun</button>
+                    </div>
+                    <!-- Photo Grid -->
+                    <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-4 gap-md"></div>
+                </div>
+
+                <!-- Lightbox -->
+                <div id="gallery-lightbox"
+                    class="fixed inset-0 z-50 hidden items-center justify-center bg-black/85 backdrop-blur-sm p-4 md:p-10 opacity-0 transition-opacity duration-300">
+                    <button id="gallery-lightbox-close"
+                        class="absolute top-6 right-6 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
+                        aria-label="Tutup">
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
+                    <button id="gallery-lightbox-prev"
+                        class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
+                        aria-label="Sebelumnya">
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </button>
+                    <button id="gallery-lightbox-next"
+                        class="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
+                        aria-label="Berikutnya">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                    <div class="max-w-4xl w-full flex flex-col items-center gap-4">
+                        <img id="gallery-lightbox-img" class="max-h-[75vh] w-auto rounded-2xl shadow-2xl object-contain"
+                            src="" alt="" />
+                        <p id="gallery-lightbox-caption" class="text-white/90 font-label-md text-label-md text-center"></p>
                     </div>
                 </div>
 
@@ -1973,6 +1962,127 @@
             card.addEventListener('mouseleave', () => {
                 card.style.transform = 'translateY(0)';
             });
+        });
+
+        // ============================================================
+        // GALERI POTENSI & KEGIATAN: Filter Kategori + Lightbox
+        // Sumber foto: dokumentasi warga Padukuhan Gaten (GitHub jejeee28/padukuhangaten.id)
+        // ============================================================
+        const GH_BASE = "https://raw.githubusercontent.com/jejeee28/padukuhangaten.id/main/";
+        const galleryPhotos = [
+            // Karang Taruna Omega (5 foto)
+            { file: "gaten-karangtaruna.jpeg", category: "karangtaruna", label: "Karang Taruna", title: "Kegiatan Karang Taruna Omega" },
+            { file: "gaten-karangtaruna2.jpeg", category: "karangtaruna", label: "Karang Taruna", title: "Kegiatan Karang Taruna Omega" },
+            { file: "gaten-karangtaruna3.jpeg", category: "karangtaruna", label: "Karang Taruna", title: "Kegiatan Karang Taruna Omega" },
+            { file: "gaten-karangtaruna4.jpeg", category: "karangtaruna", label: "Karang Taruna", title: "Kegiatan Karang Taruna Omega" },
+            { file: "gaten-karangtaruna5.jpeg", category: "karangtaruna", label: "Karang Taruna", title: "Kegiatan Karang Taruna Omega" },
+            // Kemerdekaan RI (2 foto)
+            { file: "gaten-kegiatandesakemerdekaanindonesia.jpeg", category: "kemerdekaan", label: "Kemerdekaan RI", title: "Perayaan Kemerdekaan RI" },
+            { file: "gaten-kegiatandesakemerdekaanindonesia2.jpeg", category: "kemerdekaan", label: "Kemerdekaan RI", title: "Perayaan Kemerdekaan RI" },
+            // Kerja Bakti (7 foto)
+            { file: "gaten-kegiatandesakerjabakti.jpeg", category: "kerjabakti", label: "Kerja Bakti", title: "Kerja Bakti Warga Gaten" },
+            { file: "gaten-kegiatandesakerjabakti2.jpeg", category: "kerjabakti", label: "Kerja Bakti", title: "Kerja Bakti Warga Gaten" },
+            { file: "gaten-kegiatandesakerjabakti3.jpeg", category: "kerjabakti", label: "Kerja Bakti", title: "Kerja Bakti Warga Gaten" },
+            { file: "gaten-kegiatandesakerjabakti4.jpeg", category: "kerjabakti", label: "Kerja Bakti", title: "Kerja Bakti Warga Gaten" },
+            { file: "gaten-kegiatandesakerjabakti5.jpeg", category: "kerjabakti", label: "Kerja Bakti", title: "Kerja Bakti Warga Gaten" },
+            { file: "gaten-kegiatandesakerjabakti6.jpeg", category: "kerjabakti", label: "Kerja Bakti", title: "Kerja Bakti Warga Gaten" },
+            { file: "gaten-kegiatandesakerjabakti7.jpeg", category: "kerjabakti", label: "Kerja Bakti", title: "Kerja Bakti Warga Gaten" },
+            // Merti Dusun (7 foto)
+            { file: "gaten-mertidusun.jpeg", category: "mertidusun", label: "Merti Dusun", title: "Umbul Doa Merti Dusun Gaten" },
+            { file: "gaten-mertidusun2.jpeg", category: "mertidusun", label: "Merti Dusun", title: "Umbul Doa Merti Dusun Gaten" },
+            { file: "gaten-mertidusun3.jpeg", category: "mertidusun", label: "Merti Dusun", title: "Umbul Doa Merti Dusun Gaten" },
+            { file: "gaten-mertidusun4.jpeg", category: "mertidusun", label: "Merti Dusun", title: "Umbul Doa Merti Dusun Gaten" },
+            { file: "gaten-mertidusun5.jpeg", category: "mertidusun", label: "Merti Dusun", title: "Umbul Doa Merti Dusun Gaten" },
+            { file: "gaten-mertidusun6.jpeg", category: "mertidusun", label: "Merti Dusun", title: "Umbul Doa Merti Dusun Gaten" },
+            { file: "gaten-mertidusun7.jpeg", category: "mertidusun", label: "Merti Dusun", title: "Umbul Doa Merti Dusun Gaten" }
+        ];
+
+        const galleryGrid = document.getElementById('gallery-grid');
+        const galleryFilters = document.getElementById('gallery-filters');
+        let currentFilter = 'semua';
+        let visiblePhotos = galleryPhotos;
+
+        function renderGallery(filter) {
+            visiblePhotos = filter === 'semua' ? galleryPhotos : galleryPhotos.filter(p => p.category === filter);
+            galleryGrid.innerHTML = visiblePhotos.map((photo, idx) => `
+                <div class="gallery-item relative group overflow-hidden rounded-2xl aspect-square cursor-pointer" data-index="${idx}">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                        style="background-image: url('${GH_BASE}${photo.file}')"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3">
+                        <span class="text-white font-label-md text-label-md">${photo.label}</span>
+                    </div>
+                </div>
+            `).join('');
+
+            galleryGrid.querySelectorAll('.gallery-item').forEach(item => {
+                item.addEventListener('click', () => openLightbox(parseInt(item.getAttribute('data-index'))));
+            });
+        }
+
+        galleryFilters.querySelectorAll('.gallery-filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                galleryFilters.querySelectorAll('.gallery-filter-btn').forEach(b => {
+                    b.classList.remove('active', 'bg-primary', 'text-on-primary');
+                    b.classList.add('bg-white', 'border', 'border-outline-variant', 'text-on-surface');
+                });
+                btn.classList.add('active', 'bg-primary', 'text-on-primary');
+                btn.classList.remove('bg-white', 'border', 'border-outline-variant', 'text-on-surface');
+                currentFilter = btn.getAttribute('data-filter');
+                renderGallery(currentFilter);
+            });
+        });
+
+        renderGallery('semua');
+
+        // Lightbox logic
+        const lightbox = document.getElementById('gallery-lightbox');
+        const lightboxImg = document.getElementById('gallery-lightbox-img');
+        const lightboxCaption = document.getElementById('gallery-lightbox-caption');
+        const lightboxClose = document.getElementById('gallery-lightbox-close');
+        const lightboxPrev = document.getElementById('gallery-lightbox-prev');
+        const lightboxNext = document.getElementById('gallery-lightbox-next');
+        let lightboxIndex = 0;
+
+        function openLightbox(index) {
+            lightboxIndex = index;
+            updateLightbox();
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+            requestAnimationFrame(() => lightbox.classList.remove('opacity-0'));
+        }
+
+        function updateLightbox() {
+            const photo = visiblePhotos[lightboxIndex];
+            lightboxImg.src = `${GH_BASE}${photo.file}`;
+            lightboxImg.alt = photo.title;
+            lightboxCaption.textContent = `${photo.title} — ${lightboxIndex + 1}/${visiblePhotos.length}`;
+        }
+
+        function closeLightbox() {
+            lightbox.classList.add('opacity-0');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+                lightbox.classList.remove('flex');
+            }, 300);
+        }
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+        lightboxPrev.addEventListener('click', () => {
+            lightboxIndex = (lightboxIndex - 1 + visiblePhotos.length) % visiblePhotos.length;
+            updateLightbox();
+        });
+        lightboxNext.addEventListener('click', () => {
+            lightboxIndex = (lightboxIndex + 1) % visiblePhotos.length;
+            updateLightbox();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.classList.contains('hidden')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') lightboxPrev.click();
+            if (e.key === 'ArrowRight') lightboxNext.click();
         });
 
         // ============================================================
