@@ -258,6 +258,8 @@
                 <a class="nav-link font-body-md text-body-md text-tertiary border-b-2 border-tertiary pb-1"
                     href="#beranda">Beranda</a>
                 <a class="nav-link font-body-md text-body-md text-on-surface hover:text-primary transition-colors"
+                    href="#sejarah">Sejarah</a>
+                <a class="nav-link font-body-md text-body-md text-on-surface hover:text-primary transition-colors"
                     href="#statistik">Statistik</a>
                 <a class="nav-link font-body-md text-body-md text-on-surface hover:text-primary transition-colors"
                     href="#potensi">Potensi</a>
@@ -292,6 +294,8 @@
             <a class="mobile-nav-link text-xl font-headline-md text-tertiary border-b border-outline-variant/30 pb-2"
                 href="#beranda">Beranda</a>
             <a class="mobile-nav-link text-xl font-headline-md text-on-surface hover:text-primary transition-colors pb-2"
+                href="#sejarah">Sejarah</a>
+            <a class="mobile-nav-link text-xl font-headline-md text-on-surface hover:text-primary transition-colors pb-2"
                 href="#statistik">Statistik</a>
             <a class="mobile-nav-link text-xl font-headline-md text-on-surface hover:text-primary transition-colors pb-2"
                 href="#potensi">Potensi</a>
@@ -321,8 +325,7 @@
             <!-- Hero Section -->
             <div class="relative h-[870px] flex items-center overflow-hidden">
                 <div class="absolute inset-0 z-0">
-                    <div class="w-full h-full bg-cover bg-center"
-                        data-alt="Pemandangan asli Padukuhan Gaten."
+                    <div class="w-full h-full bg-cover bg-center" data-alt="Pemandangan asli Padukuhan Gaten."
                         style="background-image: url('https://raw.githubusercontent.com/jejeee28/padukuhangaten.id/main/gaten-beranda.png')">
                     </div>
                     <div class="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent">
@@ -396,7 +399,177 @@
                 </div>
             </div>
 
-            <!-- Layanan & Navigasi (Bento Grid Style) -->
+            <!-- ================= SECTION: SEJARAH & LEGENDA ================= -->
+            <div id="sejarah" class="py-xl bg-surface-container-low border-t border-outline-variant/30 scroll-mt-20">
+                <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                    <div class="text-center mb-lg">
+                        <span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary font-label-md text-label-md mb-2">Warisan Budaya &amp; Tutur</span>
+                        <h2 class="font-headline-lg text-headline-lg text-primary">Sejarah &amp; Legenda Padukuhan Gaten</h2>
+                        <p class="text-on-surface-variant max-w-2xl mx-auto mt-2">
+                            Mengenal asal-usul nama Gaten melalui kisah tutur leluhur yang diwariskan secara turun-temurun.
+                        </p>
+                    </div>
+
+                    <!-- Tab Switcher Header -->
+                    <div class="flex justify-center mb-lg">
+                        <div class="inline-flex p-1.5 rounded-full bg-white border border-outline-variant/40 shadow-sm" id="sejarah-tabs">
+                            <button data-tab="faktual"
+                                class="sejarah-tab-btn active px-6 py-2.5 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all flex items-center gap-2">
+                                <span class="material-symbols-outlined text-lg">history_edu</span>
+                                Ringkasan Asal-Usul
+                            </button>
+                            <button data-tab="legenda"
+                                class="sejarah-tab-btn px-6 py-2.5 rounded-full font-label-md text-label-md text-on-surface hover:text-primary transition-all flex items-center gap-2">
+                                <span class="material-symbols-outlined text-lg">auto_stories</span>
+                                Kisah &amp; Legenda Tutur
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Content Tab 1: Ringkasan Asal-usul Nama (Active by default) -->
+                    <div id="sejarah-tab-faktual" class="sejarah-tab-content block">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+                            <!-- Versi 1 Card -->
+                            <div class="bg-white rounded-3xl p-lg shadow-sm border border-outline-variant/30 hover:shadow-md transition-all flex flex-col justify-between">
+                                <div>
+                                    <div class="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center font-bold mb-md">
+                                        <span class="material-symbols-outlined text-2xl">person</span>
+                                    </div>
+                                    <span class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary font-label-md text-label-md mb-xs">Versi 1</span>
+                                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Nyai Katean</h3>
+                                    <p class="text-on-surface-variant font-body-md text-body-md leading-relaxed mb-md">
+                                        Diambil dari nama sosok perempuan yang tekun berdoa, gigih berikhtiar, dan tak pernah putus asa.
+                                    </p>
+                                    <div class="bg-surface-container-low p-md rounded-2xl border border-outline-variant/30 space-y-2">
+                                        <div class="text-xs uppercase tracking-wider text-primary font-bold">Falsafah Jawa</div>
+                                        <div class="font-serif italic font-semibold text-primary">"Kasêmbadan kang disêdya"</div>
+                                        <div class="text-xs text-on-surface-variant">Tercapainya apa yang dicita-citakan dan diusahakan dengan keteguhan hati.</div>
+                                    </div>
+                                </div>
+                                <div class="mt-md pt-md border-t border-outline-variant/30 text-xs text-on-surface-variant flex items-center justify-between">
+                                    <span>Etimologi Nama:</span>
+                                    <span class="font-bold text-primary">Katean &rarr; Gaten</span>
+                                </div>
+                            </div>
+
+                            <!-- Versi 2 Card -->
+                            <div class="bg-white rounded-3xl p-lg shadow-sm border border-outline-variant/30 hover:shadow-md transition-all flex flex-col justify-between">
+                                <div>
+                                    <div class="w-12 h-12 rounded-2xl bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold mb-md">
+                                        <span class="material-symbols-outlined text-2xl">diversity_3</span>
+                                    </div>
+                                    <span class="inline-block px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md mb-xs">Versi 2</span>
+                                    <h3 class="font-headline-md text-headline-md text-primary mb-2">Kyai &amp; Nyai Gati Mulya</h3>
+                                    <p class="text-on-surface-variant font-body-md text-body-md leading-relaxed mb-md">
+                                        Diambil dari nama sepasang suami istri yang dikenal sungguh-sungguh, jujur, dan berbudi luhur mulia.
+                                    </p>
+                                    <div class="bg-surface-container-low p-md rounded-2xl border border-outline-variant/30 space-y-2">
+                                        <div class="text-xs uppercase tracking-wider text-secondary font-bold">Makna Bahasa Jawa</div>
+                                        <div class="font-serif italic font-semibold text-secondary">"Gati" (Sungguh-sungguh) &amp; "Mulya" (Mulia)</div>
+                                        <div class="text-xs text-on-surface-variant">Menggambarkan kebaikan dan kemuliaan budi pekerti dalam setiap perbuatan.</div>
+                                    </div>
+                                </div>
+                                <div class="mt-md pt-md border-t border-outline-variant/30 text-xs text-on-surface-variant flex items-center justify-between">
+                                    <span>Etimologi Nama:</span>
+                                    <span class="font-bold text-secondary">Gati Mulya &rarr; Gaten</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Tab 2: Kisah & Legenda Tutur (Cerpen Percakapan Mbah Karti & Sarmi) -->
+                    <div id="sejarah-tab-legenda" class="sejarah-tab-content hidden">
+                        <div class="bg-white rounded-3xl p-md md:p-xl shadow-md border border-outline-variant/20 relative overflow-hidden">
+                            <!-- Background accent watermark -->
+                            <div class="absolute -right-12 -bottom-12 opacity-5 pointer-events-none select-none text-primary">
+                                <span class="material-symbols-outlined text-[240px]">menu_book</span>
+                            </div>
+
+                            <div class="flex items-center gap-3 mb-md pb-md border-b border-outline-variant/30">
+                                <div class="w-12 h-12 rounded-2xl bg-tertiary/10 text-tertiary flex items-center justify-center font-bold">
+                                    <span class="material-symbols-outlined text-2xl">auto_stories</span>
+                                </div>
+                                <div>
+                                    <h3 class="font-headline-md text-headline-md text-primary">Senja di Pematang Sawah Gaten</h3>
+                                    <p class="text-caption text-on-surface-variant">Kisah Percakapan Mbah Karti dan Sarmi tentang Asal-Usul Padukuhan</p>
+                                </div>
+                            </div>
+
+                            <div class="space-y-4 font-body-md text-body-md text-on-surface leading-relaxed max-w-4xl">
+                                <p class="italic text-on-surface-variant bg-surface-container-low p-4 rounded-2xl border-l-4 border-tertiary">
+                                    Matahari sore menggantung rendah di ufuk barat, memantulkan warna keemasan di permukaan air sawah yang baru saja diairi.
+                                </p>
+
+                                <p>
+                                    Sarmi duduk di gubuk kecil di pematang, menunggu neneknya, <strong>Mbah Karti</strong>, menyelesaikan pekerjaannya mencabuti rumput liar di sela-sela tanaman padi.
+                                </p>
+
+                                <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30">
+                                    <p class="font-medium text-primary mb-1">“Mbah, kenapa sih padukuhan kita dinamai Gaten?”</p>
+                                    <p class="text-on-surface-variant text-sm">
+                                        tanya Sarmi, memecah keheningan sore itu. Ia baru saja pulang dari sekolah dan diberi tugas menulis cerita rakyat dari kampung halamannya.
+                                    </p>
+                                </div>
+
+                                <p>
+                                    Mbah Karti berhenti sejenak, menyeka keringat di dahinya dengan ujung kain yang melilit kepalanya, lalu duduk di samping cucunya.
+                                </p>
+
+                                <p class="font-medium text-on-surface">
+                                    “Wah, itu cerita panjang, Nduk. Bahkan orang-orang tua di sini pun punya dua cerita berbeda tentang asal namanya.”
+                                </p>
+
+                                <p class="italic text-on-surface-variant">
+                                    “Dua cerita? Yang mana yang benar, Mbah?”
+                                </p>
+
+                                <p>
+                                    “Itulah yang menarik. Sampai sekarang, tidak ada yang tahu pasti mana yang benar. Keduanya diceritakan turun-temurun, dari kakek ke bapak, dari bapak ke anak, begitu seterusnya,” jawab Mbah Karti sambil memandang hamparan sawah yang mulai temaram. Ia pun mulai bertutur:
+                                </p>
+
+                                <!-- Card Versi 1 -->
+                                <div class="bg-primary/5 p-md rounded-2xl border border-primary/20 space-y-2">
+                                    <div class="flex items-center gap-2 text-primary font-bold">
+                                        <span class="material-symbols-outlined text-sm">filter_1</span>
+                                        <span>Versi Pertama: Nyai Katean</span>
+                                    </div>
+                                    <p class="text-on-surface leading-relaxed">
+                                        “Dahulu kala, hiduplah seorang perempuan bernama <strong>Nyai Katean</strong> di tanah ini. Ia dikenal sebagai sosok yang tekun berdoa dan berusaha, tidak pernah putus asa meski hidupnya penuh dengan cobaan. Warga sekitar percaya, apa pun yang diikhtiarkan Nyai Katean, pada akhirnya selalu terkabul. Orang-orang Jawa menyebutnya <span class="italic font-serif font-semibold text-primary">kasêmbadan kang disêdya</span>, artinya tercapainya apa yang dicita-citakan. Karena keteguhan hatinya itulah, nama Nyai Katean menjadi buah bibir. Lambat laun, orang-orang menyebut wilayah tempat tinggalnya dengan nama <em>Katean</em>, yang kemudian berubah pelafalannya menjadi <strong>Gaten</strong>, seperti yang kita kenal sekarang.”
+                                    </p>
+                                </div>
+
+                                <p class="text-on-surface-variant italic">
+                                    Sarmi mendengarkan dengan saksama, matanya berbinar menyimak kisah leluhurnya. “Tapi ada juga versi lain, Mbah?” tanyanya penasaran.
+                                </p>
+
+                                <!-- Card Versi 2 -->
+                                <div class="bg-secondary-container/30 p-md rounded-2xl border border-secondary-container/50 space-y-2">
+                                    <div class="flex items-center gap-2 text-secondary-fixed-dim font-bold">
+                                        <span class="material-symbols-outlined text-sm">filter_2</span>
+                                        <span>Versi Kedua: Kyai &amp; Nyai Gati Mulya</span>
+                                    </div>
+                                    <p class="text-on-surface leading-relaxed">
+                                        “Betul. Cerita kedua ini kudengar dari mendiang kakekmu. Katanya, di tanah ini juga pernah hidup sepasang suami istri, <strong>Kyai Gati Mulya</strong> dan <strong>Nyai Gati Mulya</strong>. Keduanya dikenal sebagai orang yang sungguh-sungguh dalam menjalani hidup, jujur, dan berbudi luhur. Kata <em>gati</em> sendiri punya banyak makna dalam bahasa Jawa, bisa berarti nyata, <em>têmên</em>, tingkah, tata, ulah, dan <em>sêngsêm</em>. Sedangkan <em>mulya</em> berarti mulia. Jadi, nama Gati Mulya itu menggambarkan orang yang sungguh-sungguh dan mulia dalam segala tindak-tanduknya. Karena kebaikan dan keteladanan pasangan itu, nama mereka disematkan pada wilayah ini, yang kemudian dikenal sebagai <strong>Gaten</strong>.”
+                                    </p>
+                                </div>
+
+                                <p>
+                                    Sarmi terdiam sejenak, mencoba mencerna dua kisah yang begitu berbeda namun sama-sama indah. “Kalau begitu, Gaten ini punya dua asal-usul, ya, Mbah? Yang satu tentang seorang perempuan yang penuh harapan, satunya lagi tentang sepasang suami istri yang mulia.”
+                                </p>
+
+                                <div class="bg-tertiary/10 p-md rounded-2xl border-l-4 border-tertiary space-y-2">
+                                    <p class="font-medium text-tertiary">
+                                        Mbah Karti tersenyum. “Betul, Nduk. Tapi menurut Mbah, keduanya sebenarnya mengajarkan hal yang sama. Yang satu bicara soal keteguhan hati mengejar cita-cita, yang satu lagi bicara soal kesungguhan dan kemuliaan budi. Dua-duanya adalah nilai yang masih kita jaga sampai sekarang.”
+                                    </p>
+                                    <p class="text-on-surface leading-relaxed mt-2">
+                                        Ia menunjuk ke arah hamparan sawah yang membentang luas di hadapan mereka. “Lihat itu, Nduk. Sawah-sawah ini masih kita rawat sampai sekarang, tidak seperti desa-desa lain yang sudah berubah jadi perumahan. Itu karena warga sini masih memegang teguh apa yang diwariskan leluhur, bekerja keras dan sungguh-sungguh seperti Kyai dan Nyai Gati Mulya, tapi juga tak pernah berhenti berharap dan berusaha seperti Nyai Katean.”
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="layanan" class="py-xl bg-surface-container-low scroll-mt-20">
                 <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
                     <div class="text-center mb-lg">
@@ -720,7 +893,8 @@
                             class="p-md md:p-lg bg-surface-container-low flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                             <div>
                                 <h3 class="font-headline-md text-headline-md text-primary">Data Penduduk per RT</h3>
-                                <p class="text-caption text-on-surface-variant">Total 4 Rukun Tetangga (RT 01 - RT 04)</p>
+                                <p class="text-caption text-on-surface-variant">Total 4 Rukun Tetangga (RT 01 - RT 04)
+                                </p>
                             </div>
                             <div class="flex gap-2 w-full md:w-auto">
                                 <div class="relative flex-1 md:flex-none">
@@ -774,7 +948,8 @@
                                     </tr>
                                     <tr class="hover:bg-surface-container-low transition-colors">
                                         <td class="px-lg py-4 font-label-md">RT 03</td>
-                                        <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Tri Sudarmadi</td>
+                                        <td class="px-lg py-4 font-body-md text-on-surface-variant">Bp. Tri Sudarmadi
+                                        </td>
                                         <td class="px-lg py-4 font-body-md">36</td>
                                         <td class="px-lg py-4 font-body-md">52</td>
                                         <td class="px-lg py-4 font-body-md">57</td>
@@ -793,44 +968,12 @@
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
         </section>
 
         <!-- ================= SECTION 3: POTENSI ================= -->
         <section id="potensi" class="scroll-mt-20 border-t border-outline-variant/30 py-xl bg-surface-container-low">
             <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
-                <!-- History Narrative Section -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center mb-xl">
-                    <div class="space-y-md">
-                        <div class="flex items-center gap-sm text-tertiary">
-                            <span class="h-[2px] w-12 bg-tertiary"></span>
-                            <span class="font-label-md text-label-md tracking-widest uppercase">Tapak Tilas &amp;
-                                Sejarah</span>
-                        </div>
-                        <h2 class="font-display text-display text-primary leading-tight">Asal-Usul Nama Padukuhan Gaten
-                        </h2>
-                        <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                            Nama Padukuhan Gaten memiliki dua versi cerita mengenai asal-usulnya. Versi pertama
-                            menyebutkan bahwa nama Gaten berasal dari nama Nyai Katean. Katean dalam bahasa Jawa
-                            memiliki arti kasembadan kang disedya, yaitu terkabulnya sesuatu yang dicita-citakan. Dari
-                            nama tokoh tersebut, wilayah ini kemudian dikenal dan disebut dengan nama Gaten.
-
-                        </p>
-                        <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                            Versi kedua menyebutkan bahwa nama Gaten berasal dari nama Kyai dan Nyai Gati Mulya. Gati
-                            dalam bahasa Jawa berarti nyata, têmên, tingkah, tata, ulah, sêngsêm, dan sacumbana,
-                            sedangkan Mulya berarti mulia. Dari nama kedua tokoh tersebut, wilayah ini kemudian dikenal
-                            dan disebut dengan nama Gaten hingga sekarang.
-                        </p>
-                    </div>
-                    <div class="relative group">
-                        <div class="absolute -inset-4 bg-secondary-container rounded-3xl -z-10 transform rotate-2">
-                        </div>
-                        <img class="w-full h-[500px] object-cover rounded-2xl card-shadow group-hover:scale-[1.02] transition-transform duration-500"
-                            data-alt="A cinematic, high-angle photograph of a lush Indonesian village landscape at sunrise. The scene features traditional Javanese houses with distinctive Joglo roofs nestled among vibrant green rice paddies and tall tropical trees. The morning mist rolls gently over the fields, illuminated by a warm, golden sunlight that creates a serene and timeless atmosphere. The colors are rich in natural greens, earthy browns, and soft yellows, reflecting a professional light-mode aesthetic of rural serenity."
-                            src="https://commons.wikimedia.org/wiki/Special:FilePath/Jatiluwih%20rice%20terraces.jpg" />
-                    </div>
-                </div>
 
                 <!-- Potensi Desa Section: Interactive Grid -->
                 <div class="text-center max-w-2xl mx-auto mb-xl">
@@ -917,7 +1060,8 @@
                                     class="material-symbols-outlined text-tertiary scale-75">check_circle</span>
                                 Pengairan Sawah Terpadu</li>
                             <li class="flex items-center gap-xs"><span
-                                    class="material-symbols-outlined text-tertiary scale-75">check_circle</span> Perkebunan
+                                    class="material-symbols-outlined text-tertiary scale-75">check_circle</span>
+                                Perkebunan
                                 Kelapa</li>
                             <li class="flex items-center gap-xs"><span
                                     class="material-symbols-outlined text-tertiary scale-75">check_circle</span>
@@ -926,35 +1070,76 @@
                     </div>
                 </div>
 
-                <!-- Galeri Potensi: Filterable Gallery + Lightbox -->
+                <!-- Galeri Potensi & Kegiatan: Bento Grid + Floating Pinterest Modal -->
                 <div class="mb-xl">
-                    <div class="flex flex-col md:flex-row justify-between items-end mb-lg gap-md">
+                    <div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
                         <div>
-                            <h2 class="font-headline-lg text-headline-lg text-primary">Galeri Potensi &amp; Kegiatan
-                            </h2>
-                            <p class="text-on-surface-variant mt-sm">Momen keseharian dan kegiatan warga Padukuhan
-                                Gaten dalam lensa.</p>
+                            <h2 class="font-headline-lg text-headline-lg text-primary">Galeri Potensi &amp; Kegiatan</h2>
+                            <p class="text-on-surface-variant mt-sm">Momen keseharian dan keindahan alam Padukuhan Gaten dalam lensa.</p>
+                        </div>
+                        <div class="flex gap-sm items-center">
+                            <button id="open-all-photos-filter-btn"
+                                class="bg-surface-container hover:bg-surface-container-high p-4 rounded-full transition-colors flex items-center justify-center shadow-sm"
+                                aria-label="Filter galeri" title="Filter Galeri">
+                                <span class="material-symbols-outlined">filter_list</span>
+                            </button>
+                            <button id="open-all-photos-btn"
+                                class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-md text-label-md hover:bg-primary-container shadow-md transition-all flex items-center gap-2">
+                                Lihat Semua Foto
+                            </button>
                         </div>
                     </div>
-                    <!-- Filter Buttons -->
-                    <div class="flex flex-wrap gap-2 mb-lg" id="gallery-filters">
-                        <button data-filter="semua"
-                            class="gallery-filter-btn active px-6 py-2.5 rounded-full font-label-md text-label-md bg-primary text-on-primary transition-all">Semua</button>
-                        <button data-filter="karangtaruna"
-                            class="gallery-filter-btn px-6 py-2.5 rounded-full font-label-md text-label-md bg-white border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all">Karang
-                            Taruna</button>
-                        <button data-filter="kemerdekaan"
-                            class="gallery-filter-btn px-6 py-2.5 rounded-full font-label-md text-label-md bg-white border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all">Kemerdekaan
-                            RI</button>
-                        <button data-filter="kerjabakti"
-                            class="gallery-filter-btn px-6 py-2.5 rounded-full font-label-md text-label-md bg-white border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all">Kerja
-                            Bakti</button>
-                        <button data-filter="mertidusun"
-                            class="gallery-filter-btn px-6 py-2.5 rounded-full font-label-md text-label-md bg-white border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all">Merti
-                            Dusun</button>
+
+                    <!-- 4 Card Bento Grid (Tampilan Utama di Halaman) -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-md md:grid-rows-2 h-auto md:h-[650px]">
+                        <!-- Card 1: Kiri Besar -->
+                        <div id="bento-card-0"
+                            class="col-span-2 row-span-2 relative group overflow-hidden rounded-3xl min-h-[300px] md:min-h-0 cursor-pointer">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                                style="background-image: url('https://raw.githubusercontent.com/jejeee28/padukuhangaten.id/main/gaten-mertidusun.jpeg')">
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent flex flex-col justify-end p-lg">
+                                <span
+                                    class="text-white/80 font-label-md text-label-md uppercase tracking-widest mb-xs">Merti Dusun</span>
+                                <h4 class="text-white font-headline-md text-headline-md">Umbul Doa Merti Dusun Gaten</h4>
+                            </div>
+                        </div>
+                        <!-- Card 2: Atas Tengah -->
+                        <div id="bento-card-1"
+                            class="relative group overflow-hidden rounded-3xl min-h-[160px] md:min-h-0 cursor-pointer">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                                style="background-image: url('https://raw.githubusercontent.com/jejeee28/padukuhangaten.id/main/gaten-karangtaruna.jpeg')">
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex flex-col justify-end p-md">
+                                <span class="text-white font-label-md text-label-md">Karang Taruna Omega</span>
+                            </div>
+                        </div>
+                        <!-- Card 3: Atas Kanan -->
+                        <div id="bento-card-2"
+                            class="relative group overflow-hidden rounded-3xl min-h-[160px] md:min-h-0 cursor-pointer">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                                style="background-image: url('https://raw.githubusercontent.com/jejeee28/padukuhangaten.id/main/gaten-kegiatandesakerjabakti.jpeg')">
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex flex-col justify-end p-md">
+                                <span class="text-white font-label-md text-label-md">Kerja Bakti Warga</span>
+                            </div>
+                        </div>
+                        <!-- Card 4: Bawah Kanan Lebar -->
+                        <div id="bento-card-3"
+                            class="col-span-2 relative group overflow-hidden rounded-3xl h-64 md:h-auto cursor-pointer">
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                                style="background-image: url('https://raw.githubusercontent.com/jejeee28/padukuhangaten.id/main/gaten-kegiatandesakemerdekaanindonesia.jpeg')">
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent flex flex-col justify-end p-md">
+                                <span class="text-white/80 font-label-md text-label-md">Kemerdekaan RI</span>
+                                <h4 class="text-white font-headline-md text-headline-md">Perayaan Kemerdekaan Padukuhan Gaten</h4>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Photo Grid -->
-                    <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-4 gap-md"></div>
                 </div>
 
                 <!-- Lightbox -->
@@ -978,7 +1163,8 @@
                     <div class="max-w-4xl w-full flex flex-col items-center gap-4">
                         <img id="gallery-lightbox-img" class="max-h-[75vh] w-auto rounded-2xl shadow-2xl object-contain"
                             src="" alt="" />
-                        <p id="gallery-lightbox-caption" class="text-white/90 font-label-md text-label-md text-center"></p>
+                        <p id="gallery-lightbox-caption" class="text-white/90 font-label-md text-label-md text-center">
+                        </p>
                     </div>
                 </div>
 
@@ -1069,7 +1255,8 @@
                                     <span class="font-headline-md text-primary font-bold">3</span>
                                 </div>
                                 <div>
-                                    <h4 class="font-label-md text-label-md text-primary font-bold">Bp. Tri Sudarmadi</h4>
+                                    <h4 class="font-label-md text-label-md text-primary font-bold">Bp. Tri Sudarmadi
+                                    </h4>
                                     <p class="font-caption text-caption text-tertiary mt-0.5">Ketua RT 3</p>
                                 </div>
                             </div>
@@ -1093,7 +1280,8 @@
                                     <span class="material-symbols-outlined text-tertiary">construction</span>
                                 </div>
                                 <div>
-                                    <h4 class="font-label-md text-label-md text-primary font-bold">Sdr. Dwi Ari Pamuji</h4>
+                                    <h4 class="font-label-md text-label-md text-primary font-bold">Sdr. Dwi Ari Pamuji
+                                    </h4>
                                     <p class="font-caption text-caption text-tertiary mt-0.5">Ketua POKGIAT</p>
                                 </div>
                             </div>
@@ -1129,7 +1317,8 @@
                                     <span class="material-symbols-outlined text-tertiary">diversity_3</span>
                                 </div>
                                 <div>
-                                    <h4 class="font-label-md text-label-md text-primary font-bold">Sdr. Oka Nur Hidayat</h4>
+                                    <h4 class="font-label-md text-label-md text-primary font-bold">Sdr. Oka Nur Hidayat
+                                    </h4>
                                     <p class="font-caption text-caption text-tertiary mt-0.5">Ketua Karang Taruna</p>
                                 </div>
                             </div>
@@ -1163,13 +1352,16 @@
                                 dan pengelolaan keuangan mandiri demi pelayanan warga yang optimal.
                             </p>
                             <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
-                                <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0 flex items-center justify-center">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0 flex items-center justify-center">
                                     <span class="material-symbols-outlined text-secondary">groups</span>
                                 </div>
                                 <div>
-                                    <p class="font-caption text-caption text-on-surface-variant group-hover:text-on-primary-container/60">
+                                    <p
+                                        class="font-caption text-caption text-on-surface-variant group-hover:text-on-primary-container/60">
                                         Koordinator</p>
-                                    <p class="font-label-md text-label-md text-primary group-hover:text-on-primary-container">
+                                    <p
+                                        class="font-label-md text-label-md text-primary group-hover:text-on-primary-container">
                                         4 Ketua RT (RT 01–04)</p>
                                 </div>
                             </div>
@@ -1192,13 +1384,16 @@
                                 (Arbei).
                             </p>
                             <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
-                                <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0 flex items-center justify-center">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0 flex items-center justify-center">
                                     <span class="material-symbols-outlined text-tertiary">groups</span>
                                 </div>
                                 <div>
-                                    <p class="font-caption text-caption text-on-surface-variant group-hover:text-on-tertiary-container/60">
+                                    <p
+                                        class="font-caption text-caption text-on-surface-variant group-hover:text-on-tertiary-container/60">
                                         Koordinator</p>
-                                    <p class="font-label-md text-label-md text-primary group-hover:text-on-tertiary-container">
+                                    <p
+                                        class="font-label-md text-label-md text-primary group-hover:text-on-tertiary-container">
                                         7 Kader Aktif</p>
                                 </div>
                             </div>
@@ -1208,8 +1403,7 @@
                             class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
                             <div
                                 class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 transition-colors">
-                                <span
-                                    class="material-symbols-outlined text-primary">egg</span>
+                                <span class="material-symbols-outlined text-primary">egg</span>
                             </div>
                             <h4
                                 class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
@@ -1226,9 +1420,11 @@
                                         src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%23d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%23435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%23435544%27/%3E%3C/svg%3E" />
                                 </div>
                                 <div>
-                                    <p class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
+                                    <p
+                                        class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
                                         Ketua KWT</p>
-                                    <p class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
+                                    <p
+                                        class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
                                         Ibu Suyati</p>
                                 </div>
                             </div>
@@ -1238,8 +1434,7 @@
                             class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
                             <div
                                 class="bg-tertiary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 transition-colors">
-                                <span
-                                    class="material-symbols-outlined text-tertiary">agriculture</span>
+                                <span class="material-symbols-outlined text-tertiary">agriculture</span>
                             </div>
                             <h4
                                 class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
@@ -1257,9 +1452,11 @@
                                         src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%23d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%23435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%23435544%27/%3E%3C/svg%3E" />
                                 </div>
                                 <div>
-                                    <p class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
+                                    <p
+                                        class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
                                         Koordinator Tani</p>
-                                    <p class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
+                                    <p
+                                        class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
                                         Bp. Siswanto</p>
                                 </div>
                             </div>
@@ -1274,8 +1471,7 @@
                                 class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
                                 <div
                                     class="bg-secondary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 transition-colors">
-                                    <span
-                                        class="material-symbols-outlined text-secondary">pets</span>
+                                    <span class="material-symbols-outlined text-secondary">pets</span>
                                 </div>
                                 <h4
                                     class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
@@ -1293,9 +1489,11 @@
                                             src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%23d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%23435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%23435544%27/%3E%3C/svg%3E" />
                                     </div>
                                     <div>
-                                        <p class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
+                                        <p
+                                            class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
                                             Koordinator Ternak</p>
-                                        <p class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
+                                        <p
+                                            class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
                                             Bp. Siswanto</p>
                                     </div>
                                 </div>
@@ -1305,8 +1503,7 @@
                                 class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
                                 <div
                                     class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 transition-colors">
-                                    <span
-                                        class="material-symbols-outlined text-primary">music_note</span>
+                                    <span class="material-symbols-outlined text-primary">music_note</span>
                                 </div>
                                 <h4
                                     class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
@@ -1325,9 +1522,11 @@
                                             src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%23d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%23435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%23435544%27/%3E%3C/svg%3E" />
                                     </div>
                                     <div>
-                                        <p class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
+                                        <p
+                                            class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
                                             Ketua</p>
-                                        <p class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
+                                        <p
+                                            class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
                                             Sdr. Dwi Ari Pamuji</p>
                                     </div>
                                 </div>
@@ -1337,8 +1536,7 @@
                                 class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
                                 <div
                                     class="bg-tertiary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 transition-colors">
-                                    <span
-                                        class="material-symbols-outlined text-tertiary">theater_comedy</span>
+                                    <span class="material-symbols-outlined text-tertiary">theater_comedy</span>
                                 </div>
                                 <h4
                                     class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
@@ -1357,9 +1555,11 @@
                                             src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%23d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%23435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%23435544%27/%3E%3C/svg%3E" />
                                     </div>
                                     <div>
-                                        <p class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
+                                        <p
+                                            class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
                                             Ketua</p>
-                                        <p class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
+                                        <p
+                                            class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
                                             Sdr. Adnan Ardi Kuntoro</p>
                                     </div>
                                 </div>
@@ -1369,8 +1569,7 @@
                                 class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
                                 <div
                                     class="bg-secondary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 transition-colors">
-                                    <span
-                                        class="material-symbols-outlined text-secondary">construction</span>
+                                    <span class="material-symbols-outlined text-secondary">construction</span>
                                 </div>
                                 <h4
                                     class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
@@ -1388,9 +1587,11 @@
                                             src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%23d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%23435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%23435544%27/%3E%3C/svg%3E" />
                                     </div>
                                     <div>
-                                        <p class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
+                                        <p
+                                            class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
                                             Ketua</p>
-                                        <p class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
+                                        <p
+                                            class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
                                             Sdr. Dwi Ari Pamuji</p>
                                     </div>
                                 </div>
@@ -1400,8 +1601,7 @@
                                 class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
                                 <div
                                     class="bg-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 transition-colors">
-                                    <span
-                                        class="material-symbols-outlined text-primary">diversity_3</span>
+                                    <span class="material-symbols-outlined text-primary">diversity_3</span>
                                 </div>
                                 <h4
                                     class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
@@ -1420,9 +1620,11 @@
                                             src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20200%20200%27%3E%3Crect%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27%23d4e8d2%27/%3E%3Ccircle%20cx%3D%27100%27%20cy%3D%2778%27%20r%3D%2738%27%20fill%3D%27%23435544%27/%3E%3Cpath%20d%3D%27M32%20196c0-48%2030-76%2068-76s68%2028%2068%2076%27%20fill%3D%27%23435544%27/%3E%3C/svg%3E" />
                                     </div>
                                     <div>
-                                        <p class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
+                                        <p
+                                            class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
                                             Ketua</p>
-                                        <p class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
+                                        <p
+                                            class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
                                             Sdr. Oka Nur Hidayat</p>
                                     </div>
                                 </div>
@@ -1432,8 +1634,7 @@
                                 class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
                                 <div
                                     class="bg-tertiary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 transition-colors">
-                                    <span
-                                        class="material-symbols-outlined text-tertiary">mosque</span>
+                                    <span class="material-symbols-outlined text-tertiary">mosque</span>
                                 </div>
                                 <h4
                                     class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
@@ -1445,13 +1646,16 @@
                                     Gaten.
                                 </p>
                                 <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
-                                    <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0 flex items-center justify-center">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0 flex items-center justify-center">
                                         <span class="material-symbols-outlined text-secondary">mosque</span>
                                     </div>
                                     <div>
-                                        <p class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
+                                        <p
+                                            class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
                                             Koordinator</p>
-                                        <p class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
+                                        <p
+                                            class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
                                             Takmir Masjid Al-Barokah</p>
                                     </div>
                                 </div>
@@ -1461,8 +1665,7 @@
                                 class="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container transition-all duration-300">
                                 <div
                                     class="bg-secondary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-6 transition-colors">
-                                    <span
-                                        class="material-symbols-outlined text-secondary">sports_volleyball</span>
+                                    <span class="material-symbols-outlined text-secondary">sports_volleyball</span>
                                 </div>
                                 <h4
                                     class="font-headline-md text-headline-md text-primary mb-3 group-hover:text-on-secondary-container">
@@ -1474,13 +1677,16 @@
                                     Juara 1 Turnamen Bola Voli Porkal/Piala Lurah Tirtomulyo 2023.
                                 </p>
                                 <div class="pt-6 border-t border-outline-variant flex items-center gap-sm">
-                                    <div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0 flex items-center justify-center">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-surface-container overflow-hidden flex-shrink-0 flex items-center justify-center">
                                         <span class="material-symbols-outlined text-secondary">sports_volleyball</span>
                                     </div>
                                     <div>
-                                        <p class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
+                                        <p
+                                            class="font-caption text-caption text-on-surface-variant group-hover:text-on-secondary-container/60">
                                             Koordinator</p>
-                                        <p class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
+                                        <p
+                                            class="font-label-md text-label-md text-primary group-hover:text-on-secondary-container">
                                             Tim Bola Voly Omega</p>
                                     </div>
                                 </div>
@@ -1625,8 +1831,7 @@
                                 menuju Padukuhan Gaten dari pusat pemerintahan Kalurahan Tirtomulyo.</p>
                         </div>
                         <a class="inline-flex items-center gap-2 text-tertiary font-label-md text-label-md hover:underline underline-offset-4"
-                            href="https://maps.app.goo.gl/eDvzEaZ1vt6SSWQJA" target="_blank"
-                            rel="noopener noreferrer">
+                            href="https://maps.app.goo.gl/eDvzEaZ1vt6SSWQJA" target="_blank" rel="noopener noreferrer">
                             <span class="material-symbols-outlined">directions</span>
                             Buka di Google Maps
                         </a>
@@ -1780,7 +1985,8 @@
                 <div class="space-y-2 text-on-surface-variant">
                     <div class="flex items-start gap-3">
                         <span class="material-symbols-outlined text-tertiary">location_on</span>
-                        <span> Gaten, Tirtomulyo, Kec. Kretek, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55772.</span>
+                        <span> Gaten, Tirtomulyo, Kec. Kretek, Kabupaten Bantul, Daerah Istimewa Yogyakarta
+                            55772.</span>
                     </div>
                     <div class="flex items-center gap-3">
                         <span class="material-symbols-outlined text-tertiary">call</span>
@@ -1793,6 +1999,44 @@
             © 2024 Padukuhan Gaten. Desa Ramah Budaya &amp; Modern.
         </div>
     </footer>
+
+    <!-- Kartu Modal Melayang Galeri Foto (Pop-up di Atas Header & Layar Utama, z-index: 99999) -->
+    <div id="all-photos-modal"
+        class="fixed inset-0 hidden items-center justify-center bg-black/80 backdrop-blur-md p-4 md:p-6 opacity-0 transition-opacity duration-300"
+        style="z-index: 99999;">
+        <div id="all-photos-modal-panel"
+            class="bg-surface rounded-3xl w-full max-w-5xl h-[82vh] max-h-[82vh] flex flex-col overflow-hidden shadow-2xl relative border border-outline-variant/30 my-auto opacity-0 translate-y-6 md:scale-95 transition-all duration-300">
+            <!-- Header Kartu Modal -->
+            <div class="flex-shrink-0 px-lg py-md border-b border-outline-variant flex justify-between items-center bg-surface-container-low">
+                <div>
+                    <h3 class="font-headline-lg text-headline-lg text-primary">Galeri Foto Padukuhan Gaten</h3>
+                    <p class="text-caption text-on-surface-variant mt-0.5">Dokumentasi kegiatan dan potensi warga (21 Foto)</p>
+                </div>
+                <button id="all-photos-modal-close"
+                    class="w-10 h-10 rounded-full bg-surface-container-high hover:bg-outline-variant/30 text-on-surface flex items-center justify-center transition-colors"
+                    aria-label="Tutup Galeri">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <!-- Filter Tabs -->
+            <div class="flex-shrink-0 px-md md:px-lg py-sm border-b border-outline-variant bg-surface flex flex-wrap gap-2" id="gallery-filters">
+                <button data-filter="semua"
+                    class="gallery-filter-btn active px-5 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary transition-all">Semua (21)</button>
+                <button data-filter="karangtaruna"
+                    class="gallery-filter-btn px-5 py-2 rounded-full font-label-md text-label-md bg-white border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all">Karang Taruna (5)</button>
+                <button data-filter="kemerdekaan"
+                    class="gallery-filter-btn px-5 py-2 rounded-full font-label-md text-label-md bg-white border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all">Kemerdekaan RI (2)</button>
+                <button data-filter="kerjabakti"
+                    class="gallery-filter-btn px-5 py-2 rounded-full font-label-md text-label-md bg-white border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all">Kerja Bakti (7)</button>
+                <button data-filter="mertidusun"
+                    class="gallery-filter-btn px-5 py-2 rounded-full font-label-md text-label-md bg-white border border-outline-variant text-on-surface hover:bg-surface-container-high transition-all">Merti Dusun (7)</button>
+            </div>
+            <!-- Grid Foto Pinterest (Ukuran Acak / Masonry) -->
+            <div class="overflow-y-auto flex-1 p-md md:p-lg">
+                <div id="gallery-grid" class="columns-2 md:columns-3 lg:columns-4 gap-3"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal Detail Potensi Desa -->
     <div id="potensi-modal-backdrop"
@@ -1965,7 +2209,7 @@
         });
 
         // ============================================================
-        // GALERI POTENSI & KEGIATAN: Filter Kategori + Lightbox
+        // GALERI POTENSI & KEGIATAN: Bento Grid + Modal Semua Foto + Lightbox
         // Sumber foto: dokumentasi warga Padukuhan Gaten (GitHub jejeee28/padukuhangaten.id)
         // ============================================================
         const GH_BASE = "https://raw.githubusercontent.com/jejeee28/padukuhangaten.id/main/";
@@ -1999,17 +2243,32 @@
 
         const galleryGrid = document.getElementById('gallery-grid');
         const galleryFilters = document.getElementById('gallery-filters');
+        const allPhotosModal = document.getElementById('all-photos-modal');
+        const openAllPhotosBtn = document.getElementById('open-all-photos-btn');
+        const openAllPhotosFilterBtn = document.getElementById('open-all-photos-filter-btn');
+        const allPhotosModalClose = document.getElementById('all-photos-modal-close');
+
         let currentFilter = 'semua';
         let visiblePhotos = galleryPhotos;
 
+        // Variasi tinggi foto ala Pinterest (Masonry)
+        const masonryHeights = ['210px', '280px', '320px', '230px', '290px', '240px', '310px', '260px'];
+        function getMasonryHeight(idx) {
+            return masonryHeights[idx % masonryHeights.length];
+        }
+
         function renderGallery(filter) {
             visiblePhotos = filter === 'semua' ? galleryPhotos : galleryPhotos.filter(p => p.category === filter);
+
             galleryGrid.innerHTML = visiblePhotos.map((photo, idx) => `
-                <div class="gallery-item relative group overflow-hidden rounded-2xl aspect-square cursor-pointer" data-index="${idx}">
+                <div class="gallery-item relative group overflow-hidden rounded-2xl cursor-pointer"
+                    style="display: inline-block; width: 100%; margin-bottom: 12px; height: ${getMasonryHeight(idx)}; break-inside: avoid;"
+                    data-index="${idx}">
                     <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                         style="background-image: url('${GH_BASE}${photo.file}')"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3">
-                        <span class="text-white font-label-md text-label-md">${photo.label}</span>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3">
+                        <span class="text-white text-sm font-medium">${photo.label}</span>
+                        <span class="text-white/80 text-xs mt-0.5">${photo.title}</span>
                     </div>
                 </div>
             `).join('');
@@ -2019,18 +2278,68 @@
             });
         }
 
-        galleryFilters.querySelectorAll('.gallery-filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                galleryFilters.querySelectorAll('.gallery-filter-btn').forEach(b => {
-                    b.classList.remove('active', 'bg-primary', 'text-on-primary');
-                    b.classList.add('bg-white', 'border', 'border-outline-variant', 'text-on-surface');
+        function openAllPhotosModal() {
+            renderGallery(currentFilter);
+            const panel = document.getElementById('all-photos-modal-panel');
+            if (allPhotosModal) {
+                allPhotosModal.classList.remove('hidden');
+                allPhotosModal.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+                requestAnimationFrame(() => {
+                    allPhotosModal.classList.remove('opacity-0');
+                    if (panel) panel.classList.remove('opacity-0', 'translate-y-6', 'md:scale-95');
                 });
-                btn.classList.add('active', 'bg-primary', 'text-on-primary');
-                btn.classList.remove('bg-white', 'border', 'border-outline-variant', 'text-on-surface');
-                currentFilter = btn.getAttribute('data-filter');
-                renderGallery(currentFilter);
+            }
+        }
+
+        function closeAllPhotosModal() {
+            const panel = document.getElementById('all-photos-modal-panel');
+            if (allPhotosModal) {
+                allPhotosModal.classList.add('opacity-0');
+                if (panel) panel.classList.add('opacity-0', 'translate-y-6', 'md:scale-95');
+                document.body.style.overflow = '';
+                setTimeout(() => {
+                    allPhotosModal.classList.add('hidden');
+                    allPhotosModal.classList.remove('flex');
+                }, 300);
+            }
+        }
+
+        if (openAllPhotosBtn) openAllPhotosBtn.addEventListener('click', openAllPhotosModal);
+        if (openAllPhotosFilterBtn) openAllPhotosFilterBtn.addEventListener('click', openAllPhotosModal);
+        if (allPhotosModalClose) allPhotosModalClose.addEventListener('click', closeAllPhotosModal);
+        if (allPhotosModal) {
+            allPhotosModal.addEventListener('click', (e) => {
+                if (e.target === allPhotosModal) closeAllPhotosModal();
             });
+        }
+
+        // Bento Cards Click -> Langsung buka Lightbox foto tersebut
+        const bentoPhotoIndices = [14, 0, 7, 5]; // Merti Dusun, Karang Taruna, Kerja Bakti, Kemerdekaan
+        [0, 1, 2, 3].forEach(idx => {
+            const card = document.getElementById(`bento-card-${idx}`);
+            if (card) {
+                card.addEventListener('click', () => {
+                    visiblePhotos = galleryPhotos;
+                    openLightbox(bentoPhotoIndices[idx]);
+                });
+            }
         });
+
+        if (galleryFilters) {
+            galleryFilters.querySelectorAll('.gallery-filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    galleryFilters.querySelectorAll('.gallery-filter-btn').forEach(b => {
+                        b.classList.remove('active', 'bg-primary', 'text-on-primary');
+                        b.classList.add('bg-white', 'border', 'border-outline-variant', 'text-on-surface');
+                    });
+                    btn.classList.add('active', 'bg-primary', 'text-on-primary');
+                    btn.classList.remove('bg-white', 'border', 'border-outline-variant', 'text-on-surface');
+                    currentFilter = btn.getAttribute('data-filter');
+                    renderGallery(currentFilter);
+                });
+            });
+        }
 
         renderGallery('semua');
 
@@ -2344,6 +2653,33 @@
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && !modalBackdrop.classList.contains('hidden')) closePotensiModal();
         });
+
+        // Sejarah Tabs Switcher
+        const sejarahTabs = document.getElementById('sejarah-tabs');
+        if (sejarahTabs) {
+            sejarahTabs.querySelectorAll('.sejarah-tab-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const targetTab = btn.getAttribute('data-tab');
+                    sejarahTabs.querySelectorAll('.sejarah-tab-btn').forEach(b => {
+                        b.classList.remove('active', 'bg-primary', 'text-on-primary', 'shadow-sm');
+                        b.classList.add('text-on-surface', 'hover:text-primary');
+                    });
+                    btn.classList.add('active', 'bg-primary', 'text-on-primary', 'shadow-sm');
+                    btn.classList.remove('text-on-surface', 'hover:text-primary');
+
+                    document.querySelectorAll('.sejarah-tab-content').forEach(content => {
+                        content.classList.add('hidden');
+                        content.classList.remove('block');
+                    });
+
+                    const activeContent = document.getElementById(`sejarah-tab-${targetTab}`);
+                    if (activeContent) {
+                        activeContent.classList.remove('hidden');
+                        activeContent.classList.add('block');
+                    }
+                });
+            });
+        }
 
         // Toggle expand/collapse untuk cards organisasi
         let orgExpanded = false;
